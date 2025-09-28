@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import './app.css';
 
-import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import ImportBootstrap from '../components/ImportBootstrap/ImportBootstrap'
 import { SkipToContentLink } from '@/components/SkipLink/SkipLink';
 import NavBar from '@/components/NavBar/NavBar';
@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <Script async src='https://www.googletagmanager.com/gtag/js?id=G-92QDBLPD10'/>
+      <GoogleAnalytics gaId="G-92QDBLPD10" />
       <ImportBootstrap/>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header>

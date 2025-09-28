@@ -10,6 +10,7 @@
     "deploy": "npm run build && gh-pages -d out --nojekyll --cname danielanapoli.com"
   },
   "dependencies": {
+    "@next/third-parties": "^15.5.4",
     "bootstrap": "^5.3.8",
     "next": "15.5.3",
     "react": "19.1.0",
