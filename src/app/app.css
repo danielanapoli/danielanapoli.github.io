@@ -1,0 +1,98 @@
+.skip-to-main-link {
+  position: absolute; 
+  left: -9999px; 
+  z-index: 999; 
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0; 
+}
+
+.skip-to-main-link:focus {
+  left: 50%; 
+  transform: translateX(-50%); 
+  opacity: 1; 
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media print {
+  .print-button{
+    display: none;
+  }
+}
+
+.print-button{
+  background-color: black;
+}
+
+.Home-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.underlined-heading {
+  text-decoration: underline;
+}
+
+.smaller-text {
+  font-size: smaller;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.smaller-div {
+  width: 100%;
+  padding-top: 2%;
+}
+
+.grey-divider {
+  padding-top: 0.05%;
+  background-color: #dee2e6;
+}
+
+#accordion-content {
+  font-size: large;
+}
+
+#hero-text {
+  font-size:x-large;
+}
+
+h1.hero {
+  font-size: 600%;
+}
