@@ -22,6 +22,22 @@ function AcademicPublications() {
         <br/>
         <Row>
             <Col>
+              <h3>Considering Privacy & AI in Remote Healthcare Technology for Older Adults</h3>
+              <Badge bg="secondary">Presentation</Badge>
+              <br/><br/>
+              <p>
+                We spoke to older adults across Canada about their needs and privacy expectations in remote healthcare technology. Unexpectedly, many had a lot to say about AI and the exciting (but sometimes scary) potential implications on future solutions. 
+                This talk was part of an online event for the <a href="https://www.wisdomexchangeproject.org/home" target="_blank" rel="noopener noreferrer" title="A link to the Wisdom Exchange Project website. Opens in a new tab.">Wisdom Exchange Project</a> in December 2025. 
+              </p>
+            </Col>
+            <Col md={4}>
+            <div className='smaller-div'>
+              <SlidesEmbed embedId={"https://www.slideshare.net/slideshow/embed_code/key/AdMkQXxrqTzC0Q?hostedIn=slideshare&page=upload"} />
+            </div>
+            </Col>
+        </Row>
+        <Row>
+            <Col>
               <h3>Remote Healthcare Technology Use Cases and the Contextual Integrity of Older Adult User Privacy</h3>
               <Badge bg="secondary">Presentation</Badge>
               <br/><br/>

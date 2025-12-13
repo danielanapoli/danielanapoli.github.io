@@ -34,7 +34,7 @@ function navBar(){
                   <DropdownItem href='/academic/publications'>Paper publications</DropdownItem>
                   <DropdownItem href='/academic/talks'>Talks and workshops</DropdownItem>
                 </NavDropdown>
-                <NavLink href='/side-projects' disabled>Side Projects</NavLink>
+                <NavLink href='/research-tools'>Tools</NavLink>
                 <NavLink href='/resume'>Resume</NavLink>
                 <NavLink href='/contact'>Contact</NavLink>
             </Nav>

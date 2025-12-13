@@ -22,13 +22,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
   title: "Daniela Napoli | Portfolio",
-  description: "Samples of Daniela Napoli's user research projects focused on accessible and inclusive design.",
+  description: "Samples of user research projects focused on accessible and inclusive design by Daniela Napoli.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <GoogleAnalytics gaId="G-92QDBLPD10" />
+      
       <ImportBootstrap/>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header>
