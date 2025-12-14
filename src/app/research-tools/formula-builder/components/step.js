@@ -1,5 +1,6 @@
 import { Question } from './question';
 import { Answers } from './answers';
+import { formulas } from '../content/formulas';
 
 /**
  * @param {string} parent - String name of the option that results in this question being displayed
@@ -9,12 +10,13 @@ import { Answers } from './answers';
  * @param {string[]} options - String array of answer options
  * @param {MouseEventHandler<HTMLButtonElement>} onClick - button click event handler to execute
  */
-export function Step({ parent, choices, number, question, options, onClick, onEnd}) {
+export function Step({ parent, choices, number, question, options, onClick, setFormula }) {
   const isParentSelected = !parent || choices.includes(parent);
   const displayThisStep = choices.length >= number - 1;
 
   if (displayThisStep && (!options || !options.length <= 0)) {
-    onEnd();
+    let answerKey = choices.join("-");
+    setFormula(formulas[answerKey]);
   }
 
   return (

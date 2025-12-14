@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col';
 import { useState } from 'react';
 import { Step } from './components/step';
 import { steps } from './content/steps';
-import { formulas } from './content/formulas';
 import { Recommendations } from './components/recommendations';
 
 function ResearchTools() {
@@ -24,12 +23,6 @@ function ResearchTools() {
       // The slice resets the step back to the earlier step if we changed an old answer
       return [...prev.slice(0, stepNumber - 1), selectedAnswer];
     })
-  }
-
-  const handleEnd = () => {
-    let answerKey = choices.join("-");
-    setFormula(formulas[answerKey]);
-    console.log('end reached: ' + formula)
   }
 
   return (
@@ -58,7 +51,7 @@ function ResearchTools() {
                   question={step.question}
                   options={step.options}
                   onClick={handleAnswerClick}
-                  onEnd={handleEnd}
+                  setFormula={setFormula}
                 />
               ))
             }
