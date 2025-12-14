@@ -22,9 +22,9 @@ function ResearchTools() {
         <Row className="justify-content-md-center">
           <CardGroup>
             <Card style={{ width: '100%' }} bg='light' className='border-0 m-4 p-4'>
-              <CardImg variant='top' src='/img/paper.png' className='p-2' alt=''/>
+              <CardImg variant='top' src='' className='p-2' alt=''/>
               <CardBody>
-                <CardTitle>Paper Publications</CardTitle>
+                <CardTitle>Form Builder</CardTitle>
                 <CardText>
                   Some peer-reviewed contributions to academic literature on human-centered design and usable security.
                 </CardText>

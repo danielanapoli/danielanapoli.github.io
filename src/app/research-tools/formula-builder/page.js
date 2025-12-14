@@ -3,9 +3,13 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Spinner from 'react-bootstrap/Spinner';
+
 import { useState } from 'react';
 import { Step } from './components/step';
 import { steps } from './content/steps';
+import { CardBody, CardTitle } from 'react-bootstrap';
 
 function ResearchTools() {
   const [choices, setChoices] = useState([]);
@@ -27,13 +31,27 @@ function ResearchTools() {
           <Container fluid='md'>
             <Row>
               <Col>
-              <h1>Formula Builder</h1>
+              <h1>Formula Wizard</h1>
               </Col>
             </Row>
             <Row>
               <Col>
-              Even when you're a statistical wizard, it's hard to remember which test best suits specific UX research data. Just tell the formula builder what you’re working with, and it points you toward the right method to use.
+              Even when you're a statistical wizard, it's hard to remember which test best suits specific UX research data. 
+              Tell us what you’re working with, and the Formula Wizard will point you toward the right method to use.
               </Col>
+            </Row>
+            <Row className="justify-content-md-center">
+              <Card className='mt-5' bg='light' style={{ width: '75%'}}>
+                <Card.Body>
+                  <Card.Title><h3>Recommendations</h3></Card.Title>
+                  <Card.Text className='text-center'>Answer the questions and we'll suggest a formula.</Card.Text>
+                  <div className='d-flex justify-content-center alight-items-center'>
+                      <Spinner animation='border' role='status' size='sm'>
+                      <span className="visually-hidden">Loading...</span>
+                      </Spinner>
+                  </div>
+                </Card.Body>
+              </Card>
             </Row>
             <br/>
             {
@@ -49,6 +67,7 @@ function ResearchTools() {
                 />
               ))
             }
+            <br/>
           </Container>
       </section>
     </div>

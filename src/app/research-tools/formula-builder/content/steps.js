@@ -18,8 +18,8 @@ export const steps = [
       options: ["Nominal", "Ordinal"]
     },
     {
-      parent: "Nominal",
-      number: 3, 
+      parent: "Numerical",
+      number: 2, 
       question: <span>What do you want to know about the <strong>numerical</strong> data?</span>,
       options: ["Differences", "Relationships"]
     }
