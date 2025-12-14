@@ -100,6 +100,80 @@ export const steps = [
       number: 5, 
       question: <span>Pearson's R</span>,
       options: []
-    }
+    },
+    {
+      parent: "Differences between groups",
+      number: 4, 
+      question: <span>How many groups are you comparing?</span>,
+      options: ["One", "Two", "More than two"]
+    },
+    {
+      parent: "One",
+      number: 5, 
+      question: <span>Do you know the <strong>population standard deviation</strong>?</span>,
+      options: ["Yes", "No"]
+    },
+    {
+      parent: "Yes",
+      number: 6, 
+      question: <span>Z-Test</span>,
+      options: []
+    },
+    {
+      parent: "No",
+      number: 6, 
+      question: <span>One sample T-test</span>,
+      options: []
+    },
+    {
+      parent: "Two",
+      number: 5, 
+      question: <span>Are there <strong>equal variances</strong>?</span>,
+      options: ["Yes", "No"]
+    },
+    {
+      parent: "Yes",
+      number: 6, 
+      question: <span>Are you analyzing <strong>repeated measures</strong>?</span>,
+      options: ["Yes", "No"]
+    },
+    {
+      parent: "Yes",
+      number: 7, 
+      question: <span>Paired T-test</span>,
+      options: []
+    },
+    {
+      parent: "No",
+      number: 7, 
+      question: <span>Independent Samples T-test</span>,
+      options: []
+    },
+    {
+      parent: "No",
+      number: 5, 
+      question: <span>Mann-Whitney U (a.k.a Wilcoxon Rank Sum)</span>,
+      options: []
+    },
+    {
+      parent: "More than two",
+      number: 5, 
+      question: <span>Are there <strong>equal variances</strong>?</span>,
+      options: ["Yes", "No"]
+    },
+    {
+      parent: "Yes",
+      number: 6, 
+      question: <span>Analysis of Variance (ANOVA)</span>,
+      options: []
+    },
+    {
+      parent: "No",
+      number: 6, 
+      question: <span>Kruskal-Wallis test</span>,
+      options: []
+    },
+
+
 
   ]

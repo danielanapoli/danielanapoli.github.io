@@ -22,7 +22,6 @@ function ResearchTools() {
         <Row className="justify-content-md-center">
           <CardGroup>
             <Card style={{ width: '100%' }} bg='light' className='border-0 m-4 p-4'>
-              <CardImg variant='top' src='' className='p-2' alt=''/>
               <CardBody>
                 <CardTitle>Form Builder</CardTitle>
                 <CardText>
