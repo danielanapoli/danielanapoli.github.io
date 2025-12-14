@@ -3,13 +3,10 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Spinner from 'react-bootstrap/Spinner';
 
 import { useState } from 'react';
 import { Step } from './components/step';
 import { steps } from './content/steps';
-import { CardBody, CardTitle } from 'react-bootstrap';
 import { formulas } from './content/formulas';
 import { Recommendations } from './components/recommendations';
 
@@ -32,6 +29,7 @@ function ResearchTools() {
   const handleEnd = () => {
     let answerKey = choices.join("-");
     setFormula(formulas[answerKey]);
+    console.log('end reached: ' + formula)
   }
 
   return (

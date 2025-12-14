@@ -13,8 +13,8 @@ export function Step({ parent, choices, number, question, options, onClick, onEn
   const isParentSelected = !parent || choices.includes(parent);
   const displayThisStep = choices.length >= number - 1;
 
-  if (!options) {
-    () => onEnd();
+  if (displayThisStep && (!options || !options.length <= 0)) {
+    onEnd();
   }
 
   return (
