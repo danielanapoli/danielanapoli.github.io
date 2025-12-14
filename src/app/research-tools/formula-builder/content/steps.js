@@ -2,7 +2,7 @@
  * @param {string} parent - String name of the option that results in this question being displayed
  * @param {number} number - Number indicating the position of this step in the sequence of steps
  * @param {string | html} question - String or HTML of of the question to display 
- * @param {string[]} options - String array of answer options 
+ * @param {string[]} options - String array of answer options (Omit if end step)
  */
 export const steps = [
     {
