@@ -1,9 +1,26 @@
+'use client';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
+import { Step } from './components/step';
+import { steps } from './content/steps';
 
 function ResearchTools() {
+  const [choices, setChoices] = useState([]);
+  const handleAnswerClick = (stepNumber, selectedAnswer) => { 
+    setChoices(prev => {
+      // If we clicked an answer that we already chose do nothing
+      if (selectedAnswer === prev[stepNumber - 1]) {
+        return prev;
+      }
+      
+      // The slice resets the step back to the earlier step if we changed an old answer
+      return [...prev.slice(0, stepNumber - 1), selectedAnswer];
+    })
+  }
+
   return (
     <div className='Tools'> 
       <section id='content'>
@@ -19,37 +36,19 @@ function ResearchTools() {
               </Col>
             </Row>
             <br/>
-            <Row className="justify-content-md-center">
-              <Col md="auto" className='text-center'>
-                <h3>What kind of data are you analyzing?</h3>
-              </Col>
-            </Row>
-            <Row className="justify-content-md-center">
-              <Col md="auto" className='text-center'><Button variant='light'>Categorical</Button></Col>
-              <Col md="auto" className='text-center'><Button variant='light'>Numerical</Button></Col>
-            </Row>
-            <br/>
-            <Row className="justify-content-md-center">
-              <Col md="auto" className='text-center'>
-                <h3>What kind of <strong>categorical</strong> data?</h3>
-              </Col>
-            </Row>
-            <Row className="justify-content-md-center">
-              <Col md="auto" className='text-center'><Button variant='light'>Nominal</Button></Col>
-              <Col md="auto" className='text-center'><Button variant='light'>Ordinal</Button></Col>
-            </Row>
-            <br/>
-            <Row className="justify-content-md-center">
-              <Col md="auto" className='text-center'>
-                <h3>What do you want to know about the <strong>numerical</strong> data?</h3>
-              </Col>
-            </Row>
-            <Row className="justify-content-md-center">
-              <Col md="auto" className='text-center'><Button variant='light'>Differences</Button></Col>
-              <Col md="auto" className='text-center'><Button variant='light'>Relationships</Button></Col>
-            </Row>
-            <br/>
-
+            {
+              steps.map((step, index) => (
+                <Step 
+                  key={index}
+                  parent={step.parent}
+                  choices={choices}
+                  number={step.number}
+                  question={step.question}
+                  options={step.options}
+                  onClick={handleAnswerClick}
+                />
+              ))
+            }
           </Container>
       </section>
     </div>
