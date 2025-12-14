@@ -31,23 +31,23 @@ function ResearchTools() {
           <Container fluid='md'>
             <Row>
               <Col>
-              <h1>Formula Wizard</h1>
+              <h1>Stats Formula Wizard</h1>
               </Col>
             </Row>
             <Row>
               <Col>
-              Even when you're a statistical wizard, it's hard to remember which test best suits specific UX research data. 
-              Tell us what you’re working with, and the Formula Wizard will point you toward the right method to use.
+              Even when you're a stats nerd, it's hard to remember which test best suits specific UX research data. 
+              Tell us what you’re working with, and the Stats Formula Wizard will give you some tips.
               </Col>
             </Row>
             <Row className="justify-content-md-center">
               <Card className='mt-5' bg='light' style={{ width: '75%'}}>
                 <Card.Body>
-                  <Card.Title><h3>Recommendations</h3></Card.Title>
+                  <Card.Title><h3>Suggestions</h3></Card.Title>
                   <Card.Text className='text-center'>Answer the questions and we'll suggest a formula.</Card.Text>
                   <div className='d-flex justify-content-center alight-items-center'>
                       <Spinner animation='border' role='status' size='sm'>
-                      <span className="visually-hidden">Loading...</span>
+                      <span className='visually-hidden'>Loading...</span>
                       </Spinner>
                   </div>
                 </Card.Body>

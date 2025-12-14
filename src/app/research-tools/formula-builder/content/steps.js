@@ -21,6 +21,85 @@ export const steps = [
       parent: "Numerical",
       number: 2, 
       question: <span>What do you want to know about the <strong>numerical</strong> data?</span>,
-      options: ["Differences", "Relationships"]
+      options: ["Relationships between variables", "Differences between groups"]
+    },
+    {
+      parent: "Nominal",
+      number: 3,
+      question: <span>How many variables do you have?</span>,
+      options: ["One", "Two or more"]
+    },
+    {
+      parent: "One",
+      number: 4,
+      question: <span>Chi-square goodness of fit</span>,
+      options: []
+    },
+    {
+      parent: "Two or more",
+      number: 4,
+      question: <span>Chi-square test of independence</span>,
+      options: []
+    },
+    {
+      parent: "Ordinal",
+      number: 3,
+      question: <span>What are you investigating?</span>,
+      options: ["Relationships between variables", "Differences between groups"]
+    },
+    {
+      parent: "Relationships between variables",
+      number: 4,
+      question: <span>Spearman's Rank Correlation</span>,
+      options: []
+    },
+    {
+      parent: "Differences between groups",
+      number: 4,
+      question: <span>What kind of <strong>groups</strong> are you testing?</span>,
+      options: ["Independent groups", "Within groups"]
+    },
+    {
+      parent: "Independent groups",
+      number: 5,
+      question: <span>Mann Whitney U (a.k.a Wilcoxon Rank-Sum)</span>,
+      options: []
+    },
+    {
+      parent: "Within groups",
+      number: 5,
+      question: <span>Wilcoxon Signed-Rank Test</span>,
+      options: []
+    },
+    {
+      parent: "Relationships between variables",
+      number: 3, 
+      question: <span>Do you have a true independent variable?</span>,
+      options: ["Yes", "No"]
+    },
+    {
+      parent: "Yes",
+      number: 4, 
+      question: <span>Regression test</span>,
+      options: []
+    },
+    {
+      parent: "No",
+      number: 4, 
+      question: <span>How is your data <strong>distributed</strong>?</span>,
+      options: ["Normal distribution", "Not normal distribution"]
+    },
+    {
+      parent: "Normal distribution",
+      number: 5, 
+      question: <span>Spearman's Rank Correlation</span>,
+      options: []
+    },
+    {
+      parent: "Not normal distribution",
+      number: 5, 
+      question: <span>Pearson's R</span>,
+      options: []
     }
+
   ]
