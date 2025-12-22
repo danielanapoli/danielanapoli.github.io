@@ -4,7 +4,7 @@ export function FormulaBlock({ formula }) {
   if (formula) {
     return (
       <div className='d-flex justify-content-center alight-items-center'>
-        <strong>{formula.name}</strong>
+        <strong>{formula}</strong>
       </div>
     )
   }

@@ -9,19 +9,30 @@ import { Step } from './components/step';
 import { steps } from './content/steps';
 import { Recommendations } from './components/recommendations';
 
+
 function ResearchTools() {
   const [choices, setChoices] = useState([]);
   const [formula, setFormula] = useState(null);
+
+  let allSteps = setStepNumbers(1, steps);
   
-  const handleAnswerClick = (stepNumber, selectedAnswer) => { 
+  const handleAnswerClick = (selectedAnswer) => { 
     setChoices(prev => {
+      let selectedStep = allSteps.find(s => s.id === selectedAnswer);
+      let stepPosition = selectedStep.number - 1;
+
       // If we clicked an answer that we already chose do nothing
-      if (selectedAnswer === prev[stepNumber - 1]) {
+      if (choices.includes(selectedAnswer)) {
         return prev;
       }
+
+      // If selectedAnswer has no options we've reached the end
+      setFormula(selectedStep.formula);
       
       // The slice resets the step back to the earlier step if we changed an old answer
-      return [...prev.slice(0, stepNumber - 1), selectedAnswer];
+      let newChoices = [...prev.slice(0, stepPosition - 1), selectedAnswer];
+      console.debug(newChoices);
+      return newChoices;
     })
   }
 
@@ -45,13 +56,9 @@ function ResearchTools() {
               steps.map((step, index) => (
                 <Step 
                   key={index}
-                  parent={step.parent}
+                  stepData={step}
                   choices={choices}
-                  number={step.number}
-                  question={step.question}
-                  options={step.options}
                   onClick={handleAnswerClick}
-                  setFormula={setFormula}
                 />
               ))
             }
@@ -60,6 +67,16 @@ function ResearchTools() {
       </section>
     </div>
   );
+}
+
+function setStepNumbers(stepNumber, step) {
+  if (step.options && step.options.length > 0) {
+    step.options.foreach(o => {
+      o.number = stepNumber;
+      setStepNumbers(stepNumer++, o.options);
+    })
+  }
+  return step;
 }
 
 export default ResearchTools;
