@@ -9,16 +9,15 @@ import { Step } from './components/step';
 import { steps } from './content/steps';
 import { Recommendations } from './components/recommendations';
 
-
 function ResearchTools() {
   const [choices, setChoices] = useState([]);
   const [formula, setFormula] = useState(null);
 
-  let allSteps = setStepNumbers(1, steps);
-  
+  var allSteps = enrichStepsData(steps);
+
   const handleAnswerClick = (selectedAnswer) => { 
     setChoices(prev => {
-      let selectedStep = allSteps.find(s => s.id === selectedAnswer);
+      let selectedStep = allSteps[selectedAnswer];
       let stepPosition = selectedStep.number - 1;
 
       // If we clicked an answer that we already chose do nothing
@@ -31,7 +30,6 @@ function ResearchTools() {
       
       // The slice resets the step back to the earlier step if we changed an old answer
       let newChoices = [...prev.slice(0, stepPosition - 1), selectedAnswer];
-      console.debug(newChoices);
       return newChoices;
     })
   }
@@ -53,10 +51,10 @@ function ResearchTools() {
             </Row>
             <Recommendations formula={formula} />
             {
-              steps.map((step, index) => (
+              Object.entries(allSteps).map(([key, value]) => (
                 <Step 
-                  key={index}
-                  stepData={step}
+                  key={key}
+                  stepData={value}
                   choices={choices}
                   onClick={handleAnswerClick}
                 />
@@ -69,14 +67,35 @@ function ResearchTools() {
   );
 }
 
-function setStepNumbers(stepNumber, step) {
-  if (step.options && step.options.length > 0) {
-    step.options.foreach(o => {
-      o.number = stepNumber;
-      setStepNumbers(stepNumer++, o.options);
-    })
+// Adds the id and step number to the body of each dictionary entry
+function enrichStepsData(stepsData) {
+  const stepsKeys = Object.keys(stepsData);
+
+  var enrichedSteps = steps;
+  for (const key of stepsKeys) {
+    enrichedSteps[key] = {
+      ...enrichedSteps[key],
+      id: key, 
+      number: distanceFromRoot(stepsData, key) + 1
+    }
   }
-  return step;
+
+  return enrichedSteps;
+}
+
+// Calculates how far the node is from the root node
+function distanceFromRoot(stepsDict, nodeId, distance = 0) {
+  if (nodeId === "root") {
+    return distance;
+  }
+
+  for (let node in stepsDict) {
+    if (stepsDict[node].options.includes(nodeId)) {
+      return distanceFromRoot(stepsDict, node, distance + 1);
+    }
+  }
+
+  return -1;
 }
 
 export default ResearchTools;

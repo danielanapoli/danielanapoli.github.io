@@ -3,9 +3,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import { steps } from '../content/steps';
 
-/**
- * @param {string[]} options - String array of answer options 
- */
 export function Answers({ options, onClick}) {
   return (
     <Row className="justify-content-md-center">
@@ -23,6 +20,5 @@ export function Answers({ options, onClick}) {
 }
 
 function getButtonText(option) {
-  let step = steps.find(s => s.id === option);
-  return step?.display ?? step?.id ?? '[ERROR LOADING OPTION]';
+  return steps[option]?.display ?? option ?? '[ERROR LOADING OPTION]';
 }
