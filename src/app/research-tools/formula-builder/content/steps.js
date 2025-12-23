@@ -1,179 +1,192 @@
 /**
- * @param {string} parent - String name of the option that results in this question being displayed
- * @param {number} number - Number indicating the position of this step in the sequence of steps
- * @param {string | html} question - String or HTML of of the question to display 
- * @param {string[]} options - String array of answer options (Omit if end step)
+ * An array of step data objects, each object includes:
+ * @param {string} id - String ID of the step
+ * @param {string} display - The string to display for this step, when presented as an option in its parent step
+ * @param {number} number - Number indicating the position of this step is in the sequence of steps
+ * @param {string | html} question - [Optional] String or HTML of the question to display 
+ * @param {string | HTML} formula - [Optional] String or HTML of the formula to display
+ * @param {string[]} options - [Optional] String array of answer options Ids (Omit if end step)
+ * 
+ * @Notes
+ * If options is null or empty, it is assumed this is the last step
  */
 export const steps = [
     {
-      parent: null,
-      number: 1, 
+      id: null,
+      display: null,
       question: "What kind of data are you analyzing?",
-      options: ["Categorical", "Numerical"]
+      options: ["Cat", "Num"]
     },
     {
-      parent: "Categorical",
-      number: 2, 
+      id: "Cat",
+      display: "Categorical",
       question: <span>What kind of <strong>categorical</strong> data?</span>,
-      options: ["Nominal", "Ordinal"]
+      options: ["Cat-Nom", "Cat-Ord"]
     },
     {
-      parent: "Numerical",
-      number: 2, 
+      id: "Num",
+      display: "Numerical",
       question: <span>What do you want to know about the <strong>numerical</strong> data?</span>,
-      options: ["Relationships between variables", "Differences between groups"]
+      options: ["Num-Rel", "Num-Diff"]
     },
     {
-      parent: "Nominal",
-      number: 3,
+      id: "Cat-Nom",
+      display: "Nominal",
       question: <span>How many variables do you have?</span>,
-      options: ["One", "Two or more"]
+      options: ["Cat-Nom-One", "Cat-Nom-TwoOrMore"]
     },
     {
-      parent: "One",
-      number: 4,
+      id: "Cat-Nom-One",
+      display: "One",
+      options: [],
       question: <span>Chi-square goodness of fit</span>,
-      options: []
+      formula: <span>Chi-square goodness of fit</span>, 
+      formulaCode: "https://latex.codecogs.com/svg.image?\chi^{2}_{c}=\sum\frac{(O_{i}-E_{i})^{2}}{E_{i}}"
     },
     {
-      parent: "Two or more",
-      number: 4,
+      id: "Cat-Nom-TwoOrMore",
+      display: "Two or more",
       question: <span>Chi-square test of independence</span>,
       options: []
     },
     {
-      parent: "Ordinal",
-      number: 3,
+      id: "Cat-Ord",
+      display: "Ordinal",
       question: <span>What are you investigating?</span>,
-      options: ["Relationships between variables", "Differences between groups"]
+      options: ["Cat-Ord-Rel", "Cat-Ord-Diff"]
     },
     {
-      parent: "Relationships between variables",
-      number: 4,
+      id: "Cat-Ord-Rel",
+      display: "Relationships between variables",
       question: <span>Spearman's Rank Correlation</span>,
       options: []
     },
     {
-      parent: "Differences between groups",
-      number: 4,
+      id: "Cat-Ord-Diff",
+      display: "Differences between groups",
       question: <span>What kind of <strong>groups</strong> are you testing?</span>,
-      options: ["Independent groups", "Within groups"]
+      options: ["Cat-Ord-Diff-Independent", "Cat-Ord-Diff-Within"]
     },
     {
-      parent: "Independent groups",
-      number: 5,
+      id: "Cat-Ord-Diff-Independent",
+      display: "Independent groups",
       question: <span>Mann Whitney U (a.k.a Wilcoxon Rank-Sum)</span>,
       options: []
     },
     {
-      parent: "Within groups",
-      number: 5,
+      id: "Cat-Ord-Diff-Within",
+      display: "Within groups",
       question: <span>Wilcoxon Signed-Rank Test</span>,
       options: []
     },
     {
-      parent: "Relationships between variables",
-      number: 3, 
+      id: "Num-Rel",
+      display: "Relationships between variables",
       question: <span>Do you have a true independent variable?</span>,
-      options: ["Yes", "No"]
+      options: ["Num-Rel-Yes", "Num-Rel-No"]
     },
     {
-      parent: "Yes",
-      number: 4, 
+      id: "Num-Rel-Yes",
+      display: "Yes",
       question: <span>Regression test</span>,
+      formula: <span>Regression test</span>,
       options: []
     },
     {
-      parent: "No",
-      number: 4, 
+      id: "Num-Rel-No",
+      display: "No",
       question: <span>How is your data <strong>distributed</strong>?</span>,
-      options: ["Normal distribution", "Not normal distribution"]
+      options: ["Num-Rel-No-NormDist", "Num-Rel-No-NotNormDist"]
     },
     {
-      parent: "Normal distribution",
-      number: 5, 
+      id: "Num-Rel-No-NormDist",
+      display: "Normal distribution",
       question: <span>Spearman's Rank Correlation</span>,
+      formula: <span>Spearman's Rank Correlation</span>,
       options: []
     },
     {
-      parent: "Not normal distribution",
-      number: 5, 
+      id: "Num-Rel-No-NotNormDist",
+      display: "Not normal distribution",
       question: <span>Pearson's R</span>,
+      formula: <span>Pearson's R</span>,
       options: []
     },
     {
-      parent: "Differences between groups",
-      number: 4, 
+      id: "Num-Diff",
+      display: "Differences between groups",
       question: <span>How many groups are you comparing?</span>,
-      options: ["One", "Two", "More than two"]
+      options: ["Num-Diff-One", "Num-Diff-Two", "Num-Diff-More"]
     },
     {
-      parent: "One",
-      number: 5, 
+      id: "Num-Diff-One",
+      display: "One",
       question: <span>Do you know the <strong>population standard deviation</strong>?</span>,
-      options: ["Yes", "No"]
+      options: ["Num-Diff-One-Yes", "Num-Diff-One-No"]
     },
     {
-      parent: "Yes",
-      number: 6, 
+      id: "Num-Diff-One-Yes",
+      display: "Yes",
       question: <span>Z-Test</span>,
+      formula: <span>Z-Test</span>,
       options: []
     },
     {
-      parent: "No",
-      number: 6, 
+      id: "Num-Diff-One-No",
+      display: "No",
       question: <span>One sample T-test</span>,
+      formula: <span>One sample T-test</span>,
       options: []
     },
     {
-      parent: "Two",
-      number: 5, 
+      id: "Num-Diff-Two",
+      display: "Two",
       question: <span>Are there <strong>equal variances</strong>?</span>,
-      options: ["Yes", "No"]
+      options: ["Num-Diff-Two-Yes", "Num-Diff-Two-No"]
     },
     {
-      parent: "Yes",
-      number: 6, 
+      id: "Num-Diff-Two-Yes",
+      display: "Yes",
       question: <span>Are you analyzing <strong>repeated measures</strong>?</span>,
-      options: ["Yes", "No"]
+      options: ["Num-Diff-Two-Yes-Yes", "Num-Diff-Two-Yes-No"]
     },
     {
-      parent: "Yes",
-      number: 7, 
+      id: "Num-Diff-Two-Yes-Yes",
+      display: "Yes",
       question: <span>Paired T-test</span>,
       options: []
     },
     {
-      parent: "No",
-      number: 7, 
+      id: "Num-Diff-Two-Yes-No",
+      display: "No",
       question: <span>Independent Samples T-test</span>,
       options: []
     },
     {
-      parent: "No",
-      number: 5, 
+      id: "Num-Diff-Two-No",
+      display: "No",
       question: <span>Mann-Whitney U (a.k.a Wilcoxon Rank Sum)</span>,
+      formula: <span>Mann-Whitney U (a.k.a Wilcoxon Rank Sum)</span>,
       options: []
     },
     {
-      parent: "More than two",
-      number: 5, 
+      id: "Num-Diff-More",
+      display: "More than two",
       question: <span>Are there <strong>equal variances</strong>?</span>,
-      options: ["Yes", "No"]
+      options: ["Num-Diff-More-Yes", "Num-Diff-More-No"]
     },
     {
-      parent: "Yes",
-      number: 6, 
+      id: "Num-Diff-More-Yes",
+      display: "Yes",
       question: <span>Analysis of Variance (ANOVA)</span>,
+      formula: <span>Analysis of Variance (ANOVA)</span>,
       options: []
     },
     {
-      parent: "No",
-      number: 6, 
+      id: "Num-Diff-More-No",
+      display: "No",
       question: <span>Kruskal-Wallis test</span>,
+      formula: <span>Kruskal-Wallis test</span>,
       options: []
     },
-
-
-
   ]
