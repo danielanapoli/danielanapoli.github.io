@@ -3,7 +3,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardImg from 'react-bootstrap/CardImg';
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardBody from 'react-bootstrap/CardBody';
 import CardTitle from 'react-bootstrap/CardTitle';
@@ -23,9 +22,9 @@ function ResearchTools() {
           <CardGroup>
             <Card style={{ width: '100%' }} bg='light' className='border-0 m-4 p-4'>
               <CardBody>
-                <CardTitle>Form Builder</CardTitle>
+                <CardTitle>Stats Formula Wizard</CardTitle>
                 <CardText>
-                  Some peer-reviewed contributions to academic literature on human-centered design and usable security.
+                  A handy tool to remember which statistical tests are best suited for your research data. Based on the statistical tests, the tool provides a formula to plug-in to your Excel sheet.
                 </CardText>
                 <Button className='stretched-link' variant="secondary" href="/research-tools/formula-builder">Read more</Button>
               </CardBody>

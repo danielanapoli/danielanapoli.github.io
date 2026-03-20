@@ -7,7 +7,6 @@ import CardTitle from 'react-bootstrap/CardTitle';
 import CardText from 'react-bootstrap/CardText';
 import CardGroup from 'react-bootstrap/CardGroup';
 import CardLink from 'react-bootstrap/CardLink';
-import Image from 'react-bootstrap/Image';
 
 function Home() {
   return(
@@ -18,9 +17,9 @@ function Home() {
             <h1 className='hero'>Hi, I'm Daniela</h1>
           </Row>
           <Row className='align-items-center'>
-            <Col lg='4'>
+            {/* <Col lg='4'> */}
               <p>
-                I'm a <strong>Usability/UX Researcher</strong> from Ontario, Canada.
+                I'm a <strong>User Researcher</strong> from Ontario, Canada.
                 On multi-disciplinary teams, I can be your go-to for embedding users' needs in technological visions.
                 With years of industry experience and a PhD in Computer Science, I'm well-versed in leveraging UX methods in agile environments.
               </p>
@@ -32,10 +31,10 @@ function Home() {
                 Thank you for spending some time here. Each case study highlights the full arc of research: the framing of key questions, the selection of appropriate methodologies, and the actionable insights that drove product decisions. If you have any questions, feel free to email me at <a href='mailto:hello@danielanapoli.com'>hello@danielanapoli.com</a>.
               </p>
               <br/>
-            </Col>
-            <Col>
+            {/* </Col> */}
+            {/* <Col>
             <Image width={'100%'} src={'/img/hero-doodle.png'} className='pb-5' alt='Image of Daniela scribbling on a piece of paper with a marker in a room of other people.'/>
-            </Col>
+            </Col> */}
           </Row>
           <Row className='justify-content-md-center'>
             <Col>

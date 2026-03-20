@@ -25,23 +25,24 @@ function Resume() {
             <Row>
                 <Col md={10}>
                 <ul>
-                    <li>PhD and MA in Human–Computer Interaction with experience in user-centered design, usable security, and accessibility in various domains</li>
-                    <li>Applies 7+ years of qualitative and quantitative methods like interviews, surveys, heuristic evaluations, A/B tests, benchmarking, statistical analyses</li>
-                    <li>Regularly collaborates with cross-functional teams including software developers, product managers, and higher management to co-create strategies aligned with both business and user needs</li>
-                    <li>Provides actionable insights to help inform product improvements and future roadmaps which optimize ROI and support stakeholder buy-in</li>
+                    <li>Nearly 10 years of qualitative and quantitative user research</li>
+                    <li>PhD in Computer Science; MA in Human-Computer Interaction</li>
+                    <li>Expertise in user-centered design, usable privacy, and accessibility</li>
+                    <li>Uncovers insights that drive product improvements, roadmaps, and ROI</li>
+                    <li>Collaborates cross-functionally with developers, PMs, and leadership to align business and user needs</li>
                 </ul>
                 </Col>
             </Row>
             <br/>
             <Row>
-                <Col><h3 className='underlined-heading'>UX Education</h3></Col>
+                <Col><h3 className='underlined-heading'>Education</h3></Col>
             </Row>
             <Row>
                 <Col md={8}>
                 <strong>Doctor of Philosophy in Computer Science</strong><br/>
                 Carleton University, Ottawa, Ontario<br/>
                 <ul>
-                    <li>Thesis focus on designing remote healthcare technology for older adults</li>
+                    <li>Thesis: <a href='https://hdl.handle.net/20.500.14718/44742' target='_blank' rel='noopener noreferrer' title='Link to Carleton University Thesis repository'>Tailoring Remote Healthcare Technology to Meet the Needs and Privacy Expectations of Older Adults</a></li>
                     <li>Senior member of Carleton's Human Oriented Research in Usable Security <a href='https://chorus.scs.carleton.ca/' target='_blank' rel='noopener noreferrer' title='Link to the Carleton Usable Security research lab. Opens in a new tab.'>(CHORUS)</a> lab</li>
                 </ul>
                 </Col>
@@ -52,7 +53,7 @@ function Resume() {
                 <strong>Master of Arts in Human-Computer Interaction</strong><br/>
                 Carleton University, Ottawa, Ontario<br/>
                 <ul>
-                    <li>Thesis focus on usable security for people with visual disabilities; read more at <a href='https://carleton.scholaris.ca/items/b9e26ef6-df12-4cf4-bfea-07a99d045f59' target='_blank' rel='noopener noreferrer' title='Link to Carleton University Thesis repository'>Carleton's repository</a></li>
+                    <li>Thesis: <a href='https://carleton.scholaris.ca/items/b9e26ef6-df12-4cf4-bfea-07a99d045f59' target='_blank' rel='noopener noreferrer' title='Link to Carleton University Thesis repository'>Accessible and Usable Security: Exploring Visually Impaired Users’ Online Security and Privacy Strategies</a></li>
                     <li>Junior member of Carleton's Human Oriented Research in Usable Security <a href='https://chorus.scs.carleton.ca/' target='_blank' rel='noopener noreferrer' title='Link to the Carleton Usable Security research lab. Opens in a new tab.'>(CHORUS)</a> lab</li>
                 </ul>
                 </Col>
@@ -60,22 +61,32 @@ function Resume() {
             </Row>
             <br/>
             <Row>
-                <Col><h3 className='underlined-heading'>UX Experience</h3></Col>
+                <Col><h3 className='underlined-heading'>User Research Experience</h3></Col>
             </Row>
             <Row>
                 <Col md={8}>
                 <strong>Senior User Experience Researcher</strong><br/>
                 Canadian Institute for Health Information, Toronto, Ontario<br/>
                 <ul>
-                    <li>Collaborated with team leads and program managers to define project needs, research goals, and timelines</li>
-                    <li>Designed and facilitated qualitative and quantitative usability evaluations of offerings, including:</li>
-                    <ul>
-                        <li>Usability benchmarking to assess UX and SEO ROI</li>
-                        <li>Conducting interviews and focus groups to determine requirements for future offerings</li>
-                    </ul>
-                    <li>Prepared clear, concise reports and presentations communicating key findings and actionable recommendations</li>
-                    <li>Coached fellow researchers on defining research goals, study design, and impactfully sharing with stakeholders</li>
+                    <li>Led generative discovery research to guide modernization of critical legacy products</li>
+                    <li>Led quantitative findability benchmarking and comparative studies to quantify UX improvements for KPI reports</li>
+                    <li>Partnered with product and program leaders to shape research strategy and priorities</li>
+                    <li>Delivered user-backed insights that shaped product strategy, design directions, and roadmap decisions</li>
+                    <li>Mentored other researchers on study design, analysis, research strategy, and communicating impact to stakeholders</li>
                 </ul>
+                </Col>
+                <Col className='text-end' md={3}>October 2025 - Current</Col>            
+            </Row>
+            <Row>
+                <Col md={8}>
+                <strong>Senior User Experience Researcher</strong><br/>
+                Canadian Institute for Health Information, Toronto, Ontario<br/>
+                    <ul>
+                        <li>Led qualitative and quantitative usability studies to improve product UX and SEO performance</li>
+                        <li>Supported research strategy and priorities with team leads and program managers</li>
+                        <li>Conducted user interviews and focus groups to uncover requirements for future offerings</li>
+                        <li>Synthesized findings into actionable recommendations that informed product and roadmap decisions</li>
+                    </ul>
                 <Alert variant='light'>💡 Featured project: <a target='_blank' rel='noopener noreferrer' title='Link to a project page on Danielas website. Opens in a new tab.' href='/industry/requirements'>Requirements Discovery</a></Alert>              
                 </Col>
                 <Col className='text-end' md={3}>October 2021 - March 2023</Col>            
@@ -148,6 +159,14 @@ function Resume() {
             <Row>
                 <Col><h3 className='underlined-heading'>Professional Development</h3></Col>
             </Row>
+            <Row>
+                <Col md={8}>
+                <strong>The Complete Games User Research Fundamentals</strong> <Badge bg='secondary'>Course</Badge><br/>
+                Games User Research with Steve Bromley, <a href='https://gamesuserresearch.com/courses/games-user-research-fundamentals-a-practical-introduction-on-how-to-plan-run-and-analyse-games-user-research-studies/' target='_blank' rel='noopener noreferrer' title='Link to the course website. Opens in a new tab.'>Online course</a><br/>
+                </Col>
+                <Col className='text-end' md={3}>March 2026 - current</Col>
+            </Row>
+            <br/>
             <Row>
                 <Col md={8}>
                 <strong>Measuring UX and ROI</strong> <Badge bg='secondary'>Course</Badge><br/>
