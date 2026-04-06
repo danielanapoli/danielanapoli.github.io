@@ -1,3 +1,5 @@
+'use client'
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,6 +10,7 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
+import { BackButton } from '@/components/BackButton/BackButton';
 
 function IndustryAutomation() {
   return (
@@ -17,9 +20,10 @@ function IndustryAutomation() {
             <Container fluid="md">
             <Breadcrumb>
                 <BreadcrumbItem href="/">Home</BreadcrumbItem>
-                <BreadcrumbItem href="/industry">Industry Portfolio</BreadcrumbItem>
+                <BreadcrumbItem href="/user-research">User Research</BreadcrumbItem>
                 <BreadcrumbItem active>Persona Automation</BreadcrumbItem>
             </Breadcrumb>
+            <BackButton/>
                 <Row>
                 <Col>
                 <h1>Persona Automation</h1>

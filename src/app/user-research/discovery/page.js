@@ -1,3 +1,5 @@
+'use client'
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,6 +10,7 @@ import Badge from 'react-bootstrap/Badge';
 import AlertHeading from 'react-bootstrap/AlertHeading';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
+import { BackButton } from '@/components/BackButton/BackButton';
 
 function IndustryRequirements() {
   return (
@@ -16,9 +19,10 @@ function IndustryRequirements() {
           <Container fluid="md">
           <Breadcrumb>
             <BreadcrumbItem href="/">Home</BreadcrumbItem>
-            <BreadcrumbItem href="/industry">Industry Portfolio</BreadcrumbItem>
+            <BreadcrumbItem href="/user-research">User Research</BreadcrumbItem>
             <BreadcrumbItem active>Requirements Discovery</BreadcrumbItem>
           </Breadcrumb>
+          <BackButton/>
             <Row>
               <Col>
               <h1>Requirements Discovery</h1>
@@ -27,20 +31,14 @@ function IndustryRequirements() {
             <br/>
               <Row>
                   <Col>
-                    <h2>Users need...</h2>
-                    <p id="hero-text">
-                      to gauge their performance and guide future<br/>improvement programs. 
-                      <br/><br/>
-                      <Badge bg="secondary">The Canadian Institute for Health Information (CIHI)</Badge> 
-                    </p>
                   </Col>
                   <Col>
                     <Alert variant='warning'>
-                      <AlertHeading><h2>Research Impact</h2></AlertHeading>
+                      <AlertHeading><h2>Impact</h2></AlertHeading>
                       <ul id="accordion-content">
-                        <li>Delivered comprehensive data-driven vision statements for future CIHI offerings</li>
-                        <li>Streamlined user and organization needs</li>
-                        <li>Enhanced stakeholder alignment and buy-in</li>
+                        <li>Surface new opportuity areas</li>
+                        <li>Align product strategy with real user needs</li>
+                        <li>Reduce risk of building low-value features</li>
                       </ul>
                     </Alert> 
                   </Col>
@@ -48,14 +46,15 @@ function IndustryRequirements() {
                 <Row>
                   <Col>
                     <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
-                    <AccordionItem index={0} header={"Problem"}>
-                      <p id="accordion-content">
-                        Users struggle to <strong>consolidate</strong> data about their clinic on the CIHI website.
-                        <br/><br/>
-                        Wrangling this data to put on the CIHI website is not straightforward. Data is split among different departments, and each department has unique processes for managing their data.
-                      </p>                  
+                    <AccordionItem index={0} header={"What I deliver"}>
+                      <ul id="accordion-content">
+                        <li>In-depth interviews and contextual inquiries</li>
+                        <li>Thematic analyses and insight synthesis</li>
+                        <li>Opportunity mapping and problem framing</li>
+                        <li>Early-stage product direction recommendations</li>
+                      </ul>                  
                       </AccordionItem>
-                    <AccordionItem index={1} header={"Process"}>
+                    <AccordionItem index={1} header={"How I work"}>
                         <h5>Internal Stakeholder Interviews</h5>
                         <ul id="accordion-content">
                           <li>Conducted 20 hours of semi-structured interviews with various departmental leaders</li>
@@ -84,18 +83,12 @@ function IndustryRequirements() {
                           <li>Provided data-driven design recommendations during initial design reviews</li>
                           <li>Guided and participated in a cross-department all-day design studio workshop to finalize future-vision design wireframes</li>
                         </ul>
-                        <h5>Sharing Findings and Recommendations</h5>
-                        <ul id="accordion-content">
-                          <li>Crafted <i>current state</i> user journey maps to communicate key findings and recommendations</li>
-                          <li>Crafted <i>future state</i> user journey maps to contextualize future-vision design wireframes</li>
-                          <li>Supported leadership in evaluating how to accommodate users while meeting organizational goals</li>
-                        </ul>
                     </AccordionItem>
-                    <AccordionItem index={2} header={"Tools"}>
+                    <AccordionItem index={2} header={"Example deliverables"}>
                       <ul id="accordion-content">
-                        <li>Mural</li>
-                        <li>NVivo</li>
-                        <li>Snacks, stickies, pens, and paper</li>
+                        <li>Current state user journey maps to show key findings and recommendations</li>
+                          <li>Future state user journey maps to capture future-vision design wireframes</li>
+                          <li>Executive reports recommending how to support users while meeting business needs</li>
                       </ul>
                     </AccordionItem>
                   </Accordion>

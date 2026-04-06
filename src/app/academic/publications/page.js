@@ -85,7 +85,7 @@ function AcademicPublications() {
               <p>We studied how these users protect their online security by observing their interactions with Gmail, Amazon, and a phishing site mimicking CNIB, a well-known organization. We also conducted semi-structured interviews to understand their real-world concerns.</p>
               <p>Our analysis identified serious usability issues that caused risky behaviors or compromises between accessibility and security, particularly when accessibility software like JAWS hindered risk identification. We outlined four states of security and privacy experienced during sensitive tasks and provided design recommendations to improve communication of security information for users with visual disabilities.</p>
               <p><strong>Downloads:</strong> N/A</p>
-              <p><strong>Citations:</strong> 29</p>
+              <p><strong>Citations:</strong> 33</p>
             </Col>
             <Col md={4}>
               <YoutubeEmbed embedId="wPes4YF4bxY" />

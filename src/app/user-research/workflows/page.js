@@ -16,7 +16,7 @@ function IndustryWorkflows() {
           <Container fluid="md">
           <Breadcrumb>
             <BreadcrumbItem href="/">Home</BreadcrumbItem>
-            <BreadcrumbItem href="/industry">Industry Portfolio</BreadcrumbItem>
+            <BreadcrumbItem href="/user-research">User Research</BreadcrumbItem>
             <BreadcrumbItem active>Improving Interdisciplinary Workflows</BreadcrumbItem>
           </Breadcrumb>
             <Row>

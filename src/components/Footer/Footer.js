@@ -19,8 +19,9 @@ function footer(){
             </p>  
             <br/>
             <p className="smaller-text">
-                Handmade with love. Last updated on September 2025.<br/>
-                Some icons were made by <a href="https://www.flaticon.com/authors/freepik" target='_blank' rel='noopener noreferrer' title="A website dedicated to royalty-free icons. Opens in new tab.">Freepik</a>.
+                Designed & developed by Daniela Napoli <br/>
+                Last updated April 2026<br/>
+                Icons from <a href="https://www.flaticon.com/authors/freepik" target='_blank' rel='noopener noreferrer' title="A website dedicated to royalty-free icons. Opens in new tab.">Freepik</a><br/>
                 <br/>
             </p> 
             </Col>
