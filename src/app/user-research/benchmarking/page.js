@@ -8,14 +8,14 @@ import Table from 'react-bootstrap/Table';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import { BackButton } from '@/components/BackButton/BackButton';
-import { BreadCrumb } from '@/components/BreadCrumb/BreadCrumb';
+import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function PerformanceBenchmarking() {
   return (
     <div className="PerformanceBenchmarking">
       <section id="content">
         <Container fluid="md">
-          <BreadCrumb/>
+          <CustomBreadcrumb/>
           <BackButton/>
             <Row fluid='true'>
               <h1>Performance benchmarking</h1>
