@@ -1,9 +1,8 @@
-'use-client';
+'use client'
 
 import Image from 'react-bootstrap/Image';
-import Container  from 'react-bootstrap/Container';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
+import Container from 'react-bootstrap/Container';
+import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -15,11 +14,7 @@ function Toolkit() {
     <div className='Toolkit'>
       <section id='content'>
         <Container fluid='md'>
-            <Breadcrumb>
-                <BreadcrumbItem href='/'>Home</BreadcrumbItem>
-                <BreadcrumbItem href='/academic'>Academic Portfolio</BreadcrumbItem>
-                <BreadcrumbItem active>Design Toolkit</BreadcrumbItem>
-            </Breadcrumb>
+            <CustomBreadcrumb/>
             <h1>Remote Healthcare Technology Design Toolkit</h1>
             <br/>
             <Row fluid='true'>

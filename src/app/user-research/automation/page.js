@@ -6,117 +6,73 @@ import Col from 'react-bootstrap/Col';
 import Alert from 'react-bootstrap/Alert';
 import AlertHeading from 'react-bootstrap/AlertHeading';
 import Badge from 'react-bootstrap/Badge';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import { BackButton } from '@/components/BackButton/BackButton';
+import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function IndustryAutomation() {
   return (
     <div className="IndustryAutomation">
-      <br/> 
-        <section id="content">
-            <Container fluid="md">
-            <Breadcrumb>
-                <BreadcrumbItem href="/">Home</BreadcrumbItem>
-                <BreadcrumbItem href="/user-research">User Research</BreadcrumbItem>
-                <BreadcrumbItem active>Persona Automation</BreadcrumbItem>
-            </Breadcrumb>
-            <BackButton/>
-                <Row>
-                <Col>
-                <h1>Persona Automation</h1>
-                </Col>
-                </Row>
-                <br/>
-                <Row>
-                    <Col>
-                        <h2>Users need...</h2>
-                        <p id="hero-text">
-                        personalized support for leveraging data and relating tools.
-                        <br/><br/>
-                        <Badge bg="secondary">The Canadian Institute for Health Information (CIHI)</Badge> 
-                        </p>
-                    </Col>
-                    <Col>
-                        <Alert variant='warning'>
-                        <AlertHeading><h2>Research Impact</h2></AlertHeading>
-                        <ul id="accordion-content">
-                            <li>Enhanced user experience personalization by improving data relevancy</li>
-                            <li>Increased team productivity and reduced project timelines by 2 weeks</li> 
-                            <li>Spearheaded automation integration initiaitves across the organization</li>                 
-                        </ul>
-                        </Alert> 
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                    <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
-                        <AccordionItem index={0} header={"Problem"}>
-                            <p id="accordion-content">
-                            Users struggle to <strong>assess</strong> how CIHI data could be useful for their projects.
-                            </p>
-                            <p id="accordion-content">
-                            Customizing user experiences to improve relevancy is not straightforward. Many users have multiple roles and their needs in CIHI tools can dynamically change per visit.
-                            </p>
-                        </AccordionItem>
-                    <AccordionItem index={1} header={"Process"}>
-                        *Note: Before I joined the project, this analysis was planned to be completed manually with Excel.  
-                        With my programming background, I identified an opportunity to leverage automation techniques. 
-                        <br/><br/>
-                        <h4>Data Scrubbing with Python</h4>
-                        <ul id="accordion-content">
-                            <li>Extracted responses to open-text, demographic questions from recent <i>exit-intent</i> survey responses</li>
-                            <li>Cleaned data for processing
-                            <ul>
-                                <li>Assessed response validity, excluded invalid responses</li>
-                                <li>Adjusted for spelling variations</li>
-                                <li>Translated French-language responses</li>
-                            </ul>
-                            </li>
-                        </ul>
-                        <h4>Mapping Users to Personas with Natural Language Processing</h4>
-                        <ul id="accordion-content">
-                            <li>Compiled keyword list from open-text responses relating to persona characteristics</li>
-                            <li>Iteratively categorized respondents per persona</li>
-                            <ul>
-                            <li>Automatically mapped keywords to survey response</li>
-                            <li>Manually assessed unmapped response for potential keyword list improvements</li>
-                            <li>Improved mapping algorithm</li>
-                                <ul>
-                                <li>E.g., Updated word stems, considered medical terminology, and considered vernacular variations</li>
-                                </ul>
-                            </ul>
-                            <li>Ended processing when 87% of the survey responses could be accurately categorized</li>
-                        </ul>
-                        <h4>Expanding the Persona Framework</h4>
-                        <ul id="accordion-content">
-                            <li>Once respondents were categorized, full responses were further analyzed</li>
-                            <li>Validated the existing persona framework using mapped responses</li>
-                            <ul>
-                            <li>E.g., Persona A most often uses the XYZ tool on the website</li>
-                            </ul> 
-                            <li>Extracted new user insights and integrated findings in the persona framework</li>
-                            <ul>
-                            <li>E.g., Persona B is most likely to report XYZ pain points</li>
-                            </ul>
-                            <li>Provided data-driven recommendations for usability improvements to the CIHI website</li>
-                        </ul>
-                        </AccordionItem>
-                        <AccordionItem index={2} header={"Tools"}>
-                        <ul id="accordion-content">
-                            <li>Excel</li>
-                            <li>Python</li>
-                            <li>VS Code</li>
-                        </ul>
-                        </AccordionItem>
-                    </Accordion>
-                    </Col>
-                </Row>           
-            </Container>
-        </section>
-     </div>
+      <section id="content">
+        <Container fluid="md">
+          <CustomBreadcrumb/>
+          <BackButton/>
+          <Row fluid='true'>
+            <h1>Persona Integration</h1>
+            <Col>
+              <Accordion defaultActiveKeys={["0", "1", "2", "3"]} allKeys={["0", "1", "2", "3"]}>
+                <AccordionItem index={0} header={"What I deliver"}>
+                  <p>Integrating persona frameworks to translate user insights into audience segmentation systems other departments can adopt and act on. That includes the technical work of building those systems, not just recommending them.</p>
+                  <ul id="accordion-content">
+                    <li>Persona development and validation grounded in real user data</li>
+                    <li>Automated persona classification built on and validated against existing audience frameworks</li>
+                    <li>Research-informed recommendations for embedding personas into organizational workflows</li>
+                  </ul>
+                </AccordionItem>
+                <AccordionItem index={1} header={"How I work"}>
+                  <h5>Assess and consolidate existing research</h5>
+                  <p>Before building anything, I need to understand what the existing research can actually support. That means reviewing what's available, evaluating its reliability, and identifying gaps that need to be addressed before personas can be scaled.</p>
+                  <ul id="accordion-content">
+                    <li>Review existing research, data sources, and segmentation approaches</li>
+                    <li>Evaluate whether existing findings are sufficient to support persona development</li>
+                    <li>Design and conduct targeted studies to address research gaps where needed</li>
+                    <li>Synthesize consolidated insights into a foundation the system can be built on</li>
+                  </ul>
+                  <h5>Build the classification framework collaboratively</h5>
+                  <p>The system is only as trustworthy as the logic underneath it. I work with researchers, subject matter experts, and relevant stakeholders to define the keywords and characteristics that form the basis of the persona classification model.</p>
+                  <ul id="accordion-content">
+                    <li>Facilitate collaborative sessions to identify persona characteristics and defining attributes</li>
+                    <li>Validate the classification framework across research and non-research perspectives</li>
+                    <li>Refine the framework iteratively before any technical build begins</li>
+                  </ul>
+                  <h5>Build the persona system</h5>
+                  <p>With a validated framework in place, I build the technical system that makes persona classification reliable and scalable.</p>
+                  <ul id="accordion-content">
+                    <li>Clean and process raw data for analysis</li>
+                    <li>Build persona classification and mapping systems grounded in the validated framework</li>
+                    <li>Validate outputs against existing personas and refine iteratively</li>
+                  </ul>
+                  <h5>Embed personas into how the organization operates</h5>
+                  <p>When persona systems are built to scale, they change how other departments make decisions, from how marketing segments users to how product teams prioritize features.</p>
+                  <ul id="accordion-content">
+                    <li>Translate research findings into persona logic that other teams can adopt and operationalize</li>
+                    <li>Present outputs to relevant stakeholders in formats that support cross-departmental adoption</li>
+                  </ul>
+                </AccordionItem>
+                <AccordionItem index={2} header={"Example deliverables"}>
+                  <ul id="accordion-content">
+                    <li>Automated scripts for scanning and categorizing raw user data into persona groups</li>
+                    <li>Research-informed recommendations for embedding personas into organizational workflows</li>
+                    <li>Executive reports connecting persona insights to organizational strategy</li>
+                  </ul>
+                </AccordionItem>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </div>
   );
 }
 

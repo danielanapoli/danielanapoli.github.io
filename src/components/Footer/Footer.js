@@ -15,12 +15,13 @@ function footer(){
                 <a href="mailto:hello@danielanapoli.com" rel="noopener noreferrer" title="Daniela's email address. Will open the mail app.">Email</a> |&nbsp;
                 <a href="https://linkedin.com/in/danielanap/" target="_blank" rel="noopener noreferrer" title="Daniela's profile on LinkedIn. Opens in a new tab.">LinkedIn</a> |&nbsp;
                 <a href="https://scholar.google.com/citations?user=qdH8ZZcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Daniela's profile on Google Scholar. Opens in a new tab.">Google Scholar</a> |&nbsp;
+                <a href="https://www.substack.com/@hellodaniela" target="_blank" rel="noopener noreferrer" title="Daniela's blog on Substack. Opens in a new tab.">Substack</a> |&nbsp;
                 <a href="https://github.com/danielanapoli" target="_blank" rel="noopener noreferrer" title="Daniela's profile on GitHub. Opens in a new tab.">GitHub</a>
             </p>  
             <br/>
             <p className="smaller-text">
                 Designed & developed by Daniela Napoli <br/>
-                Last updated April 2026<br/>
+                Last updated May 2026<br/>
                 Icons from <a href="https://www.flaticon.com/authors/freepik" target='_blank' rel='noopener noreferrer' title="A website dedicated to royalty-free icons. Opens in new tab.">Freepik</a><br/>
                 <br/>
             </p> 

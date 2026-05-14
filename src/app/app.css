@@ -100,3 +100,17 @@
 h1.hero {
   font-size: 600%;
 }
+
+img.card-img-standard {
+  height: clamp(50px, 6vw, 90px);
+  width: auto;
+}
+
+.card-hover {
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  background-color: #f8f9fa;
+}

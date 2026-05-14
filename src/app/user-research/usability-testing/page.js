@@ -5,12 +5,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Alert from 'react-bootstrap/Alert';
 import AlertHeading from 'react-bootstrap/AlertHeading';
-import Badge from 'react-bootstrap/Badge';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
-
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import { BackButton } from '@/components/BackButton/BackButton';
+import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function IndustryAutomation() {
   return (
@@ -18,11 +15,7 @@ function IndustryAutomation() {
       <br/> 
         <section id="content">
             <Container fluid="md">
-            <Breadcrumb>
-                <BreadcrumbItem href="/">Home</BreadcrumbItem>
-                <BreadcrumbItem href="/user-research">Industry Portfolio</BreadcrumbItem>
-                <BreadcrumbItem active>Usability tests</BreadcrumbItem>
-            </Breadcrumb>
+            <CustomBreadcrumb/>
             <BackButton/>
                 <Row>
                 <Col>

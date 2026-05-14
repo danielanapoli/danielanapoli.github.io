@@ -2,22 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
 
 import YoutubeEmbed from '@/components/YoutubeEmbed/YoutubeEmbed';
 import SlidesEmbed from '@/components/SlidesEmbed/SlidesEmbed';
+import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function AcademicPublications() {
   return (
     <div className="AcademicPublications">
       <section id="content">
             <Container>
-            <Breadcrumb>
-            <BreadcrumbItem href="/">Home</BreadcrumbItem>
-            <BreadcrumbItem href="/academic">Academic Portfolio</BreadcrumbItem>
-            <BreadcrumbItem active>Paper Publications</BreadcrumbItem>
-            </Breadcrumb>
+            <CustomBreadcrumb/>
             <h1>Paper Publications</h1>
             <br/>
         <Row>

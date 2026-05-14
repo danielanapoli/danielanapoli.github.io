@@ -4,21 +4,16 @@ import Col from 'react-bootstrap/Col';
 import Alert from 'react-bootstrap/Alert';
 import AlertHeading from 'react-bootstrap/AlertHeading';
 import Badge from 'react-bootstrap/Badge';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
+import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function IndustryWorkflows() {
   return (
     <div className="IndustryWorkflows">
       <section id="content">
           <Container fluid="md">
-          <Breadcrumb>
-            <BreadcrumbItem href="/">Home</BreadcrumbItem>
-            <BreadcrumbItem href="/user-research">User Research</BreadcrumbItem>
-            <BreadcrumbItem active>Improving Interdisciplinary Workflows</BreadcrumbItem>
-          </Breadcrumb>
+          <CustomBreadcrumb/>
             <Row>
               <Col>
               <h1>Improving Interdisciplinary Workflows</h1>

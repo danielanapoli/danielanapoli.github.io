@@ -10,7 +10,7 @@ function Contact() {
           <Container fluid='md'>
             <Row>
               <Col>
-              <h1>Contact</h1>
+              <h1>Get in Touch</h1>
               </Col>
             </Row>
             <Row>

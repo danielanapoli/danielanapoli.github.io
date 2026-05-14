@@ -6,6 +6,8 @@ import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
 import React, { ReactNode } from 'react'
 import { usePathname } from 'next/navigation'
 
+const formatLabel = (slug) => slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+
 const CustomBreadcrumb = () => {
 
     const paths = usePathname()
@@ -23,14 +25,14 @@ const CustomBreadcrumb = () => {
                         if (isActive) {
                             return (
                                 <BreadcrumbItem key={index} active={true}>
-                                    {link}
+                                    {formatLabel(link)}
                                 </BreadcrumbItem>
                             )
                         }
                         else {
                             return (
                                 <BreadcrumbItem key={index} href={href}>
-                                    {link}
+                                    {formatLabel(link)}
                                 </BreadcrumbItem>
                             ) 
                         }

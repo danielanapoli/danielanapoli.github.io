@@ -3,92 +3,69 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
 import Alert from 'react-bootstrap/Alert';
-import Badge from 'react-bootstrap/Badge';
 import AlertHeading from 'react-bootstrap/AlertHeading';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import { BackButton } from '@/components/BackButton/BackButton';
+import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function IndustryRequirements() {
   return (
     <div className="IndustryRequirements">
       <section id="content">
           <Container fluid="md">
-          <Breadcrumb>
-            <BreadcrumbItem href="/">Home</BreadcrumbItem>
-            <BreadcrumbItem href="/user-research">User Research</BreadcrumbItem>
-            <BreadcrumbItem active>Requirements Discovery</BreadcrumbItem>
-          </Breadcrumb>
+          <CustomBreadcrumb/>
           <BackButton/>
             <Row>
-              <Col>
               <h1>Requirements Discovery</h1>
-              </Col>
-            </Row>
-            <br/>
-              <Row>
-                  <Col>
-                  </Col>
-                  <Col>
-                    <Alert variant='warning'>
-                      <AlertHeading><h2>Impact</h2></AlertHeading>
-                      <ul id="accordion-content">
-                        <li>Surface new opportuity areas</li>
-                        <li>Align product strategy with real user needs</li>
-                        <li>Reduce risk of building low-value features</li>
-                      </ul>
-                    </Alert> 
-                  </Col>
-                </Row>
-                <Row>
                   <Col>
                     <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
                     <AccordionItem index={0} header={"What I deliver"}>
+                      <p>Discovery research that informs product strategy and grounds teams in what users actually need. That includes translating insights into design decisions and practical requirements that technical teams can act on.</p>
                       <ul id="accordion-content">
                         <li>In-depth interviews and contextual inquiries</li>
                         <li>Thematic analyses and insight synthesis</li>
                         <li>Opportunity mapping and problem framing</li>
                         <li>Early-stage product direction recommendations</li>
-                      </ul>                  
-                      </AccordionItem>
+                      </ul>
+                    </AccordionItem>
                     <AccordionItem index={1} header={"How I work"}>
-                        <h5>Internal Stakeholder Interviews</h5>
-                        <ul id="accordion-content">
-                          <li>Conducted 20 hours of semi-structured interviews with various departmental leaders</li>
-                          <ul>
-                            <li>Explored the internal workflows of managing current offerings</li>
-                            <li>Discussed pain points and how future solutions can improve those challenges</li>
-                            <li>Considered high-level internal service changes required for accommodating various shifts in offerings</li>
-                          </ul>
-                          <li>Thematically analyzed interview findings to identify common themes and key insights</li>
-                          <li>Validated and extended upon key takeaways with findings from previous related initiatives</li>  
-                        </ul>
-                        <h5>User Interviews</h5>
-                        <ul id="accordion-content">
-                          <li>Conducted 14 1-hour semi-structured interviews with users across Canada</li>
-                          <ul>
-                            <li>Explored users' organizational goals, team dynamics, and everyday workflows</li>
-                            <li>Explored how current offerings are leveraged in everyday work</li>
-                            <li>Discussed pain points and how future solutions can improve those challenges</li>
-                          </ul>
-                          <li>Thematically analyzed interview findings to identify common themes and key insights</li>
-                          <li>Validated and extended upon key takeaways with findings from previous related initiatives</li>
-                        </ul>
-                        <h5>Design Ideation</h5>
-                        <ul id="accordion-content">
-                          <li>Collaborated with the project's lead designer to formulate initial design wireframes</li>
-                          <li>Provided data-driven design recommendations during initial design reviews</li>
-                          <li>Guided and participated in a cross-department all-day design studio workshop to finalize future-vision design wireframes</li>
-                        </ul>
+                      <h5>Start with what already exists</h5>
+                      <p>Before strategizing any research, I dig into what the organization already knows. That means reviewing digital analytics, existing documentation, and prior research to understand the landscape before adding to it.</p>
+                      <ul id="accordion-content">
+                        <li>Audit existing data sources and prior research initiatives</li>
+                        <li>Identify knowledge gaps that primary research needs to fill</li>
+                        <li>Review findings with internal stakeholders to pressure-test assumptions before moving forward</li>
+                      </ul>
+                      <h5>Consult internal stakeholders</h5>
+                      <p>The people closest to the product have already formed a picture of the user. I want to understand that picture, where it came from, and what organizational goals and constraints are shaping it, before I strategize anything.</p>
+                      <ul id="accordion-content">
+                        <li>Interview departmental leaders to surface assumptions about users and existing knowledge</li>
+                        <li>Understand organizational goals and strategic priorities that research outcomes need to align with</li>
+                        <li>Identify internal constraints that shape what solutions are actually viable</li>
+                      </ul>
+                      <h5>Talk to users</h5>
+                      <p>With the internal picture in place, user interviews have sharper focus.</p>
+                      <ul id="accordion-content">
+                        <li>Conduct semi-structured interviews to explore goals, workflows, and pain points</li>
+                        <li>Analyze findings thematically to surface patterns across participants</li>
+                        <li>Validate and build on existing knowledge where prior research is available</li>
+                      </ul>
+                      <h5>Stay involved through design ideation</h5>
+                      <p>Findings don't hand themselves off. I push to keep research present in early design and requirements gathering, whether that's a single review or a cross-functional workshop, because the translation step is where insights tend to get lost.</p>
+                      <ul id="accordion-content">
+                        <li>Contribute research findings to inform initial wireframe directions</li>
+                        <li>Participate in design reviews and workshops to keep user needs present where the engagement allows</li>
+                        <li>Help frame user insights as actionable requirements for technical teams</li>
+                      </ul>
                     </AccordionItem>
                     <AccordionItem index={2} header={"Example deliverables"}>
                       <ul id="accordion-content">
-                        <li>Current state user journey maps to show key findings and recommendations</li>
-                          <li>Future state user journey maps to capture future-vision design wireframes</li>
-                          <li>Executive reports recommending how to support users while meeting business needs</li>
+                        <li>Current state journey maps showing key findings and recommendations</li>
+                        <li>Future state journey maps capturing early design direction</li>
+                        <li>User-informed requirements documentation for technical implementation</li>
+                        <li>Executive reports connecting user needs to business goals</li>
                       </ul>
                     </AccordionItem>
                   </Accordion>

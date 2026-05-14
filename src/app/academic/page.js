@@ -17,7 +17,7 @@ function Academic() {
         <Row>
           <Col>
             <h1>Academic Portfolio</h1>
-            <p>
+            <p className='fs-5'>
               Some of my favourite academic works focused on <strong>accessibility</strong> and <strong>usable security</strong>.
               You can learn more about my other academic publications by visiting <a href="https://scholar.google.com/citations?user=qdH8ZZcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Daniela's profile on Google Scholar. Opens in a new tab.">Google Scholar</a>.
               You can also explore my <a href="/user-research" rel="noopener noreferrer" title="The industry research portfolio page of Daniela's website.">industry portfolio</a> or my <a href="/resume" rel="noopener noreferrer" title="A link to Daniela's online resume.">resume</a>.
