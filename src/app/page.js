@@ -19,8 +19,11 @@ function Home() {
             <h1 className='hero'>Hi, I'm Daniela</h1>
             <p className='fs-5'>
               I'm a mixed-method <strong>User Researcher</strong> based in Ontario, Canada. 
-              I combine qualitative depth with quantitative rigour to help multi-disciplinary teams embed user needs into product strategy; here's where I can make an impact. 
-            </p>
+              I combine qualitative depth with quantitative rigour to help multi-disciplinary teams embed user needs into product strategy. My website gives more details about the types of research I do, how I do it, and the impact it has on product decisions. 
+              </p>
+              <p className='fs-5'>
+                Explore my <a href='/academic' rel='noopener noreferrer' title="The academic research portfolio page of Daniela's website.">academic projects</a> and <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a> for more details. Want to connect? I'm happy to dive into anything listed here.
+              </p>
           </Row>
           <Row>
             <Col md={9}>
@@ -90,7 +93,7 @@ function Home() {
                 <Card className='border-0 m-1 card-hover'>
                   <CardBody>
                     <Row>
-                      <Col md={4}>
+                      <Col md={5}>
                       <CardTitle>Usability testing</CardTitle>
                       <CardImg src="./img/satisfaction.png" className='card-img-standard'/>
                       </Col>
@@ -98,18 +101,18 @@ function Home() {
                       <CardText>Uncover user pain points and improvement opportunities through product assessments.</CardText>
                       <CardLink className='stretched-link' href='/user-research/usability-testing'>My usability testing work</CardLink>
                       </Col>
-                    </Row>  
+                    </Row>
                   </CardBody>
                 </Card>
                 <Card className='border-0 m-1 card-hover'>
                   <CardBody>
                     <Row>
-                      <Col md={4}>
+                      <Col md={5}>
                       <CardTitle>Research science</CardTitle>
                       <CardImg src="./img/paper.png" className='card-img-standard'/>
                       </Col>
                       <Col md={7}>
-                      <CardText className='fs-5'>Leverage expertise from academia for your most complex product challenges.</CardText>
+                      <CardText>Leverage expertise from academia for complex product challenges.</CardText>
                       <CardLink className='stretched-link' href='/academic'>My research foundations</CardLink>
                       </Col>
                     </Row>  

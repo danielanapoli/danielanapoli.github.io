@@ -1,103 +1,59 @@
+'use client'
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Alert from 'react-bootstrap/Alert';
-import AlertHeading from 'react-bootstrap/AlertHeading';
-import Badge from 'react-bootstrap/Badge';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
+import { BackButton } from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function IndustryWorkflows() {
   return (
     <div className="IndustryWorkflows">
       <section id="content">
-          <Container fluid="md">
+        <Container fluid="md">
           <CustomBreadcrumb/>
-            <Row>
-              <Col>
-              <h1>Improving Interdisciplinary Workflows</h1>
-              </Col>
-            </Row>
-            <br/>
-            <Row>            
-                <Col>
-                  <h2>Product teams need...</h2>
-                  <p id="hero-text">
-                    streamlined processes to efficiently complete their work and nuture innovation
-                    <br/><br/>
-                    <Badge bg="secondary">IBM Design Studio</Badge>
-                  </p>
-                  
-                </Col>
-                <Col>
-                  <Alert variant='warning'>
-                    <AlertHeading><h2>Research Impact</h2></AlertHeading>
-                    <ul id="accordion-content">
-                      <li>Reduced silos between the design, development, and product management disciplines</li>
-                      <li>Uncovered opportunities for workflow improvements</li>
-                      <li>Improved empathy and morale among internal stakeholders</li>                      
-                    </ul>
-                  </Alert> 
-              </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
-                    <AccordionItem index={0} header={"Problem"}>
-                      <p id="accordion-content">
-                        Product teams struggle to conisistently maintain their <strong>efficiency</strong>.
-                      </p>
-                      <p id="accordion-content">
-                        Sustaining impactful workflows is no easy feat! Especially while involving interdisciplinary teams with various expertise and priorities.
-                      </p>
-                    </AccordionItem>
-                    <AccordionItem index={1} header={"Process"}>
-                      <p id="accordion-content">
-                        <h4>Explore Cross-Departmental Workflows</h4>
-                        <ul>
-                          <li>Facilitated 15 total 1-on-1 <i>As-Is Scenario Mapping</i> workshops with employees, including 5 from the design, development, and product management teams</li>
-                          <ul>
-                            <li>Discussed each step of an individual's involvement in the product development process</li>
-                            <li>Explored their processes, collaborations, and experiences leveraging specialized tools to achieve their goals</li>
-                            <li>Identified workflow-related and tool-related challenges</li>
-                          </ul>
-                          <li>Thematically analyzed maps and distilled a "Master As-Is Scenario Map" (master maps) for each of the 3 teams, highlighting nuances of the related specialties</li>
-                          <li>Consolidated 3 master maps to articulate and assess overall cross-departmental workflows</li>
-                          </ul>
-                        <h4>Identify Improvement Opportunities</h4>
-                        <ul>
-                          <li>Reviewed and modified master maps with each participant to validate key findings</li>
-                          <li>Facilitated dot-voting sessions with participants to collaboratively prioritize:</li>
-                          <ul>
-                            <li>Most critical collaboration processes to focus on</li>
-                            <li>Major pain points</li>
-                            <li>Key opportunities for improvement</li>
-                          </ul>                      
-                        </ul>
-                        <h4>Rally Stakeholder Buy-in</h4>
-                        <ul>
-                          <li>Led a 2-hour seminar involving 20 participants from the design, development, and product management teams</li>
-                          <ul>
-                            <li>Presented and discussed validated master maps and dot-voting results</li>
-                            <li>Facilitated a design thinking workshop focused on collaboratively writing <i>Hills</i> or mission statements focused on prioritized workflow improvements</li>
-                          </ul>
-                          <li>Packaged research findings and recommendations for organizational leaders</li>                      
-                        </ul>    
-                      </p>      
-                    </AccordionItem>
-                    <AccordionItem index={2} header={"Tools"}>
-                      <ul id="accordion-content">
-                        <li>Mural</li>
-                        <li>Snacks, stickies, pens, and paper</li>
-                      </ul>
-                    </AccordionItem>
-                  </Accordion>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-      </div>
+          <BackButton/>
+          <Row fluid='true'>
+            <h1>Service Design Case Study: Improving interdisciplinary workflows</h1>
+            <p className='fs-5'>Aligning product managers, designers, and developers around shared priorities is hard. Each discipline brings different goals, different processes, and different definitions of what good work looks like.</p>
+          </Row>
+          <br/>
+          <Row>
+            <Col>
+              <Accordion defaultActiveKeys={["0", "1"]} allKeys={["0", "1"]}>
+                <AccordionItem index={0} header={"Process"}>
+                  <h5>Explore cross-departmental workflows</h5>
+                  <p>Before proposing any changes, I needed to understand how each team actually worked. As-Is Scenario Mapping was a deliberate choice to surface the current state before introducing any new direction.</p>
+                  <ul id="accordion-content">
+                    <li>Facilitated 15 one-on-one workshops with 5 participants from each of the design, development, and product management teams</li>
+                    <li>Explored each participant's involvement in the product development process, their collaborations, and the tools they relied on</li>
+                    <li>Thematically analyzed findings to distill a master map for each team, then consolidated all three into a cross-departmental view</li>
+                  </ul>
+                  <h5>Identify improvement opportunities</h5>
+                  <p>With a clear picture of the current state, I worked with participants to validate findings and collaboratively prioritize where change was most needed.</p>
+                  <ul id="accordion-content">
+                    <li>Reviewed and refined master maps with participants to validate key findings</li>
+                    <li>Facilitated dot-voting sessions to prioritize critical collaboration processes, major pain points, and key opportunities</li>
+                  </ul>
+                  <h5>Rally stakeholder buy-in</h5>
+                  <p>Giving people a shared view of the problem and a hand in shaping the solution changed how they related to each other, not just how they worked.</p>
+                  <ul id="accordion-content">
+                    <li>Led a 2-hour seminar with all 20 participants to present and discuss validated findings</li>
+                    <li>Facilitated a Hills workshop to collaboratively define priorities for workflow improvements</li>
+                    <li>Packaged findings and recommendations for organizational leaders</li>
+                  </ul>
+                </AccordionItem>
+                <AccordionItem index={1} header={"Outcomes"}>
+                  <p>The research reduced silos between teams and uncovered concrete opportunities for workflow improvement. The process itself gave participants space to be self-reflective and co-own a path forward. Empathy and morale across the three teams visibly improved. Full institutionalization of the findings was underway at the time of my departure.</p>
+                </AccordionItem>
+              </Accordion>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </div>
   );
 }
 

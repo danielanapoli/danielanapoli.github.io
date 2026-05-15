@@ -20,10 +20,11 @@ function IndustryAutomation() {
           <BackButton/>
           <Row fluid='true'>
             <h1>Persona Integration</h1>
+            <p className='fs-5'>Personas sitting in a research report don't change how teams make decisions. I can help organizations put them in their work.</p>
             <Col>
               <Accordion defaultActiveKeys={["0", "1", "2", "3"]} allKeys={["0", "1", "2", "3"]}>
                 <AccordionItem index={0} header={"What I deliver"}>
-                  <p>Integrating persona frameworks to translate user insights into audience segmentation systems other departments can adopt and act on. That includes the technical work of building those systems, not just recommending them.</p>
+                  <p>Integrating persona frameworks to translate user insights into audience segmentation protocols other departments can adopt and act on. That includes the technical work of building those systems, not just recommending them.</p>
                   <ul id="accordion-content">
                     <li>Persona development and validation grounded in real user data</li>
                     <li>Automated persona classification built on and validated against existing audience frameworks</li>

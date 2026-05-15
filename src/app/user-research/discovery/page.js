@@ -19,6 +19,9 @@ function IndustryRequirements() {
           <BackButton/>
             <Row>
               <h1>Requirements Discovery</h1>
+              <p className='fs-5'>
+                Early product decisions made without a clear picture of the problem space are expensive to undo. I help teams build that picture before the direction is set.
+              </p>
                   <Col>
                     <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
                     <AccordionItem index={0} header={"What I deliver"}>
