@@ -62,7 +62,7 @@ function Industry() {
                 <Card style={{ width: '100%' }} bg='light' className='border-0 m-2'>
                   <CardImg variant='top' src='/img/satisfaction.png' className='p-2'/>
                   <CardBody>
-                    <CardTitle>Usability testing</CardTitle>
+                    <CardTitle>Usability Testing</CardTitle>
                     <CardText>
                       Uncovering user pain points and improvement opportunities through product assessments.
                     </CardText>
@@ -76,7 +76,7 @@ function Industry() {
                 <Card style={{ width: '100%' }} bg='light' className='border-0 m-2'>
                     <CardImg variant='top' src='/img/pie-chart.png' className='p-2'/>
                     <CardBody>
-                      <CardTitle>Large-scale surveys</CardTitle>
+                      <CardTitle>Large-scale Surveys</CardTitle>
                       <CardText>
                          Driving product decisions with data from large-scale surveys of user needs and attitudes. 
                       </CardText>
@@ -97,7 +97,7 @@ function Industry() {
                 <Card style={{ width: '100%' }} bg='light' className='border-0 m-2'>
                   <CardImg variant='top' src='/img/website-template.png' className='p-2'/>
                   <CardBody>
-                    <CardTitle>Concept testing</CardTitle>
+                    <CardTitle>Concept Testing</CardTitle>
                     <CardText>
                       De-risking design decisions by validating user needs with wireframes and prototypes.
                     </CardText>

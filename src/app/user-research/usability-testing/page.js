@@ -16,7 +16,7 @@ function UsabilityTesting() {
           <CustomBreadcrumb/>
           <BackButton/>
           <Row fluid='true'>
-            <h1>Usability testing</h1>
+            <h1>Usability Testing</h1>
             <p className='fs-5'>Usability issues are rarely surface-level. I help teams investigate user interactions deeply enough to understand what is actually driving friction, and what to do about it.</p>
           </Row>
           <br/>

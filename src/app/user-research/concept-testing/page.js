@@ -16,7 +16,7 @@ function ConceptTesting() {
           <CustomBreadcrumb/>
           <BackButton/>
           <Row fluid='true'>
-            <h1>Concept testing</h1>
+            <h1>Concept Testing</h1>
             <p className='fs-5'>Committing to a direction before testing it with users is an expensive assumption. I help teams validate potential before the cost of building accumulates.</p>
           </Row>
           <br/>

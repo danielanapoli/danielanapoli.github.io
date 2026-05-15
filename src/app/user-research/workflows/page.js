@@ -16,7 +16,7 @@ function IndustryWorkflows() {
           <CustomBreadcrumb/>
           <BackButton/>
           <Row fluid='true'>
-            <h1>Service Design Case Study: Improving interdisciplinary workflows</h1>
+            <h1>Service Design Case Study: Improving Interdisciplinary Workflows</h1>
             <p className='fs-5'>Aligning product managers, designers, and developers around shared priorities is hard. Each discipline brings different goals, different processes, and different definitions of what good work looks like.</p>
           </Row>
           <br/>

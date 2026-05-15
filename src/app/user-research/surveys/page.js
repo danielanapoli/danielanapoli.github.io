@@ -16,7 +16,7 @@ function Surveys() {
           <CustomBreadcrumb/>
           <BackButton/>
           <Row fluid='true'>
-            <h1>Large-scale surveys</h1>
+            <h1>Large-scale Surveys</h1>
             <p className='fs-5'>Qualitative research tells you what's happening, but not how widespread it is. I help teams build the quantitative foundation that makes related research more focused and decisions more confident.</p>
           </Row>
           <br/>
