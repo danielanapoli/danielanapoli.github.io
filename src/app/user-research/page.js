@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'User Research Services',
+  description: 'UX research services for product teams. Discovery, benchmarking, usability testing, large-scale surveys, and concept testing by Daniela Napoli.',
+};
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

@@ -1,3 +1,25 @@
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Daniela Napoli',
+  url: 'https://danielanapoli.com',
+  jobTitle: 'UX Researcher',
+  description: 'Mixed-method UX and user researcher based in Ontario, Canada.',
+  email: 'hello@danielanapoli.com',
+  address: { '@type': 'PostalAddress', addressRegion: 'Ontario', addressCountry: 'CA' },
+  sameAs: [
+    'https://linkedin.com/in/danielanap/',
+    'https://scholar.google.com/citations?user=qdH8ZZcAAAAJ&hl=en',
+    'https://www.substack.com/@hellodaniela',
+    'https://github.com/danielanapoli',
+  ],
+};
+
+export const metadata = {
+  title: { absolute: 'Daniela Napoli | UX & User Researcher Ontario' },
+  description: 'UX and user researcher based in Ontario, Canada. Qualitative and quantitative research that connects user needs to product strategy and business outcomes.',
+};
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,6 +33,8 @@ import { SupascribeFeed } from '@/components/SupascribeFeed/SupascribeFeed';
 
 function Home() {
   return(
+  <>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
   <div className='Home'>
   <section id='content'>
         <Container fluid='md'>
@@ -107,6 +131,7 @@ function Home() {
         </Container>
     </section>
   </div>
+  </>
   );
 }
 

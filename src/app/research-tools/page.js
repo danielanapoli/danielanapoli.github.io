@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Research Tools',
+  description: 'Free UX research tools for practitioners. A statistical formula wizard to help researchers select the right tests and generate Excel-ready formulas.',
+};
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

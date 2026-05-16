@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Talks & Workshops',
+  description: 'Invited talks and workshops on accessible design, usable privacy, and AI in remote healthcare technology. Presentations at HCI conferences and design events.',
+};
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Academic Portfolio',
+  description: 'Academic portfolio of Daniela Napoli, PhD. Peer-reviewed research on accessible design, usable security, and privacy for users with visual disabilities.',
+};
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

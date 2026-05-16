@@ -21,8 +21,19 @@ const geistMono = Geist_Mono({
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
-  title: "Daniela Napoli | Portfolio",
-  description: "Samples of user research projects focused on accessible and inclusive design by Daniela Napoli.",
+  title: {
+    template: '%s | Daniela Napoli',
+    default: 'Daniela Napoli | UX & User Researcher Ontario',
+  },
+  description: 'UX and user researcher based in Ontario, Canada. Qualitative and quantitative research that connects user needs to product strategy and business outcomes.',
+  openGraph: {
+    title: 'Daniela Napoli | UX & User Researcher Ontario',
+    description: 'UX and user researcher based in Ontario, Canada. Qualitative and quantitative research that connects user needs to product strategy and business outcomes.',
+    url: 'https://danielanapoli.com',
+    siteName: 'Daniela Napoli',
+    locale: 'en_CA',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {

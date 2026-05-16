@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Contact',
+  description: 'Contact Daniela Napoli, a UX and user researcher based in Ontario, Canada. Available for research consulting, collaboration, and speaking engagements.',
+};
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
