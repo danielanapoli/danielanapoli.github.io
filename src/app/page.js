@@ -23,12 +23,7 @@ export const metadata = {
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import CardBody from 'react-bootstrap/CardBody';
-import CardTitle from 'react-bootstrap/CardTitle';
-import CardText from 'react-bootstrap/CardText';
-import CardLink from 'react-bootstrap/CardLink';
-import CardImg from 'react-bootstrap/CardImg';
+import CustomCard from '@/components/CustomCard/CustomCard';
 import { SupascribeFeed } from '@/components/SupascribeFeed/SupascribeFeed';
 
 function Home() {
@@ -52,80 +47,80 @@ function Home() {
           </Row>
           <Row>
             <Col md={9}>
-              <div className='bg-light border rounded p-3'>
+              <div>
                 <h2 className='fs-3'>How I can help</h2>
                 <Row className='g-3'>
                   <Col xs={12} md={4}>
-                    <Card className='border-0 card-hover h-100'>
-                      <CardImg variant='top' src="./img/statistics.png" className='p-2 card-img-index d-none d-md-block'/>
-                      <CardBody>
-                        <CardTitle>Performance benchmarking</CardTitle>
-                        <CardText>Quantify product design ROI and shifts in competitive advantages over time.</CardText>
-                        <CardLink className='stretched-link' href='/user-research/benchmarking'>My benchmarking work</CardLink>
-                      </CardBody>
-                    </Card>
+                    <CustomCard
+                      cardImage='./img/statistics.png'
+                      cardTitle='Performance benchmarking'
+                      cardText='Quantify product design ROI and shifts in competitive advantages over time.'
+                      cardLink='/user-research/benchmarking'
+                      cardLinkText='My benchmarking work'
+                      cardClassName='card-hover'
+                    />
                   </Col>
                   <Col xs={12} md={4}>
-                    <Card className='border-0 card-hover h-100'>
-                      <CardImg variant='top' src="./img/pie-chart.png" className='p-2 card-img-index d-none d-md-block'/>
-                      <CardBody>
-                        <CardTitle>Large-scale surveys</CardTitle>
-                        <CardText>Drive product decisions with data from large-scale surveys of user needs and attitudes.</CardText>
-                        <CardLink className='stretched-link' href='/user-research/surveys'>My survey work</CardLink>
-                      </CardBody>
-                    </Card>
+                    <CustomCard
+                      cardImage='./img/pie-chart.png'
+                      cardTitle='Large-scale surveys'
+                      cardText='Drive product decisions with data from large-scale surveys of user needs and attitudes.'
+                      cardLink='/user-research/surveys'
+                      cardLinkText='My survey work'
+                      cardClassName='card-hover'
+                    />
                   </Col>
                   <Col xs={12} md={4}>
-                    <Card className='border-0 card-hover h-100'>
-                      <CardImg variant='top' src="./img/project.png" className='p-2 card-img-index d-none d-md-block'/>
-                      <CardBody>
-                        <CardTitle>Requirements discovery</CardTitle>
-                        <CardText>Inform early product directions through in-depth exploration of problem spaces.</CardText>
-                        <CardLink className='stretched-link' href='/user-research/discovery'>My discovery work</CardLink>
-                      </CardBody>
-                    </Card>
+                    <CustomCard
+                      cardImage='./img/project.png'
+                      cardTitle='Requirements discovery'
+                      cardText='Inform early product directions through in-depth exploration of problem spaces.'
+                      cardLink='/user-research/discovery'
+                      cardLinkText='My discovery work'
+                      cardClassName='card-hover'
+                    />
                   </Col>
                   <Col xs={12} md={4}>
-                    <Card className='border-0 card-hover h-100'>
-                      <CardImg variant='top' src="./img/website-template.png" className='p-2 card-img-index d-none d-md-block'/>
-                      <CardBody>
-                        <CardTitle>Concept testing</CardTitle>
-                        <CardText>De-risk design decisions by validating user needs with wireframes and prototypes.</CardText>
-                        <CardLink className='stretched-link' href='/user-research/concept-testing'>My concept testing work</CardLink>
-                      </CardBody>
-                    </Card>
+                    <CustomCard
+                      cardImage='./img/website-template.png'
+                      cardTitle='Concept testing'
+                      cardText='De-risk design decisions by validating user needs with wireframes and prototypes.'
+                      cardLink='/user-research/concept-testing'
+                      cardLinkText='My concept testing work'
+                      cardClassName='card-hover'
+                    />
                   </Col>
                   <Col xs={12} md={4}>
-                    <Card className='border-0 card-hover h-100'>
-                      <CardImg variant='top' src="./img/satisfaction.png" className='p-2 card-img-index d-none d-md-block'/>
-                      <CardBody>
-                        <CardTitle>Usability testing</CardTitle>
-                        <CardText>Uncover user pain points and improvement opportunities through product assessments.</CardText>
-                        <CardLink className='stretched-link' href='/user-research/usability-testing'>My usability testing work</CardLink>
-                      </CardBody>
-                    </Card>
+                    <CustomCard
+                      cardImage='./img/satisfaction.png'
+                      cardTitle='Usability testing'
+                      cardText='Uncover user pain points and improvement opportunities through product assessments.'
+                      cardLink='/user-research/usability-testing'
+                      cardLinkText='My usability testing work'
+                      cardClassName='card-hover'
+                    />
                   </Col>
                   <Col xs={12} md={4}>
-                    <Card className='border-0 card-hover h-100'>
-                      <CardImg variant='top' src="./img/paper.png" className='p-2 card-img-index d-none d-md-block'/>
-                      <CardBody>
-                        <CardTitle>Research science</CardTitle>
-                        <CardText>Leverage expertise from academia for complex product challenges.</CardText>
-                        <CardLink className='stretched-link' href='/academic'>My research foundations</CardLink>
-                      </CardBody>
-                    </Card>
+                    <CustomCard
+                      cardImage='./img/paper.png'
+                      cardTitle='Research science'
+                      cardText='Leverage expertise from academia for complex product challenges.'
+                      cardLink='/academic'
+                      cardLinkText='My research foundations'
+                      cardClassName='card-hover'
+                    />
                   </Col>
                 </Row>
               </div>
             </Col>
             <Col md={3}>
-              <div className='bg-light border rounded p-3'>
+              <div>
                 <h2 className='fs-3'>From my blog</h2>
                 <SupascribeFeed
                   embedId="578213045745"
                   loaderSrc="https://js.supascribe.com/v1/loader/ytFSFZOVCvWHW0C399390pc70ND3.js"
                 />
-              </div>
+                </div>
             </Col>
           </Row>
         </Container>
