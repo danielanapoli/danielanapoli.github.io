@@ -85,25 +85,19 @@
   background-color: #dee2e6;
 }
 
-#accordion-content {
-  font-size: large;
-}
-
-#preamble-content {
-  font-size: x-large;
-}
-
-#hero-text {
-  font-size:x-large;
-}
-
 h1.hero {
-  font-size: 600%;
+  font-size: clamp(2.5rem, 12vw, 6rem);
 }
 
 img.card-img-standard {
   height: clamp(50px, 6vw, 90px);
   width: auto;
+}
+
+.card-img-index {
+  height: clamp(80px, 10vw, 130px);
+  object-fit: contain;
+  width: 100%;
 }
 
 .card-hover {
@@ -113,4 +107,10 @@ img.card-img-standard {
 
 .card-hover:hover {
   background-color: #f8f9fa;
+}
+
+.prose-content {
+  max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
 }

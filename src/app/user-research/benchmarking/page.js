@@ -7,7 +7,6 @@ import Image from 'react-bootstrap/Image';
 import Table from 'react-bootstrap/Table';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
-import { BackButton } from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function PerformanceBenchmarking() {
@@ -16,17 +15,17 @@ function PerformanceBenchmarking() {
       <section id="content">
         <Container fluid="md">
           <CustomBreadcrumb/>
-          <BackButton/>
-            <Row fluid='true'>
-              <h1>Usability benchmarking</h1>
+            <Row fluid='true' className="mb-3">
+              <Col className='prose-content'>
+                <h1>Usability benchmarking</h1>
                 <p className='fs-5'>
-                  Many teams invest in redesign processes without knowing their true impact on goals and KPIs. 
+                  Many teams invest in redesign processes without knowing their true impact on goals and KPIs.
                   I help translate user behaviours into quantifiable metrics that connect design decisions to clear outcomes.
                 </p>
+              </Col>
             </Row>
-            <br/>
             <Row>
-                <Col>
+                <Col className='prose-content'>
                     <Accordion defaultActiveKeys={["0", "1", "2", "3"]} allKeys={["0", "1", "2", "3"]}>
                       <AccordionItem index={0} header={"What I deliver"}>
                         <p>Benchmarking only works if the measures are worth repeating.</p>

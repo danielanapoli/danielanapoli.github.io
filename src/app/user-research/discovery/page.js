@@ -7,7 +7,6 @@ import Alert from 'react-bootstrap/Alert';
 import AlertHeading from 'react-bootstrap/AlertHeading';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
-import { BackButton } from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function IndustryRequirements() {
@@ -16,13 +15,16 @@ function IndustryRequirements() {
       <section id="content">
           <Container fluid="md">
           <CustomBreadcrumb/>
-          <BackButton/>
+            <Row className="mb-3">
+              <Col className='prose-content'>
+                <h1>Requirements Discovery</h1>
+                <p className='fs-5'>
+                  Early product decisions made without a clear picture of the problem space are expensive to undo. I help teams build that picture before the direction is set.
+                </p>
+              </Col>
+            </Row>
             <Row>
-              <h1>Requirements Discovery</h1>
-              <p className='fs-5'>
-                Early product decisions made without a clear picture of the problem space are expensive to undo. I help teams build that picture before the direction is set.
-              </p>
-                  <Col>
+              <Col className='prose-content'>
                     <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
                     <AccordionItem index={0} header={"What I deliver"}>
                       <p>Discovery research that informs product strategy and grounds teams in what users actually need. That includes translating insights into design decisions and practical requirements that technical teams can act on.</p>

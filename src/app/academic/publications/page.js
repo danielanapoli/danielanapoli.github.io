@@ -13,15 +13,12 @@ function AcademicPublications() {
       <section id="content">
             <Container>
             <CustomBreadcrumb/>
-            <h1>Paper Publications</h1>
-            <br/>
-        <Row>
+            <h1 className="mb-3">Paper Publications</h1>
+        <Row className="mb-4">
             <Col>
               <a href="https://dl.acm.org/doi/abs/10.1145/3170427.3180292" target="_blank" rel="noopener noreferrer" title="A link to the ACM Digital Library. Opens in a new tab."><h3>Developing Accessible and Usable Security (ACCUS) Heuristics</h3></a>
               <Badge bg="secondary">Extended Abstract</Badge> <Badge bg="secondary">Presentation</Badge>
-              <br/>
-              <br/>
-              <p>Usable security and web accessibility are often treated as separate issues. Existing research does not adequately address how users with vision loss secure their online experiences.</p>
+              <p className='mt-2'>Usable security and web accessibility are often treated as separate issues. Existing research does not adequately address how users with vision loss secure their online experiences.</p>
               <p>We created heuristics that merge both fields and evaluated ten websites, uncovering multiple issues that prevent users from following standard security advice.</p>
               <p><strong>Downloads:</strong> 362<br/></p>
               <p><strong>Citations:</strong> 24<br/></p>
@@ -32,9 +29,7 @@ function AcademicPublications() {
               </div>
             </Col>
           </Row>
-          <br/>
-          <br/>
-          <Row>
+          <Row className="mb-4">
             <Col>
               <a href="https://link.springer.com/chapter/10.1007/978-3-031-92840-6_5" target="_blank" rel="noopener noreferrer" title="A link to the Springer research database. Opens in a new tab."><h3>Exploring User Perspectives on Data Collection, Data Sharing Preferences, and Privacy Concerns with Remote Healthcare Technology</h3></a>
               <Badge bg="secondary">Full-paper</Badge> <Badge bg="secondary">Presentation</Badge>
@@ -51,9 +46,7 @@ function AcademicPublications() {
               </div>
             </Col>
           </Row>
-          <br/>
-          <br/>
-          <Row>
+          <Row className="mb-4">
             <Col>
               <a href="https://link.springer.com/chapter/10.1007/978-3-031-94159-7_24" target="_blank" rel="noopener noreferrer" title="A link to the Springer research database. Opens in a new tab."><h3>Helpful but Terrifying: Older Adults’ Perspectives of AI in Remote Healthcare Technology</h3></a>
               <Badge bg="secondary">Poster</Badge> <Badge bg="secondary">Presentation</Badge>
@@ -69,9 +62,7 @@ function AcademicPublications() {
               </div>
             </Col>
           </Row>
-          <br/>
-          <br/>
-          <Row>
+          <Row className="mb-4">
             <Col>
             <a href="https://www.usenix.org/conference/soups2021/presentation/napoli" target="_blank" rel="noopener noreferrer" title="A link to the USENIX website. Opens in a new tab."><h3>"I'm Literally Just Hoping This Will Work:'' Obstacles Blocking the Online Security and Privacy of Users with Visual Disabilities</h3></a>
               <Badge bg="secondary">Full-paper</Badge> <Badge bg="secondary">Presentation</Badge>
@@ -86,8 +77,6 @@ function AcademicPublications() {
               <YoutubeEmbed embedId="wPes4YF4bxY" />
             </Col>
           </Row>
-          <br/>
-          <br/>
           <Row>
             <Col>
               <a href="https://www.usenix.org/conference/soups2020/presentation/napoli" target="_blank" rel="noopener noreferrer" title="A link to the USENIX website. Opens in a new tab."><h3>Something Doesn’t Feel Right: Using Thermal Warnings to Improve User Security Awareness</h3></a>

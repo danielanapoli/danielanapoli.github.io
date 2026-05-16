@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
-import { BackButton } from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function ConceptTesting() {
@@ -14,14 +13,14 @@ function ConceptTesting() {
       <section id="content">
         <Container fluid="md">
           <CustomBreadcrumb/>
-          <BackButton/>
-          <Row fluid='true'>
-            <h1>Concept Testing</h1>
-            <p className='fs-5'>Committing to a direction before testing it with users is an expensive assumption. I help teams validate potential before the cost of building accumulates.</p>
+          <Row fluid='true' className="mb-3">
+            <Col className='prose-content'>
+              <h1>Concept Testing</h1>
+              <p className='fs-5'>Committing to a direction before testing it with users is an expensive assumption. I help teams validate potential before the cost of building accumulates.</p>
+            </Col>
           </Row>
-          <br/>
           <Row>
-            <Col>
+            <Col className='prose-content'>
               <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
                 <AccordionItem index={0} header={"What I deliver"}>
                   <p>Concept testing that confirms whether a design direction has real potential before the team commits to building it.</p>

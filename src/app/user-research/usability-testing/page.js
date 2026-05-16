@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
-import { BackButton } from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function UsabilityTesting() {
@@ -14,14 +13,14 @@ function UsabilityTesting() {
       <section id="content">
         <Container fluid="md">
           <CustomBreadcrumb/>
-          <BackButton/>
-          <Row fluid='true'>
-            <h1>Usability Testing</h1>
-            <p className='fs-5'>Usability issues are rarely surface-level. I help teams investigate user interactions deeply enough to understand what is actually driving friction, and what to do about it.</p>
+          <Row fluid='true' className="mb-3">
+            <Col className='prose-content'>
+              <h1>Usability Testing</h1>
+              <p className='fs-5'>Usability issues are rarely surface-level. I help teams investigate user interactions deeply enough to understand what is actually driving friction, and what to do about it.</p>
+            </Col>
           </Row>
-          <br/>
           <Row>
-            <Col>
+            <Col className='prose-content'>
               <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
                 <AccordionItem index={0} header={"What I deliver"}>
                   <p>Usability testing that surfaces not just where users struggle, but why, so teams can act on findings with confidence.</p>

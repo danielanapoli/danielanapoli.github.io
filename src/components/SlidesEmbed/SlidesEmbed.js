@@ -3,11 +3,9 @@
 import PropTypes from "prop-types";
 
 const SlidesEmbed = ({ embedId }) => (
-    <div style={{ width: '100%', height: '500px' }}>
+    <div className="video-responsive">
     <iframe
         src={embedId}
-        width="100%"
-        height="100%"
         allowFullScreen={true}
         title="My PowerPoint Presentation"
     />

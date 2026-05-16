@@ -8,7 +8,6 @@ import AlertHeading from 'react-bootstrap/AlertHeading';
 import Badge from 'react-bootstrap/Badge';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
-import { BackButton } from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function IndustryAutomation() {
@@ -17,11 +16,14 @@ function IndustryAutomation() {
       <section id="content">
         <Container fluid="md">
           <CustomBreadcrumb/>
-          <BackButton/>
-          <Row fluid='true'>
-            <h1>Persona Integration</h1>
-            <p className='fs-5'>Personas sitting in a research report don't change how teams make decisions. I can help organizations put them in their work.</p>
-            <Col>
+          <Row fluid='true' className="mb-3">
+            <Col className='prose-content'>
+              <h1>Persona Integration</h1>
+              <p className='fs-5'>Personas sitting in a research report don't change how teams make decisions. I can help organizations put them in their work.</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col className='prose-content'>
               <Accordion defaultActiveKeys={["0", "1", "2", "3"]} allKeys={["0", "1", "2", "3"]}>
                 <AccordionItem index={0} header={"What I deliver"}>
                   <p>Integrating persona frameworks to translate user insights into audience segmentation protocols other departments can adopt and act on. That includes the technical work of building those systems, not just recommending them.</p>

@@ -1,10 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import CardLink from 'react-bootstrap/CardLink';
 import Card from 'react-bootstrap/Card';
 import CardImg from 'react-bootstrap/CardImg';
-import CardGroup from 'react-bootstrap/CardGroup';
 import CardBody from 'react-bootstrap/CardBody';
 import CardTitle from 'react-bootstrap/CardTitle';
 import CardText from 'react-bootstrap/CardText';
@@ -14,8 +13,8 @@ function Academic() {
   <div className="Academic">
     <section id="content">
       <Container fluid='md'>
-        <Row>
-          <Col>
+        <Row className="mb-3">
+          <Col className='prose-content'>
             <h1>Academic Portfolio</h1>
             <p className='fs-5'>
               Some of my favourite academic works focused on <strong>accessibility</strong> and <strong>usable security</strong>.
@@ -25,40 +24,43 @@ function Academic() {
             </p>
           </Col>
         </Row>
-        <br/>
-        <Row className="justify-content-md-center">
-          <CardGroup>
-            <Card style={{ width: '100%' }} bg='light' className='border-0 m-4 p-4'>
-              <CardImg variant='top' src='/img/paper.png' className='p-2' alt=''/>
+        <Row className='g-3'>
+          <Col xs={12} md={4}>
+            <Card bg='light' className='border-0 h-100'>
+              <CardImg variant='top' src='/img/paper.png' className='p-2 card-img-index d-none d-md-block' alt=''/>
               <CardBody>
                 <CardTitle>Paper Publications</CardTitle>
                 <CardText>
                   Some peer-reviewed contributions to academic literature on human-centered design and usable security.
                 </CardText>
-                <Button className='stretched-link' variant="secondary" href="/academic/publications">Read more</Button>
+                <CardLink className='stretched-link' href="/academic/publications">Read more</CardLink>
               </CardBody>
             </Card>
-            <Card style={{ width: '100%' }} bg="light" className='border-0 m-4 p-4'>
-              <CardImg variant='top' src='/img/podium.png' className='p-2' alt=''/>
+          </Col>
+          <Col xs={12} md={4}>
+            <Card bg='light' className='border-0 h-100'>
+              <CardImg variant='top' src='/img/podium.png' className='p-2 card-img-index d-none d-md-block' alt=''/>
               <CardBody>
                 <CardTitle>Talks and Workshops</CardTitle>
                 <CardText>
                   Highlights from some of my invited talks and presentations at HCI conferences and workshops.
                 </CardText>
-                <Button className='stretched-link' variant="secondary" href="/academic/talks">Read more</Button>
+                <CardLink className='stretched-link' href="/academic/talks">Read more</CardLink>
               </CardBody>
-            </Card>  
-            <Card style={{ width: '100%' }} bg="light" className='border-0 m-4 p-4'>
-               <CardImg variant='top' src='/img/tool.png' className='p-2' alt=''/>
+            </Card>
+          </Col>
+          <Col xs={12} md={4}>
+            <Card bg='light' className='border-0 h-100'>
+              <CardImg variant='top' src='/img/tool.png' className='p-2 card-img-index d-none d-md-block' alt=''/>
               <CardBody>
                 <CardTitle>Remote Healthcare Technology<br/>Design Toolkit</CardTitle>
                 <CardText>
                   Samples of our design toolkit to guide the development of remote healthcare technology for older adults.
                 </CardText>
-                <Button className='stretched-link' variant="secondary" href="/academic/toolkit">Read more</Button>
+                <CardLink className='stretched-link' href="/academic/toolkit">Read more</CardLink>
               </CardBody>
-            </Card>          
-          </CardGroup>
+            </Card>
+          </Col>
         </Row>
       </Container>      
     </section>

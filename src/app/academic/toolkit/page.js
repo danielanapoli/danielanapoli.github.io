@@ -15,8 +15,7 @@ function Toolkit() {
       <section id='content'>
         <Container fluid='md'>
             <CustomBreadcrumb/>
-            <h1>Remote Healthcare Technology Design Toolkit</h1>
-            <br/>
+            <h1 className="mb-3">Remote Healthcare Technology Design Toolkit</h1>
             <Row fluid='true'>
                 <Col md={7}>
                     <h2>Improving Remote Healthcare Tech</h2>
@@ -53,18 +52,17 @@ function Toolkit() {
                     <Image src='/img/toolkit-persona.png' width={'100%'} className='pb-3' alt=''/>
                     <Image src='/img/toolkit-empathymap.png' width={'100%'} className='pb-3' alt=''/>
                 </Col>
-            </Row> 
-            <br/>     
-            <Row className='text-center align-items-center'>
+            </Row>
+            <Row className='text-center align-items-center mt-3'>
             <h5><i>In collaboration with...</i></h5>
             <Col className='text-center'>                    
-                <Image src='/img/carleton-logo.png' width={'80%'} alt='Logo for Carleton University'/>
+                <Image src='/img/carleton-logo.png' style={{ maxWidth: '150px', width: '80%' }} alt='Logo for Carleton University'/>
             </Col>
             <Col className='text-center'>  
-                <Image src='/img/nrc-cnrc-logo.png' width={'60%'} alt='Logo for National Research Council Canada (NRC)'/>
+                <Image src='/img/nrc-cnrc-logo.png' style={{ maxWidth: '150px', width: '60%' }} alt='Logo for National Research Council Canada (NRC)'/>
             </Col>
             <Col className='text-center'>  
-                <Image src='/img/hc2p-logo.png' width={'80%'} alt='Logo for Human-Centric Cybersecurity Partnership (HC2P)'/>
+                <Image src='/img/hc2p-logo.png' style={{ maxWidth: '150px', width: '80%' }} alt='Logo for Human-Centric Cybersecurity Partnership (HC2P)'/>
             </Col>
             </Row>
         </Container>

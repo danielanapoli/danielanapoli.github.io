@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
-import { BackButton } from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function IndustryWorkflows() {
@@ -14,14 +13,14 @@ function IndustryWorkflows() {
       <section id="content">
         <Container fluid="md">
           <CustomBreadcrumb/>
-          <BackButton/>
-          <Row fluid='true'>
-            <h1>Service Design Case Study: Improving Interdisciplinary Workflows</h1>
-            <p className='fs-5'>Aligning product managers, designers, and developers around shared priorities is hard. Each discipline brings different goals, different processes, and different definitions of what good work looks like.</p>
+          <Row fluid='true' className="mb-3">
+            <Col className='prose-content'>
+              <h1>Service Design Case Study: Improving Interdisciplinary Workflows</h1>
+              <p className='fs-5'>Aligning product managers, designers, and developers around shared priorities is hard. Each discipline brings different goals, different processes, and different definitions of what good work looks like.</p>
+            </Col>
           </Row>
-          <br/>
           <Row>
-            <Col>
+            <Col className='prose-content'>
               <Accordion defaultActiveKeys={["0", "1"]} allKeys={["0", "1"]}>
                 <AccordionItem index={0} header={"Process"}>
                   <h5>Explore cross-departmental workflows</h5>

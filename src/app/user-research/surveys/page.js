@@ -5,7 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
-import { BackButton } from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
 function Surveys() {
@@ -14,14 +13,14 @@ function Surveys() {
       <section id="content">
         <Container fluid="md">
           <CustomBreadcrumb/>
-          <BackButton/>
-          <Row fluid='true'>
-            <h1>Large-scale Surveys</h1>
-            <p className='fs-5'>Qualitative research tells you what's happening, but not how widespread it is. I help teams build the quantitative foundation that makes related research more focused and decisions more confident.</p>
+          <Row fluid='true' className="mb-3">
+            <Col className='prose-content'>
+              <h1>Large-scale Surveys</h1>
+              <p className='fs-5'>Qualitative research tells you what's happening, but not how widespread it is. I help teams build the quantitative foundation that makes related research more focused and decisions more confident.</p>
+            </Col>
           </Row>
-          <br/>
           <Row>
-            <Col>
+            <Col className='prose-content'>
               <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
                 <AccordionItem index={0} header={"What I deliver"}>
                   <p>Large-scale surveys that give teams a quantitative foundation for confident decisions and sharper qualitative research.</p>
