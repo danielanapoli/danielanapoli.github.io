@@ -15,7 +15,7 @@ function SkipLink({skipToId, children}) {
     }
 
     return (
-        <Link onClick={() => skipTo(skipToId)} className="skip-to-main-link" href="">{children}</Link>
+        <Link onClick={() => skipTo(skipToId)} className="skip-to-main-link" href={`#${skipToId}`}>{children}</Link>
     )
 }
 

@@ -16,7 +16,7 @@ function AcademicPublications() {
   return (
     <div className="AcademicPublications">
       <section id="content">
-        <Container>
+        <Container fluid='md'>
         <CustomBreadcrumb/>
         <h1 className="mb-3">Talks and Workshops</h1>
         <Row>

@@ -72,7 +72,7 @@ function Resume() {
                   'Recommendations were implemented in the retirement of legacy offerings and the release of new products designed around the user needs surfaced in discovery.',
                 ]}
                 featuredProject={{
-                  href: '/industry/requirements',
+                  href: '/user-research/discovery',
                   label: 'Requirements Discovery',
                   linkTitle: "Link to a project page on Daniela's website. Opens in a new tab.",
                 }}
@@ -89,7 +89,7 @@ function Resume() {
                   "Developed Python modules to automate persona mapping from research findings and website metadata — replaced a manual process that previously took the team a week or more per cycle; became part of the team's ongoing persona refresh workflow.",
                 ]}
                 featuredProject={{
-                  href: '/industry/automation',
+                  href: '/user-research/automation',
                   label: 'Persona Automation',
                   linkTitle: "Link to a project page on Daniela's website. Opens in a new tab.",
                 }}
@@ -106,7 +106,7 @@ function Resume() {
                   'Packaged and presented key findings to internal stakeholders and at an internship-related conference.',
                 ]}
                 featuredProject={{
-                  href: '/industry/workflows',
+                  href: '/user-research/workflows',
                   label: 'Improving Interdisciplinary Workflows',
                   linkTitle: "Link to a project page on Daniela's website. Opens in a new tab.",
                 }}

@@ -14,20 +14,18 @@ function Contact() {
       <section id='content'>
           <Container fluid='md'>
             <Row>
-              <Col>
+              <Col className='prose-content'>
               <h1>Get in Touch</h1>
-              </Col>
-            </Row>
-            <Row>
-              <Col className='text-center prose-content'>
                 <p className='fs-5'>
-                  Want to talk more? For my fastest response, email me at <strong>hello@danielanapoli.com</strong>. More ways to connect are down below.
+                  I am not currently looking for new opportunities, but I am always open to connecting with other professionals in the UX and user research community. 
+                  Want to talk more? For my fastest response, email me at <a href='mailto:hello@danielanapoli.com'>hello@danielanapoli.com</a> or connect with me on{' '}
+                  <a href='https://linkedin.com/in/danielanap/' target='_blank' rel='noopener noreferrer' title="Daniela's LinkedIn profile. Opens in a new tab.">LinkedIn</a>.
                 </p>
               </Col>
             </Row>
             <Row className='justify-content-center'>
               <Col sm='auto' xs='auto' md='auto' lg='6' className='text-center'>
-                <Image width='60%' alt='Photo of smiling Daniela wearing a buckethat' src='/img/daniela.jpg' roundedCircle thumbnail/>
+                <Image width='60%' alt='Photo of smiling Daniela wearing a bucket hat' src='/img/daniela.jpg' roundedCircle thumbnail/>
               </Col>
             </Row>
           </Container>

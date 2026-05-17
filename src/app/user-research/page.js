@@ -63,7 +63,7 @@ function Industry() {
                 cardImage='/img/pie-chart.png'
                 cardTitle='Large-scale Surveys'
                 cardText='Driving product decisions with data from large-scale surveys of user needs and attitudes.'
-                cardSubtitle='Quatitative methods:'
+                cardSubtitle='Quantitative methods:'
                 cardSubtext='User surveys, SUS, SUPR-Q, UX-Lite, NPS, descriptive statistics, chi-square tests'
                 cardLink='/user-research/surveys'
                 cardLinkText='Read more'
