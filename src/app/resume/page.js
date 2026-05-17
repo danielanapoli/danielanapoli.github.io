@@ -20,7 +20,7 @@ function Resume() {
           </Row>
 
           <Row>
-            <Col className='prose-content'>
+            <Col className='prose-content-narrow'>
 
               <h3 className='underlined-heading'>Highlight Summary</h3>
               <div className='mb-4'>
