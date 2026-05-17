@@ -26,41 +26,28 @@ function Resume() {
           <Row className='mb-4'>
             <Col md={10}>
               <ul>
-                <li>Nearly 10 years of qualitative and quantitative user research</li>
-                <li>PhD in Computer Science; MA in Human-Computer Interaction</li>
-                <li>Expertise in user-centered design, usable privacy, and accessibility</li>
-                <li>Uncovers insights that drive product improvements, roadmaps, and ROI</li>
-                <li>Collaborates cross-functionally with developers, PMs, and leadership to align business and user needs</li>
+                <li>User researcher with a PhD in HCI and nearly a decade of mixed-methods research experience across industry UX and academic HCI.</li>
+                <li>Quantified a 395% improvement on methodology-finding tasks (and 20% overall task-success lift) in a flagship redesigned product vs. its legacy version — part of a multi-year benchmarking program across various legacy and redesigned products.</li>
+                <li>Embedded researcher on CIHI’s highest-priority program; 12+ studies delivered across two senior-role tenures inform design, feature prioritization, and technical requirements.</li>
+                <li>Pairs qualitative depth (discovery, contextual inquiry, journey mapping) with rigorous quantitative benchmarking (SUS, SUPR-Q, inferential statistics).</li>
+                <li>Domain experience: healthcare data, enterprise software, aviation training, accessibility & usable privacy.</li>
               </ul>
             </Col>
           </Row>
 
           <Row>
-            <Col><h3 className='underlined-heading'>Education</h3></Col>
-          </Row>
-          <Row className='mb-3'>
-            <Col>
-              <div className='d-flex justify-content-between align-items-baseline'>
-                <strong>Doctor of Philosophy in Computer Science</strong>
-                <span className='ms-3 text-nowrap'>Sep 2018 – Aug 2025</span>
-              </div>
-              Carleton University, Ottawa, Ontario
-              <ul>
-                <li>Thesis: <a href='https://hdl.handle.net/20.500.14718/44742' target='_blank' rel='noopener noreferrer' title='Link to Carleton University Thesis repository'>Tailoring Remote Healthcare Technology to Meet the Needs and Privacy Expectations of Older Adults</a></li>
-                <li>Senior member of Carleton's Human Oriented Research in Usable Security <a href='https://chorus.scs.carleton.ca/' target='_blank' rel='noopener noreferrer' title='Link to the Carleton Usable Security research lab. Opens in a new tab.'>(CHORUS)</a> lab</li>
-              </ul>
-            </Col>
+            <Col><h3 className='underlined-heading'>Research Methods & Tools</h3></Col>
           </Row>
           <Row className='mb-4'>
-            <Col>
-              <div className='d-flex justify-content-between align-items-baseline'>
-                <strong>Master of Arts in Human-Computer Interaction</strong>
-                <span className='ms-3 text-nowrap'>Sep 2016 – May 2018</span>
-              </div>
-              Carleton University, Ottawa, Ontario
+            <Col md={10}>
               <ul>
-                <li>Thesis: <a href='https://carleton.scholaris.ca/items/b9e26ef6-df12-4cf4-bfea-07a99d045f59' target='_blank' rel='noopener noreferrer' title='Link to Carleton University Thesis repository'>Accessible and Usable Security: Exploring Visually Impaired Users' Online Security and Privacy Strategies</a></li>
-                <li>Junior member of Carleton's Human Oriented Research in Usable Security <a href='https://chorus.scs.carleton.ca/' target='_blank' rel='noopener noreferrer' title='Link to the Carleton Usable Security research lab. Opens in a new tab.'>(CHORUS)</a> lab</li>
+                <li>Qualitative: Semi-structured interviews, contextual inquiry, journey mapping, concept testing, heuristic evaluations, think-aloud usability testing, affinity mapping, severity ranking, thematic analysis.</li>
+                <li>Quantitative: SUS, SUPR-Q, UX-Lite, NPS, unmoderated task-based testing, descriptive & inferential statistics (t-tests, ANOVA, chi-square).</li>
+                <li>Research platforms: Optimal Workshop, Loop11, Questback.</li>
+                <li>Surveys: Qualtrics, SurveyMonkey, Google Forms, Microsoft Forms</li>
+                <li>Analysis: Python, Excel, NVivo, R</li>
+                <li>Collaboration: Mural, Miro, Confluence, Figma</li>
+                <li>Analytics: Hotjar, GA4</li>
               </ul>
             </Col>
           </Row>
@@ -169,6 +156,51 @@ function Resume() {
                 <li>Acted as production assistant for lead photographer during in-studio and on-site shoots for website content</li>
                 <li>Assisted in crafting web content and news articles for the website, including covering recent sporting events and other major rallies</li>
               </ul>
+            </Col>
+          </Row>
+
+
+
+          <Row>
+            <Col><h3 className='underlined-heading'>Education</h3></Col>
+          </Row>
+          <Row className='mb-3'>
+            <Col>
+              <div className='d-flex justify-content-between align-items-baseline'>
+                <strong>Doctor of Philosophy in Computer Science</strong>
+                <span className='ms-3 text-nowrap'>Sep 2018 – Aug 2025</span>
+              </div>
+              Carleton University, Ottawa, Ontario
+              <ul>
+                <li>Thesis: <a href='https://hdl.handle.net/20.500.14718/44742' target='_blank' rel='noopener noreferrer' title='Link to Carleton University Thesis repository'>Tailoring Remote Healthcare Technology to Meet the Needs and Privacy Expectations of Older Adults</a></li>
+                <li>Senior member of Carleton's Human Oriented Research in Usable Security <a href='https://chorus.scs.carleton.ca/' target='_blank' rel='noopener noreferrer' title='Link to the Carleton Usable Security research lab. Opens in a new tab.'>(CHORUS)</a> lab</li>
+              </ul>
+            </Col>
+          </Row>
+          <Row className='mb-4'>
+            <Col>
+              <div className='d-flex justify-content-between align-items-baseline'>
+                <strong>Master of Arts in Human-Computer Interaction</strong>
+                <span className='ms-3 text-nowrap'>Sep 2016 – May 2018</span>
+              </div>
+              Carleton University, Ottawa, Ontario
+              <ul>
+                <li>Thesis: <a href='https://carleton.scholaris.ca/items/b9e26ef6-df12-4cf4-bfea-07a99d045f59' target='_blank' rel='noopener noreferrer' title='Link to Carleton University Thesis repository'>Accessible and Usable Security: Exploring Visually Impaired Users' Online Security and Privacy Strategies</a></li>
+                <li>Junior member of Carleton's Human Oriented Research in Usable Security <a href='https://chorus.scs.carleton.ca/' target='_blank' rel='noopener noreferrer' title='Link to the Carleton Usable Security research lab. Opens in a new tab.'>(CHORUS)</a> lab</li>
+              </ul>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col><h3 className='underlined-heading'>Selected Talks</h3></Col>
+          </Row>
+          <Row className='mb-3'>
+            <Col>
+              <div className='d-flex justify-content-between align-items-baseline'>
+                <div><strong>The Complete Games User Research Fundamentals</strong> <Badge bg='secondary'>Course</Badge></div>
+                <span className='ms-3 text-nowrap'>Mar 2026 – current</span>
+              </div>
+              Games User Research with Steve Bromley, <a href='https://gamesuserresearch.com/courses/games-user-research-fundamentals-a-practical-introduction-on-how-to-plan-run-and-analyse-games-user-research-studies/' target='_blank' rel='noopener noreferrer' title='Link to the course website. Opens in a new tab.'>Online course</a>
             </Col>
           </Row>
 
