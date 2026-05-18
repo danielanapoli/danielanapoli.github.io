@@ -116,7 +116,10 @@ img.card-img-standard {
 }
 
 .prose-content-narrow {
-  max-width: 65ch;
   margin-left: auto;
   margin-right: auto;
+}
+
+.Resume .prose-content-narrow {
+  max-width: 100ch;
 }
