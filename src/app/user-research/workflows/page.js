@@ -23,20 +23,20 @@ function IndustryWorkflows() {
             <Col className='prose-content'>
               <Accordion defaultActiveKeys={["0", "1"]} allKeys={["0", "1"]}>
                 <AccordionItem index={0} header={"Process"}>
-                  <h5>Explore cross-departmental workflows</h5>
+                  <h3>Explore cross-departmental workflows</h3>
                   <p>Before proposing any changes, I needed to understand how each team actually worked. As-Is Scenario Mapping was a deliberate choice to surface the current state before introducing any new direction.</p>
                   <ul id="accordion-content">
                     <li>Facilitated 15 one-on-one workshops with 5 participants from each of the design, development, and product management teams</li>
                     <li>Explored each participant's involvement in the product development process, their collaborations, and the tools they relied on</li>
                     <li>Thematically analyzed findings to distill a master map for each team, then consolidated all three into a cross-departmental view</li>
                   </ul>
-                  <h5>Identify improvement opportunities</h5>
+                  <h3>Identify improvement opportunities</h3>
                   <p>With a clear picture of the current state, I worked with participants to validate findings and collaboratively prioritize where change was most needed.</p>
                   <ul id="accordion-content">
                     <li>Reviewed and refined master maps with participants to validate key findings</li>
                     <li>Facilitated dot-voting sessions to prioritize critical collaboration processes, major pain points, and key opportunities</li>
                   </ul>
-                  <h5>Rally stakeholder buy-in</h5>
+                  <h3>Rally stakeholder buy-in</h3>
                   <p>Giving people a shared view of the problem and a hand in shaping the solution changed how they related to each other, not just how they worked.</p>
                   <ul id="accordion-content">
                     <li>Led a 2-hour seminar with all 20 participants to present and discuss validated findings</li>

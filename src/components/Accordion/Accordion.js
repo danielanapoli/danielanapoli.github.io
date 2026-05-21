@@ -51,7 +51,7 @@ export function AccordionItem({index, header, handleClick, children}) {
   return (
     <BootstrapAccordion.Item eventKey={`${index}`}>
       <BootstrapAccordion.Header onClick={() => handleClick(`${index}`)}>
-        <h3>{header}</h3>
+        <h2>{header}</h2>
       </BootstrapAccordion.Header>
       <BootstrapAccordion.Body>
         {children}

@@ -21,7 +21,7 @@ function AcademicPublications() {
         <h1 className="mb-3">Talks and Workshops</h1>
         <Row>
             <Col>
-              <h3>Considering Privacy & AI in Remote Healthcare Technology for Older Adults</h3>
+              <h2>Considering Privacy & AI in Remote Healthcare Technology for Older Adults</h2>
               <Badge bg="secondary">Presentation</Badge>
               <p className='mt-2'>
                 We spoke to older adults across Canada about their needs and privacy expectations in remote healthcare technology. Unexpectedly, many had a lot to say about AI and the exciting (but sometimes scary) potential implications on future solutions. 
@@ -36,7 +36,7 @@ function AcademicPublications() {
         </Row>
         <Row className="mb-4">
             <Col>
-              <h3>Remote Healthcare Technology Use Cases and the Contextual Integrity of Older Adult User Privacy</h3>
+              <h2>Remote Healthcare Technology Use Cases and the Contextual Integrity of Older Adult User Privacy</h2>
               <Badge bg="secondary">Presentation</Badge>
               <p className='mt-2'>
                 Older adults' privacy perspectives can be context-dependent, and their willingness to make privacy tradeoffs can vary depending on healthcare contexts. 
@@ -51,7 +51,7 @@ function AcademicPublications() {
           </Row>
           <Row>
             <Col>
-              <h3>The U in UX can be For Everyone: Accessible and Usable Privacy</h3>
+              <h2>The U in UX can be For Everyone: Accessible and Usable Privacy</h2>
               <Badge bg="secondary">Presentation</Badge> <Badge bg="secondary">Workshop</Badge>
               <p className='mt-2'>
                 Privacy-conscious designs can integrate accessibility-related principles for truly inclusive and safe solutions. 
@@ -64,7 +64,7 @@ function AcademicPublications() {
           </Row>
           <Row className="mb-4">
             <Col>
-              <h3>Design Tips to Help Non-Visual Visitors Stay Secure Online</h3>
+              <h2>Design Tips to Help Non-Visual Visitors Stay Secure Online</h2>
               <Badge bg="secondary">Presentation</Badge>
               <p className='mt-2'>
                 With some extra steps, website security features can be made even more inclusive.

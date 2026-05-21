@@ -33,28 +33,28 @@ function UsabilityTesting() {
                   </ul>
                 </AccordionItem>
                 <AccordionItem index={1} header={"How I work"}>
-                  <h5>Choose the right study format</h5>
+                  <h3>Choose the right study format</h3>
                   <p>The research goal drives the format decision. Quantitative metrics like time on task call for unmoderated. Understanding the why behind user behaviour calls for moderated, where probing in the moment is possible.</p>
                   <ul id="accordion-content">
                     <li>Define research goals and success criteria with the product team</li>
                     <li>Assess constraints including timeline, participant availability, and product fidelity</li>
                     <li>Select study format based on what the research question requires</li>
                   </ul>
-                  <h5>Design and run the study</h5>
+                  <h3>Design and run the study</h3>
                   <p>I recruit real end-users and build tasks around the behaviours that matter most.</p>
                   <ul id="accordion-content">
                     <li>Recruit participants from the actual target user population</li>
                     <li>Craft tasks that reflect realistic user goals and workflows</li>
                     <li>Probe beneath surface-level struggles to identify the root cause of usability issues</li>
                   </ul>
-                  <h5>Analyze and prioritize findings</h5>
+                  <h3>Analyze and prioritize findings</h3>
                   <p>Severity ratings are grounded in established heuristics and guidelines, not intuition.</p>
                   <ul id="accordion-content">
                     <li>Map observations to usability heuristics to interpret their full implications</li>
                     <li>Rate severity based on impact to primary task completion</li>
                     <li>Prioritize recommendations by their effect on the overall user experience</li>
                   </ul>
-                  <h5>Translate findings into action</h5>
+                  <h3>Translate findings into action</h3>
                   <p>Nothing convinces a team to take usability seriously like watching someone struggle first-hand.</p>
                   <ul id="accordion-content">
                     <li>Deliver findings in formats suited to the team and stakeholder audience</li>

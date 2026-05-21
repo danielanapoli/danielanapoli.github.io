@@ -33,20 +33,20 @@ function Surveys() {
                   </ul>
                 </AccordionItem>
                 <AccordionItem index={1} header={"How I work"}>
-                  <h5>Design for measurement integrity</h5>
+                  <h3>Design for measurement integrity</h3>
                   <p>A small wording change can undermine an entire study. I design surveys with meticulous attention to what is actually being measured.</p>
                   <ul id="accordion-content">
                     <li>Define research questions tied to specific product or design decisions</li>
                     <li>Select and apply validated usability scales where appropriate</li>
                     <li>Follow best practices in question wording, order, and structure to encourage high response rates and quality</li>
                   </ul>
-                  <h5>Run and analyze the survey</h5>
+                  <h3>Run and analyze the survey</h3>
                   <p>Surveys paired with web analytics and prior research tell a more complete story than either can alone.</p>
                   <ul id="accordion-content">
                     <li>Conduct statistical analysis to identify trends, patterns, and segment differences</li>
                     <li>Cross-reference findings with web analytics and other quantitative data sources</li>
                   </ul>
-                  <h5>Shape what comes next</h5>
+                  <h3>Shape what comes next</h3>
                   <p>Valuable survey data enables confident decisions in product directions and further research strategy.</p>
                   <ul id="accordion-content">
                     <li>Use findings to inform preliminary product and design decisions</li>

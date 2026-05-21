@@ -32,21 +32,21 @@ function ConceptTesting() {
                   </ul>
                 </AccordionItem>
                 <AccordionItem index={1} header={"How I work"}>
-                  <h5>Align on what we're testing and why</h5>
+                  <h3>Align on what we're testing and why</h3>
                   <p>The research goal determines everything — what fidelity makes sense, what questions to ask, and what a useful finding looks like.</p>
                   <ul id="accordion-content">
                     <li>Define what the concept needs to prove or disprove</li>
                     <li>Advise on fidelity choices and flag anything that could compromise research integrity</li>
                     <li>Align with the product team on what a useful finding looks like before the study begins</li>
                   </ul>
-                  <h5>Facilitate concept testing sessions</h5>
+                  <h3>Facilitate concept testing sessions</h3>
                   <p>I run moderated sessions that go beyond surface reactions to understand whether users are ready for, and capable of adopting, what's being proposed.</p>
                   <ul id="accordion-content">
                     <li>Recruit participants that reflect the range of users who will encounter the concept</li>
                     <li>Probe beneath initial reactions to understand the conditions that shape readiness and adoption</li>
                     <li>Identify gaps between what the concept assumes about users and what users actually need</li>
                   </ul>
-                  <h5>Translate findings into product direction</h5>
+                  <h3>Translate findings into product direction</h3>
                   <p>Concept testing findings are most valuable when they feed directly into design and prioritization decisions.</p>
                   <ul id="accordion-content">
                     <li>Synthesize findings across participants to identify patterns and segment differences</li>

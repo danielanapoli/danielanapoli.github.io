@@ -3,6 +3,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import { ResumeEntry } from '@/components/ResumeEntry/ResumeEntry';
 
 function Resume() {
@@ -18,11 +19,18 @@ function Resume() {
               <br /><a href='https://danielanapoli.com' target='_blank' rel='noopener noreferrer' title="Daniela's personal website. Opens in new tab.">www.danielanapoli.com</a>
             </p>
           </Row>
+          <Row className='justify-content-end mb-3 d-print-none'>
+            <Col xs='auto'>
+              <Button variant='dark' onClick={() => window.print()}>
+                Print / Save as PDF
+              </Button>
+            </Col>
+          </Row>
 
           <Row>
             <Col className='prose-content-narrow'>
 
-              <h3 className='underlined-heading'>Highlight Summary</h3>
+              <h2 className='underlined-heading'>Highlight Summary</h2>
               <div className='mb-4'>
                 <ul>
                   <li>User researcher with a PhD in HCI and nearly a decade of mixed-methods research experience across industry UX and academic HCI.</li>
@@ -32,7 +40,7 @@ function Resume() {
                 </ul>
               </div>
 
-              <h3 className='underlined-heading'>Research Methods & Tools</h3>
+              <h2 className='underlined-heading'>Research Methods & Tools</h2>
               <div className='mb-4'>
                 <ul>
                   <li><strong>Qualitative methods:</strong> Semi-structured interviews, contextual inquiry, journey mapping, concept testing, heuristic evaluations, think-aloud usability testing, affinity mapping, severity ranking, thematic analysis.</li>
@@ -45,7 +53,7 @@ function Resume() {
                 </ul>
               </div>
 
-              <h3 className='underlined-heading'>User Research Experience</h3>
+              <h2 className='underlined-heading'>User Research Experience</h2>
 
               <ResumeEntry
                 title='Senior User Experience Researcher'
@@ -125,7 +133,7 @@ function Resume() {
                 ]}
               />
 
-              <h3 className='underlined-heading'>Education</h3>
+              <h2 className='underlined-heading'>Education</h2>
 
               <ResumeEntry
                 title='Doctor of Philosophy in Computer Science'
@@ -150,7 +158,7 @@ function Resume() {
                 ]}
               />
 
-              <h3 className='underlined-heading'>Selected Publications</h3>
+              <h2 className='underlined-heading'>Selected Publications</h2>
               <div className='mb-4'>
                 <ul>
                   <li>Napoli, D., et al. <a href='https://www.usenix.org/conference/soups2021/presentation/napoli' target='_blank' rel='noopener noreferrer' title='Link to USENIX. Opens in a new tab.'>"I'm Literally Just Hoping This Will Work": Obstacles Blocking the Online Security and Privacy of Users with Visual Disabilities.</a> <em>Symposium on Usable Privacy and Security (SOUPS)</em>, 2021 — 33 citations.</li>
@@ -160,7 +168,7 @@ function Resume() {
                 </ul>
               </div>
 
-              <h3 className='underlined-heading'>Selected Invited Talks</h3>
+              <h2 className='underlined-heading'>Selected Invited Talks</h2>
               <div className='mb-4'>
                 <ul>
                   <li>Considering Privacy & AI in Remote Healthcare Technology for Older Adults — <em>Wisdom Exchange Project</em>, Dec 2025.</li>
@@ -169,7 +177,7 @@ function Resume() {
                 </ul>
               </div>
 
-              <h3 className='underlined-heading'>Professional Development</h3>
+              <h2 className='underlined-heading'>Professional Development</h2>
 
               <ResumeEntry
                 title='The Complete Games User Research Fundamentals'

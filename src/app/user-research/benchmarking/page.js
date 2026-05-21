@@ -45,21 +45,21 @@ function PerformanceBenchmarking() {
                         </ul>
                       </AccordionItem>
                       <AccordionItem index={2} header={"How I work"}>
-                        <h5>Align on success</h5>
+                        <h3>Align on success</h3>
                         <p>The right metrics come from the team, not the methodology.</p>
                           <ul id="accordion-content">
                             <li>Identify success indicators tied to organizational goals</li>
                             <li>Recommend metrics that are measurable and worth measuring</li>
                             <li>Pull in metadata from other departments to support usability test results</li>
                           </ul>
-                        <h5>Design for rigorous data collection</h5>
+                        <h3>Design for rigorous data collection</h3>
                         <p>Good benchmarking data doesn't happen by accident.</p>
                           <ul id="accordion-content">
                               <li>Craft task-based studies focused on user behaviours with recent design changes</li>
                               <li>Recruit participants who match key persona characteristics</li>
                               <li>Launch scalable and repeatable unmoderated usability tests</li>
                           </ul>
-                        <h5>Trend analyses and insights</h5>
+                        <h3>Trend analyses and insights</h3>
                         <p>One data point isn't a benchmark.</p>
                           <ul id="accordion-content">
                               <li>Conduct descriptive and inferential statistics to identify key differences between products</li>
