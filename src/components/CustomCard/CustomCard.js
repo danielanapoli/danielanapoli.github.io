@@ -17,12 +17,12 @@ export function CustomCard({
     return(
        <Card bg={cardBg} className={`border-0 h-100 ${cardClassName}`.trim()}>
                 {cardImage && <CardImg variant='top' src={cardImage} alt={cardImageAlt} className='p-2 card-img-index d-none d-md-block'/>}
-                <CardBody>
+                <CardBody className='d-flex flex-column'>
                   <CardTitle>{cardTitle}</CardTitle>
                   <CardText>{cardText}</CardText>
                   {cardSubtitle && <CardSubtitle>{cardSubtitle}</CardSubtitle>}
                   {cardSubtext && <CardText>{cardSubtext}</CardText>}
-                  <CardLink className='stretched-link' href={cardLink}>{cardLinkText}</CardLink>
+                  <CardLink className='mt-auto stretched-link' href={cardLink}>{cardLinkText}</CardLink>
                 </CardBody>
         </Card>
     );
