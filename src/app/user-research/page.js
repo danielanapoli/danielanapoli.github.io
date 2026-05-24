@@ -27,7 +27,7 @@ function Industry() {
           <Row className='g-3'>
             <Col xs={12} md={4}>
               <CustomCard
-                cardImage='/img/statistics.png'
+                cardImage='/img/statistics.webp'
                 cardTitle='Usability Benchmarking'
                 cardText='Assessing how iterative design updates influenced usability and SEO metrics over time.'
                 cardSubtitle='Quantitative methods:'
@@ -38,7 +38,7 @@ function Industry() {
             </Col>
             <Col xs={12} md={4}>
               <CustomCard
-                cardImage='/img/project.png'
+                cardImage='/img/project.webp'
                 cardTitle='Requirements Discovery'
                 cardText='Exploring user needs and pain points. Formulating actionable recommendations to guide the direction of future design work.'
                 cardSubtitle='Qualitative methods:'
@@ -49,7 +49,7 @@ function Industry() {
             </Col>
             <Col xs={12} md={4}>
               <CustomCard
-                cardImage='/img/pie-chart.png'
+                cardImage='/img/pie-chart.webp'
                 cardTitle='Large-scale Surveys'
                 cardText='Driving product decisions with data from large-scale surveys of user needs and attitudes.'
                 cardSubtitle='Quantitative methods:'
@@ -60,7 +60,7 @@ function Industry() {
             </Col>
             <Col xs={12} md={4}>
               <CustomCard
-                cardImage='/img/website-template.png'
+                cardImage='/img/website-template.webp'
                 cardTitle='Concept Testing'
                 cardText='De-risking design decisions by validating user needs with wireframes and prototypes.'
                 cardSubtitle='Qualitative methods:'
@@ -71,7 +71,7 @@ function Industry() {
             </Col>
             <Col xs={12} md={4}>
               <CustomCard
-                cardImage='/img/satisfaction.png'
+                cardImage='/img/satisfaction.webp'
                 cardTitle='Usability Testing'
                 cardText='Uncovering user pain points and improvement opportunities through product assessments.'
                 cardSubtitle='Qualitative methods:'

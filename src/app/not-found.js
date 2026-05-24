@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -18,12 +19,9 @@ export default function NotFound() {
               <p className='fs-5 mb-4'>
                 The page you&rsquo;re looking for doesn&rsquo;t exist or may have moved.
               </p>
-              <a
-                href='/'
-                className='btn btn-dark'
-              >
+              <Link href='/' className='btn btn-dark'>
                 Go to home page
-              </a>
+              </Link>
             </Col>
           </Row>
         </section>

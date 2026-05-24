@@ -27,7 +27,7 @@ function Academic() {
         <Row className='g-3'>
           <Col xs={12} md={4}>
             <CustomCard
-              cardImage='/img/paper.png'
+              cardImage='/img/paper.webp'
               cardTitle='Paper Publications'
               cardText='Some peer-reviewed contributions to academic literature on human-centered design and usable security.'
               cardLink='/academic/publications'

@@ -26,7 +26,7 @@ function NavBar() {
         <Container>
           <NavbarBrand href='/'>Daniela Napoli</NavbarBrand>
           <NavbarToggle aria-controls='basic-navbar-nav' />
-          <NavbarCollapse id='responsive-nav-bar'>
+          <NavbarCollapse id='basic-navbar-nav'>
             <Nav>
               {navLinks.map(({ href, label, exact }) => (
                 <NavLink

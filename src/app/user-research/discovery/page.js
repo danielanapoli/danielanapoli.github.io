@@ -78,7 +78,7 @@ function IndustryRequirements() {
               </Col>
               <Col md={4} className='align-self-start'>
                 <CustomCard
-                  cardImage='/img/project.png'
+                  cardImage='/img/project.webp'
                   cardTitle='Informing strategy with user needs'
                   cardText='CIHI was retiring Quick Stats, a long-standing public health data product. They needed a user-centered strategy for what came next. Three connected generative studies surfaced the core tension: users trust the data deeply, but the current packaging made it close to impossible to find and extract what they needed quickly.'
                   cardLink='/user-research/discovery/case-study'

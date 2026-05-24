@@ -100,6 +100,10 @@ img.card-img-standard {
   width: 100%;
 }
 
+.card .card-link {
+  color: #0a58ca;
+}
+
 .card-hover {
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;

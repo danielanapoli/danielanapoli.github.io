@@ -52,7 +52,7 @@ function Home() {
                 <Row className='g-3'>
                   <Col xs={12} md={4}>
                     <CustomCard
-                      cardImage='./img/statistics.png'
+                      cardImage='./img/statistics.webp'
                       cardTitle='Usability benchmarking'
                       cardText='Quantify product design ROI and shifts in competitive advantages over time.'
                       cardLink='/user-research/benchmarking'
@@ -62,7 +62,7 @@ function Home() {
                   </Col>
                   <Col xs={12} md={4}>
                     <CustomCard
-                      cardImage='./img/project.png'
+                      cardImage='./img/project.webp'
                       cardTitle='Requirements discovery'
                       cardText='Inform early product directions through in-depth exploration of problem spaces.'
                       cardLink='/user-research/discovery'
@@ -72,7 +72,7 @@ function Home() {
                   </Col>
                   <Col xs={12} md={4}>
                     <CustomCard
-                      cardImage='./img/pie-chart.png'
+                      cardImage='./img/pie-chart.webp'
                       cardTitle='Large-scale surveys'
                       cardText='Drive product decisions with data from large-scale surveys of user needs and attitudes.'
                       cardLink='/user-research/surveys'
@@ -82,7 +82,7 @@ function Home() {
                   </Col>
                   <Col xs={12} md={4}>
                     <CustomCard
-                      cardImage='./img/website-template.png'
+                      cardImage='./img/website-template.webp'
                       cardTitle='Concept testing'
                       cardText='De-risk design decisions by validating user needs with wireframes and prototypes.'
                       cardLink='/user-research/concept-testing'
@@ -92,7 +92,7 @@ function Home() {
                   </Col>
                   <Col xs={12} md={4}>
                     <CustomCard
-                      cardImage='./img/satisfaction.png'
+                      cardImage='./img/satisfaction.webp'
                       cardTitle='Usability testing'
                       cardText='Uncover user pain points and improvement opportunities through product assessments.'
                       cardLink='/user-research/usability-testing'
@@ -102,7 +102,7 @@ function Home() {
                   </Col>
                   <Col xs={12} md={4}>
                     <CustomCard
-                      cardImage='./img/paper.png'
+                      cardImage='./img/paper.webp'
                       cardTitle='Research science'
                       cardText='Leverage expertise from academia for complex product challenges.'
                       cardLink='/academic'

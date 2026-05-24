@@ -80,7 +80,7 @@ function PerformanceBenchmarking() {
               </Col>
               <Col md={4} className='align-self-start'>
                 <CustomCard
-                  cardImage='/img/statistics.png'
+                  cardImage='/img/statistics.webp'
                   cardTitle='Quantifying the impact of redesign'
                   cardText='When CIHI rebuilt its public health data tool from the ground up, they needed evidence the investment paid off. Parallel usability tests following the same protocol could help detect major shifts between the legacy product and the redesign. The findings showed a 20% overall improvement in task success, including a 395% jump for a task the original design had quietly buried.'
                   cardLink='/user-research/benchmarking/case-study'
