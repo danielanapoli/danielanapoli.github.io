@@ -62,21 +62,21 @@ function Home() {
                   </Col>
                   <Col xs={12} md={4}>
                     <CustomCard
-                      cardImage='./img/pie-chart.png'
-                      cardTitle='Large-scale surveys'
-                      cardText='Drive product decisions with data from large-scale surveys of user needs and attitudes.'
-                      cardLink='/user-research/surveys'
-                      cardLinkText='My survey work'
-                      cardClassName='card-hover'
-                    />
-                  </Col>
-                  <Col xs={12} md={4}>
-                    <CustomCard
                       cardImage='./img/project.png'
                       cardTitle='Requirements discovery'
                       cardText='Inform early product directions through in-depth exploration of problem spaces.'
                       cardLink='/user-research/discovery'
                       cardLinkText='My discovery work'
+                      cardClassName='card-hover'
+                    />
+                  </Col>
+                  <Col xs={12} md={4}>
+                    <CustomCard
+                      cardImage='./img/pie-chart.png'
+                      cardTitle='Large-scale surveys'
+                      cardText='Drive product decisions with data from large-scale surveys of user needs and attitudes.'
+                      cardLink='/user-research/surveys'
+                      cardLinkText='My survey work'
                       cardClassName='card-hover'
                     />
                   </Col>

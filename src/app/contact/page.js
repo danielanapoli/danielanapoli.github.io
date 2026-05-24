@@ -17,7 +17,7 @@ function Contact() {
               <Col className='prose-content'>
               <h1>Get in Touch</h1>
                 <p className='fs-5'>
-                  I am not currently looking for new opportunities, but I am always open to connecting with other professionals in the UX and user research community. 
+                  I am not currently looking for new opportunities; however, I am always happy to connect with other professionals in the UX and user research community. 
                   Want to talk more? For my fastest response, email me at <a href='mailto:hello@danielanapoli.com'>hello@danielanapoli.com</a> or connect with me on{' '}
                   <a href='https://linkedin.com/in/danielanap/' target='_blank' rel='noopener noreferrer' title="Daniela's LinkedIn profile. Opens in a new tab.">LinkedIn</a>.
                 </p>

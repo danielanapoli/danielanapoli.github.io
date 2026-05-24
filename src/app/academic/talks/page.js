@@ -12,9 +12,9 @@ import YoutubeEmbed from '@/components/YoutubeEmbed/YoutubeEmbed';
 import SlidesEmbed from '@/components/SlidesEmbed/SlidesEmbed';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
-function AcademicPublications() {
+function AcademicTalks() {
   return (
-    <div className="AcademicPublications">
+    <div className="AcademicTalks">
       <section id="content">
         <Container fluid='md'>
         <CustomBreadcrumb/>
@@ -83,4 +83,4 @@ function AcademicPublications() {
   );
 }
 
-export default AcademicPublications
+export default AcademicTalks

@@ -27,17 +27,6 @@ function Industry() {
           <Row className='g-3'>
             <Col xs={12} md={4}>
               <CustomCard
-                cardImage='/img/project.png'
-                cardTitle='Requirements Discovery'
-                cardText='Exploring user needs and pain points. Formulating actionable recommendations to guide the direction of future design work.'
-                cardSubtitle='Qualitative methods:'
-                cardSubtext='User interviews, stakeholder interviews, journey mapping, cross-department focus groups, design studio workshops'
-                cardLink='/user-research/discovery'
-                cardLinkText='Read more'
-              />
-            </Col>
-            <Col xs={12} md={4}>
-              <CustomCard
                 cardImage='/img/statistics.png'
                 cardTitle='Usability Benchmarking'
                 cardText='Assessing how iterative design updates influenced usability and SEO metrics over time.'
@@ -49,12 +38,12 @@ function Industry() {
             </Col>
             <Col xs={12} md={4}>
               <CustomCard
-                cardImage='/img/satisfaction.png'
-                cardTitle='Usability Testing'
-                cardText='Uncovering user pain points and improvement opportunities through product assessments.'
+                cardImage='/img/project.png'
+                cardTitle='Requirements Discovery'
+                cardText='Exploring user needs and pain points. Formulating actionable recommendations to guide the direction of future design work.'
                 cardSubtitle='Qualitative methods:'
-                cardSubtext='Think-aloud protocol, task completion observation, non-verbal cue observation, post-task questionnaires, affinity mapping, severity ranking'
-                cardLink='/user-research/usability-testing'
+                cardSubtext='User interviews, stakeholder interviews, journey mapping, cross-department focus groups, design studio workshops'
+                cardLink='/user-research/discovery'
                 cardLinkText='Read more'
               />
             </Col>
@@ -77,6 +66,17 @@ function Industry() {
                 cardSubtitle='Qualitative methods:'
                 cardSubtext='First impression capturing, conceptual walkthroughs, laddering, comparative evaluations'
                 cardLink='/user-research/concept-testing'
+                cardLinkText='Read more'
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <CustomCard
+                cardImage='/img/satisfaction.png'
+                cardTitle='Usability Testing'
+                cardText='Uncovering user pain points and improvement opportunities through product assessments.'
+                cardSubtitle='Qualitative methods:'
+                cardSubtext='Think-aloud protocol, task completion observation, non-verbal cue observation, post-task questionnaires, affinity mapping, severity ranking'
+                cardLink='/user-research/usability-testing'
                 cardLinkText='Read more'
               />
             </Col>

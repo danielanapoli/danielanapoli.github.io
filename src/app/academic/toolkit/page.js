@@ -20,7 +20,7 @@ function Toolkit() {
                 <Col md={7}>
                     <h2>Improving Remote Healthcare Tech</h2>
                     <p>
-                        Focusing on what users need while creating technology can be tough. This can be especially challenging while multidisciplinary teams, filled with people who have different expertise and priorities, are trying to find common ground.
+                        Focusing on what users need while creating technology can be tough. This can be especially challenging when multidisciplinary teams, filled with people who have different expertise and priorities, are trying to find common ground.
                     </p>
                     <p>
                         This toolkit focuses on what older adults need in terms of privacy when using technology to manage their health and well-being. By addressing these needs, the toolkit helps teams develop solutions that are specifically designed for this group.
