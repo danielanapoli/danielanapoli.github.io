@@ -100,7 +100,7 @@ img.card-img-standard {
   width: 100%;
 }
 
-.card .card-link {
+html a {
   color: #0a58ca;
 }
 

@@ -17,10 +17,10 @@ function DiscoveryCaseStudy() {
               <h1>What users need from a product that doesn't exist yet</h1>
               <p className='text-muted'>Canadian Institute for Health Information, 2026</p>
               <p className='fs-5'>
-                When CIHI decided to retire Quick Stats, a long-standing product for sharing publicly available healthcare data, the team needed more than a redesign plan. They needed a research-grounded strategy for what came next, built from actual user needs rather than assumptions about them.
+                When CIHI decided to retire a long-standing product for sharing publicly available healthcare data, the team needed more than a redesign plan. They needed a research-grounded strategy for what came next, built from actual user needs rather than assumptions about them.
               </p>
               <p className='fs-5'>
-                Quick Stats had been distributing healthcare data as Excel workbooks to data analysts and advisors across Canada who depend on it for day-to-day decision-making. CIHI had also committed to a strategic goal beyond those users: making the replacement product machine-readable, so data could flow to external systems through automated, system-to-system connections. The replacement would need to serve both human and automated consumption. The question was what it would actually take to serve either of them well.
+                The product had been distributing healthcare data in files for data analysts and advisors across Canada. These users depend on it for day-to-day decision-making. CIHI had also committed to a strategic goal beyond those users: making the replacement product machine-readable, so data could flow to external systems through automated, system-to-system connections. The replacement would need to serve both human and automated consumption. The question was what it would actually take to serve either of them well.
               </p>
 
               <h2>The research</h2>
@@ -28,7 +28,7 @@ function DiscoveryCaseStudy() {
                 I led three connected generative studies to build that picture before the design direction was set.
               </p>
               <p>
-                A Canada-wide survey (n=86) went first. Participants were data analysts and advisors who use Quick Stats in their work. The survey mapped the user need landscape, specifically what they were doing with the data, how often, and where the experience was working or breaking down. It gave enough signal to know where to dig deeper.
+                A Canada-wide survey (n=86) went first. Participants were data analysts and advisors who use the legacy product in their work. The survey mapped the user need landscape, specifically what they were doing with the data, how often, and where the experience was working or breaking down. It gave enough signal to know where to dig deeper.
               </p>
               <p>
                 The interviews (n=20) dug deeper. Semi-structured conversations focused on workflows, challenges, and how people actually use this data in practice, not in theory. Those conversations gave texture to what the survey had outlined and surfaced the specifics that only come up when you give someone room to walk you through their work.
