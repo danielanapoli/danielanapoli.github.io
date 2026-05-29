@@ -78,7 +78,7 @@ function PerformanceBenchmarking() {
                   </AccordionItem>
                 </Accordion>
               </Col>
-              <Col md={4} className='align-self-start'>
+              <Col md={4} className='mt-3 align-self-start'>
                 <CustomCard
                   cardImage='/img/statistics.webp'
                   cardTitle='Quantifying the impact of redesign'
