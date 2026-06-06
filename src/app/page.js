@@ -18,6 +18,7 @@ const personSchema = {
 export const metadata = {
   title: { absolute: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli' },
   description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli',
     description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',

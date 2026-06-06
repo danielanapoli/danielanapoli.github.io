@@ -1,6 +1,7 @@
 export const metadata = {
   title: { absolute: 'Academic Portfolio | Daniela Napoli, PhD' },
   description: 'Academic research by Daniela Napoli, PhD. Peer-reviewed publications, HCI conference talks, and design work on usable security and inclusive UX.',
+  alternates: { canonical: '/academic' },
   openGraph: {
     title: 'Academic Portfolio | Daniela Napoli, PhD',
     description: 'Academic research by Daniela Napoli, PhD. Peer-reviewed publications, HCI conference talks, and design work on usable security and inclusive UX.',

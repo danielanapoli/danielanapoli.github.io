@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Paper Publications',
   description: 'Peer-reviewed HCI publications on accessible security, visual disability, and remote healthcare privacy by Daniela Napoli. Published at SOUPS, HCII, and ACM.',
+  alternates: { canonical: '/academic/publications' },
 };
 
 import Container from 'react-bootstrap/Container';

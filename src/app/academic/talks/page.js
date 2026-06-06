@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Talks & Workshops',
   description: 'Invited talks and workshops on accessible design, usable privacy, and AI in remote healthcare technology. Presentations at HCI conferences and design events.',
+  alternates: { canonical: '/academic/talks' },
 };
 
 import Container from 'react-bootstrap/Container';

@@ -21,6 +21,7 @@ const geistMono = Geist_Mono({
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
+  metadataBase: new URL('https://danielanapoli.com'),
   title: {
     template: '%s | Daniela Napoli',
     default: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli',

@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'User Research Services for Product Teams',
   description: 'UX research for product teams: discovery, usability benchmarking, concept testing, and large-scale surveys. PhD researcher, Ontario.',
+  alternates: { canonical: '/user-research' },
   openGraph: {
     title: 'User Research Services for Product Teams | Daniela Napoli',
     description: 'UX research for product teams: discovery, usability benchmarking, concept testing, and large-scale surveys. PhD researcher, Ontario.',
