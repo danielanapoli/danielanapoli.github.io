@@ -1,6 +1,10 @@
 export const metadata = {
-  title: 'Academic Portfolio',
-  description: 'Academic portfolio of Daniela Napoli, PhD. Peer-reviewed research on accessible design, usable security, and privacy for users with visual disabilities.',
+  title: { absolute: 'Academic Portfolio | Daniela Napoli, PhD' },
+  description: 'Academic research by Daniela Napoli, PhD. Peer-reviewed publications, HCI conference talks, and design work on usable security and inclusive UX.',
+  openGraph: {
+    title: 'Academic Portfolio | Daniela Napoli, PhD',
+    description: 'Academic research by Daniela Napoli, PhD. Peer-reviewed publications, HCI conference talks, and design work on usable security and inclusive UX.',
+  },
 };
 
 import Container from 'react-bootstrap/Container';

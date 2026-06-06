@@ -1,6 +1,10 @@
 export const metadata = {
-  title: 'User Research Services',
-  description: 'UX research services for product teams. Discovery, benchmarking, usability testing, large-scale surveys, and concept testing by Daniela Napoli.',
+  title: 'User Research Services for Product Teams',
+  description: 'UX research for product teams: discovery, usability benchmarking, concept testing, and large-scale surveys. PhD researcher, Ontario.',
+  openGraph: {
+    title: 'User Research Services for Product Teams | Daniela Napoli',
+    description: 'UX research for product teams: discovery, usability benchmarking, concept testing, and large-scale surveys. PhD researcher, Ontario.',
+  },
 };
 
 import Container from 'react-bootstrap/Container';

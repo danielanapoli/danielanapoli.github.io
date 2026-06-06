@@ -66,13 +66,14 @@ function IndustryRequirements() {
                       <li>Help frame user insights as actionable requirements for technical teams</li>
                     </ul>
                   </AccordionItem>
-                  <AccordionItem index={2} header={"Example deliverables"}>
+                  <AccordionItem index={2} header={"Example outputs"}>
                     <ul id="accordion-content">
                       <li>Current state journey maps showing key findings and recommendations</li>
                       <li>Future state journey maps capturing early design direction</li>
                       <li>User-informed requirements documentation for technical implementation</li>
                       <li>Executive reports connecting user needs to business goals</li>
                     </ul>
+                    <p className="mt-3">Once direction is set, <a href="/user-research/usability-testing">usability testing</a> validates the execution.</p>
                   </AccordionItem>
                 </Accordion>
               </Col>
@@ -80,7 +81,7 @@ function IndustryRequirements() {
                 <CustomCard
                   cardImage='/img/project.webp'
                   cardTitle='Informing strategy with user needs'
-                  cardText='CIHI was retiring Quick Stats, a long-standing public health data product. They needed a user-centered strategy for what came next. Three connected generative studies surfaced the core tension: users trust the data deeply, but the current packaging made it close to impossible to find and extract what they needed quickly.'
+                  cardText='CIHI was retiring a long-standing public health data product. They needed a user-centered strategy for what came next. Three connected generative studies surfaced the core tension: users trust the data deeply, but the current packaging made it close to impossible to find and extract what they needed quickly.'
                   cardLink='/user-research/discovery/case-study'
                   cardLinkText='Read the case study'
                 />

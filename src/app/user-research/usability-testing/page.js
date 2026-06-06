@@ -69,6 +69,7 @@ function UsabilityTesting() {
                     <li>Executive usability findings reports</li>
                     <li>Actionable recommendations prioritized by impact</li>
                   </ul>
+                  <p className="mt-3">If the problem space hasn't been fully mapped yet, <a href="/user-research/discovery">requirements discovery</a> is where to start.</p>
                 </AccordionItem>
               </Accordion>
             </Col>

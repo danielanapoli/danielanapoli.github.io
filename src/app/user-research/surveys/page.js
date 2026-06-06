@@ -60,6 +60,7 @@ function Surveys() {
                     <li>Statistical analysis reports with segmented findings</li>
                     <li>Preliminary product and design recommendations</li>
                   </ul>
+                  <p className="mt-3">When you're ready to track how design changes affect those baselines, <a href="/user-research/benchmarking">usability benchmarking</a> closes the loop.</p>
                 </AccordionItem>
               </Accordion>
             </Col>

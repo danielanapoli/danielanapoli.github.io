@@ -3,9 +3,6 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Alert from 'react-bootstrap/Alert';
-import AlertHeading from 'react-bootstrap/AlertHeading';
-import Badge from 'react-bootstrap/Badge';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
@@ -63,12 +60,13 @@ function IndustryAutomation() {
                     <li>Present outputs to relevant stakeholders in formats that support cross-departmental adoption</li>
                   </ul>
                 </AccordionItem>
-                <AccordionItem index={2} header={"Example deliverables"}>
+                <AccordionItem index={2} header={"Example outputs"}>
                   <ul id="accordion-content">
                     <li>Automated scripts for scanning and categorizing raw user data into persona groups</li>
                     <li>Research-informed recommendations for embedding personas into organizational workflows</li>
                     <li>Executive reports connecting persona insights to organizational strategy</li>
                   </ul>
+                  <p className="mt-3">Building these systems, not just recommending them, comes from a CS background most UX researchers don't have — one that sits alongside a <a href="/academic">PhD in HCI</a>.</p>
                 </AccordionItem>
               </Accordion>
             </Col>

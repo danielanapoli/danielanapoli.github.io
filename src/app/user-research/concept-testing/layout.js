@@ -1,6 +1,10 @@
 export const metadata = {
-  title: 'Concept Testing',
-  description: 'Concept testing and prototype validation for product teams. Evaluating wireframes and early designs with users before committing to a build direction.',
+  title: 'Concept Testing & Prototype Validation',
+  description: 'Concept testing for product teams. Validate wireframes and early designs with real users before committing to a direction — and understand why.',
+  openGraph: {
+    title: 'Concept Testing & Prototype Validation | Daniela Napoli',
+    description: 'Concept testing for product teams. Validate wireframes and early designs with real users before committing to a direction — and understand why.',
+  },
 };
 
 export default function Layout({ children }) {

@@ -75,6 +75,7 @@ function PerformanceBenchmarking() {
                       <li>Quarterly trend reports across releases with year-over-year comparisons</li>
                       <li>Granular performance monitoring for different user segments and study periods</li>
                     </ul>
+                    <p className="mt-3">For broader quantitative context, <a href="/user-research/surveys">large-scale surveys</a> pair naturally with benchmarking studies.</p>
                   </AccordionItem>
                 </Accordion>
               </Col>

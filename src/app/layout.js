@@ -23,12 +23,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export const metadata = {
   title: {
     template: '%s | Daniela Napoli',
-    default: 'Daniela Napoli | UX & User Researcher Ontario',
+    default: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli',
   },
-  description: 'UX and user researcher based in Ontario, Canada. Qualitative and quantitative research that connects user needs to product strategy and business outcomes.',
+  description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
   openGraph: {
-    title: 'Daniela Napoli | UX & User Researcher Ontario',
-    description: 'UX and user researcher based in Ontario, Canada. Qualitative and quantitative research that connects user needs to product strategy and business outcomes.',
+    title: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli',
+    description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
     url: 'https://danielanapoli.com',
     siteName: 'Daniela Napoli',
     locale: 'en_CA',

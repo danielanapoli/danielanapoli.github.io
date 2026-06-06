@@ -16,8 +16,12 @@ const personSchema = {
 };
 
 export const metadata = {
-  title: { absolute: 'Daniela Napoli | UX & User Researcher Ontario' },
-  description: 'UX and user researcher based in Ontario, Canada. Qualitative and quantitative research that connects user needs to product strategy and business outcomes.',
+  title: { absolute: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli' },
+  description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
+  openGraph: {
+    title: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli',
+    description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
+  },
 };
 
 import Container from 'react-bootstrap/Container';
@@ -36,8 +40,8 @@ function Home() {
           <Row className='justify-content-md-center'>
             <Col className='prose-content'>
               <h1 className='hero'>Hi, I'm Daniela</h1>
+              <p className='fs-5 fw-semibold'>Mixed-Methods UX Researcher, Ontario</p>
               <p className='fs-5'>
-                I'm a mixed-method <strong>User Researcher</strong> based in Ontario, Canada.
                 I combine qualitative depth with quantitative rigour to help multi-disciplinary teams embed user needs into product strategy. My website gives more details about the types of research I do, how I do it, and the impact it has on product decisions.
               </p>
               <p className='fs-5'>

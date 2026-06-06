@@ -1,6 +1,10 @@
 export const metadata = {
   title: 'Improving Interdisciplinary Workflows',
-  description: 'Service design case study: improving cross-functional workflows at IBM. Research-driven approach to aligning design, development, and product management.',
+  description: 'Service design case study at IBM. Stakeholder interviews, as-is scenario mapping, and service blueprinting to align design, development, and product teams.',
+  openGraph: {
+    title: 'Improving Interdisciplinary Workflows | Daniela Napoli',
+    description: 'Service design case study at IBM. Stakeholder interviews, as-is scenario mapping, and service blueprinting to align design, development, and product teams.',
+  },
 };
 
 export default function Layout({ children }) {
