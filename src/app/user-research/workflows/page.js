@@ -36,7 +36,7 @@ function IndustryWorkflows() {
                     <li>Reviewed and refined master maps with participants to validate key findings</li>
                     <li>Facilitated dot-voting sessions to prioritize critical collaboration processes, major pain points, and key opportunities</li>
                   </ul>
-                  <h3>Rally stakeholder buy-in</h3>
+                  <h3>Rally collaborator buy-in</h3>
                   <p>Giving people a shared view of the problem and a hand in shaping the solution changed how they related to each other, not just how they worked.</p>
                   <ul id="accordion-content">
                     <li>Led a 2-hour seminar with all 20 participants to present and discuss validated findings</li>

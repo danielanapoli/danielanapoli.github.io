@@ -65,7 +65,7 @@ function Resume() {
                   'Conducted several studies within a longitudinal findability benchmarking program (2022–2026); the 2026 study quantified a 20% overall lift in task success and a 395% improvement on methodology-finding tasks in a redesigned product vs. its legacy version.',
                   "Serve as embedded researcher on CIHI's highest-priority program across two senior-role tenures; 12+ studies delivered to date.",
                   'Insights have directly informed design decisions, feature prioritization processes, and technical requirements definitions for the program.',
-                  'Mentor a junior researcher on study design, analysis, research strategy, and stakeholder communication.',
+                  'Mentor a junior researcher on study design, analysis, research strategy, and collaborator communication.',
                 ]}
               />
 
@@ -76,7 +76,7 @@ function Resume() {
                 location='Toronto, Ontario'
                 bullets={[
                   'Designed and ran early studies in a longitudinal findability benchmarking program for a flagship KPI report, establishing the baseline and methodology that anchored multi-year measurement.',
-                  "Led requirements discovery shaping the program's initial target model (future vision and modernization strategy): 15 user interviews and 10 stakeholder interviews.",
+                  "Led requirements discovery shaping the program's initial target model (future vision and modernization strategy): 15 user interviews and 10 collaborator interviews.",
                   'Recommendations were implemented in the retirement of legacy offerings and the release of new products designed around the user needs surfaced in discovery.',
                 ]}
                 featuredProject={{
@@ -111,7 +111,7 @@ function Resume() {
                 bullets={[
                   'Conducted and analyzed ~15 user interviews across Design, Development, and Product Management to map workflows, identify organizational pain points, and uncover collaboration opportunities.',
                   'Designed and facilitated a cross-department design-thinking workshop (~20 participants) using as-is scenario mapping, value proposition analysis, and need-statement techniques to ideate solutions for workflow challenges.',
-                  'Packaged and presented key findings to internal stakeholders and at an internship-related conference.',
+                  'Packaged and presented key findings to internal collaborators and at an internship-related conference.',
                 ]}
                 featuredProject={{
                   href: '/user-research/workflows',

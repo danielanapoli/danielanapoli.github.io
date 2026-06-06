@@ -40,7 +40,7 @@ function IndustryAutomation() {
                     <li>Synthesize consolidated insights into a foundation the system can be built on</li>
                   </ul>
                   <h3>Build the classification framework collaboratively</h3>
-                  <p>The system is only as trustworthy as the logic underneath it. I work with researchers, subject matter experts, and relevant stakeholders to define the keywords and characteristics that form the basis of the persona classification model.</p>
+                  <p>The system is only as trustworthy as the logic underneath it. I work with researchers, subject matter experts, and relevant collaborators to define the keywords and characteristics that form the basis of the persona classification model.</p>
                   <ul id="accordion-content">
                     <li>Facilitate collaborative sessions to identify persona characteristics and defining attributes</li>
                     <li>Validate the classification framework across research and non-research perspectives</li>
@@ -57,7 +57,7 @@ function IndustryAutomation() {
                   <p>When persona systems are built to scale, they change how other departments make decisions, from how marketing segments users to how product teams prioritize features.</p>
                   <ul id="accordion-content">
                     <li>Translate research findings into persona logic that other teams can adopt and operationalize</li>
-                    <li>Present outputs to relevant stakeholders in formats that support cross-departmental adoption</li>
+                    <li>Present outputs to relevant collaborators in formats that support cross-departmental adoption</li>
                   </ul>
                 </AccordionItem>
                 <AccordionItem index={2} header={"Example outputs"}>

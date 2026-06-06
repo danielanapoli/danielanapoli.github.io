@@ -42,9 +42,9 @@ function IndustryRequirements() {
                     <ul id="accordion-content">
                       <li>Audit existing data sources and prior research initiatives</li>
                       <li>Identify knowledge gaps that primary research needs to fill</li>
-                      <li>Review findings with internal stakeholders to pressure-test assumptions before moving forward</li>
+                      <li>Review findings with internal collaborators to pressure-test assumptions before moving forward</li>
                     </ul>
-                    <h3>Consult internal stakeholders</h3>
+                    <h3>Consult internal collaborators</h3>
                     <p>The people closest to the product have already formed a picture of the user. I want to understand that picture, where it came from, and what organizational goals and constraints are shaping it, before I strategize anything.</p>
                     <ul id="accordion-content">
                       <li>Interview departmental leaders to surface assumptions about users and existing knowledge</li>

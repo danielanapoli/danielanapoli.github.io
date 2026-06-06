@@ -44,7 +44,7 @@ function BenchmarkingCaseStudy() {
 
               <h2>What it moved</h2>
               <p>
-                Results went to the redesign team, product owners, and organizational directors with accountability for the program's outcomes. Stakeholders got confirmation that the investment had paid off where it mattered most. The declines gave teams a clear signal about where to go next.
+                Results went to the redesign team, product owners, and organizational directors with accountability for the program's outcomes. Collaborators got confirmation that the investment had paid off where it mattered most. The declines gave teams a clear signal about where to go next.
               </p>
               <p>
                 The gaps the data surfaced are actively being addressed. The program continues.

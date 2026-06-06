@@ -46,7 +46,7 @@ function Industry() {
                 cardTitle='Requirements Discovery'
                 cardText='Exploring user needs and pain points. Formulating actionable recommendations to guide the direction of future design work.'
                 cardSubtitle='Qualitative methods:'
-                cardSubtext='User interviews, stakeholder interviews, journey mapping, cross-department focus groups, design studio workshops'
+                cardSubtext='User interviews, collaborator interviews, journey mapping, cross-department focus groups, design studio workshops'
                 cardLink='/user-research/discovery'
                 cardLinkText='Read more'
               />
@@ -101,7 +101,7 @@ function Industry() {
                 cardTitle='Service Design Case Study: Improving Interdisciplinary Workflows'
                 cardText='Investigating design, development, and product manager workflows to uncover challenges. Formulating recommendations for cross-functional improvement.'
                 cardSubtitle='Qualitative methods:'
-                cardSubtext='Stakeholder interviews, as-is scenario mapping, dot-voting, affinity diagramming, service blueprinting'
+                cardSubtext='Collaborator interviews, as-is scenario mapping, dot-voting, affinity diagramming, service blueprinting'
                 cardLink='/user-research/workflows'
                 cardLinkText='Read more'
               />

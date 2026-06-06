@@ -29,7 +29,7 @@ function UsabilityTesting() {
                     <li>Diagnostic probing to distinguish implementation issues from deeper systemic ones</li>
                     <li>Severity-rated usability findings grounded in established heuristics</li>
                     <li>Actionable recommendations prioritized by impact on user experience</li>
-                    <li>Anonymized video clips that make usability issues tangible for stakeholders</li>
+                    <li>Anonymized video clips that make usability issues tangible for collaborators</li>
                   </ul>
                 </AccordionItem>
                 <AccordionItem index={1} header={"How I work"}>
@@ -57,7 +57,7 @@ function UsabilityTesting() {
                   <h3>Translate findings into action</h3>
                   <p>Nothing convinces a team to take usability seriously like watching someone struggle first-hand.</p>
                   <ul id="accordion-content">
-                    <li>Deliver findings in formats suited to the team and stakeholder audience</li>
+                    <li>Deliver findings in formats suited to the team and collaborator audience</li>
                     <li>Share anonymized video clips to make usability issues tangible</li>
                     <li>Translate findings into actionable next steps within agile timelines</li>
                   </ul>

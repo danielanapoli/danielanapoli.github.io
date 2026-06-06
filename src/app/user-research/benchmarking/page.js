@@ -41,7 +41,7 @@ function PerformanceBenchmarking() {
                     <p>Design decisions that connect to outcomes you can actually track.</p>
                     <ul id="accordion-content">
                       <li>Measurements of product changes and competitiveness over time</li>
-                      <li>ROI demonstrations for leadership, product teams, and stakeholders</li>
+                      <li>ROI demonstrations for leadership, product teams, and collaborators</li>
                       <li>User-centred priorities anchored to decisions and roadmaps</li>
                     </ul>
                   </AccordionItem>
@@ -69,7 +69,7 @@ function PerformanceBenchmarking() {
                     </ul>
                   </AccordionItem>
                   <AccordionItem index={3} header={"Example outputs"}>
-                    <p>What this looks like when it lands with stakeholders.</p>
+                    <p>What this looks like when it lands with collaborators.</p>
                     <ul id="accordion-content">
                       <li>Executive scorecards showing key usability metrics related to business metrics</li>
                       <li>Quarterly trend reports across releases with year-over-year comparisons</li>
