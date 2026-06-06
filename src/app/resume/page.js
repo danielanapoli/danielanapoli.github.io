@@ -180,6 +180,14 @@ function Resume() {
               <h2 className='underlined-heading'>Professional Development</h2>
 
               <ResumeEntry
+                title='AI Fluency: Framework & Foundations'
+                badge='Course'
+                dateRange='June 2026'
+                organization='Anthropic Academy'
+                organizationHref='https://anthropic.skilljar.com/ai-fluency-framework-foundations'
+              />
+              
+              <ResumeEntry
                 title='The Complete Games User Research Fundamentals'
                 badge='Course'
                 dateRange='Mar 2026 – Current'
