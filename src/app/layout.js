@@ -8,6 +8,14 @@ import { SkipToContentLink } from '@/components/SkipLink/SkipLink';
 import NavBar from '@/components/NavBar/NavBar';
 import Footer from '@/components/Footer/Footer';
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Daniela Napoli',
+  url: 'https://danielanapoli.com',
+  description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
+};
+
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -44,6 +52,7 @@ export default function RootLayout({ children }) {
       
       <ImportBootstrap/>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <header>
           <SkipToContentLink />
           <NavBar />

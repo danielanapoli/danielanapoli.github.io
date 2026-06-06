@@ -4,7 +4,7 @@ const personSchema = {
   name: 'Daniela Napoli',
   url: 'https://danielanapoli.com',
   jobTitle: 'UX Researcher',
-  description: 'Mixed-method UX and user researcher based in Ontario, Canada.',
+  description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
   email: 'hello@danielanapoli.com',
   address: { '@type': 'PostalAddress', addressRegion: 'Ontario', addressCountry: 'CA' },
   sameAs: [
