@@ -77,7 +77,7 @@ function IndustryRequirements() {
                   </AccordionItem>
                 </Accordion>
               </Col>
-              <Col md={4} className='align-self-start'>
+              <Col md={4} className='mt-3 align-self-start'>
                 <CustomCard
                   cardImage='/img/project.webp'
                   cardTitle='Informing strategy with user needs'
