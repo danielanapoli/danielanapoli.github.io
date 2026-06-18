@@ -15,6 +15,7 @@ const navLinks = [
   { href: '/academic',      label: 'Academic'                   },
   { href: '/resume',        label: 'Resume'                     },
   { href: '/contact',       label: 'Contact'                    },
+  { href: '/ai',            label: 'AI',            dotted: true },
 ];
 
 function NavBar() {
@@ -28,13 +29,14 @@ function NavBar() {
           <NavbarToggle aria-controls='basic-navbar-nav' />
           <NavbarCollapse id='basic-navbar-nav'>
             <Nav>
-              {navLinks.map(({ href, label, exact }) => (
+              {navLinks.map(({ href, label, exact, dotted }) => (
                 <NavLink
                   key={href}
                   href={href}
                   active={exact ? pathname === href : pathname.startsWith(href)}
+                  className={dotted ? 'nav-link-dotted' : undefined}
                 >
-                  {label}
+                  {label}{dotted && <span aria-hidden='true'> 🧠</span>}
                 </NavLink>
               ))}
             </Nav>

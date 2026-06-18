@@ -127,3 +127,7 @@ html a {
 .Resume .prose-content-narrow {
   max-width: 100ch;
 }
+
+.nav-link-dotted {
+  margin-left: 1rem;
+}
