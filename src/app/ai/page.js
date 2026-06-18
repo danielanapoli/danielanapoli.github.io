@@ -51,15 +51,15 @@ function HowIUseAI() {
 
           <Row className='mb-2'>
             <Col className='fs-5'>
-              <h2>My related AI work</h2>
+              <h2>Some of my AI work</h2>
             </Col>
           </Row>
 
           <Row className='mb-4 g-4'>
             <Col md={4} className='d-flex'>
-              <Card className='h-100'>
+              <Card className='h-100 border-0'>
                 <CardBody className='d-flex flex-column'>
-                  <CardTitle as='h3'>Heuristic Evaluation Claude Skill</CardTitle>
+                  <CardTitle as='h4'>UXR Claude Skill</CardTitle>
                   <CardText>
                     I tried to replace myself with AI and assessed what came back. I built a Claude skill that conducts usability heuristic evaluations, then ran it across five websites to see what would hold up.
                     </CardText>
@@ -77,20 +77,20 @@ function HowIUseAI() {
                         Read Part 2: Five Websites, One Claude Skill, and the Thing Prompts Can't Fix
                       </a>
                     </li>
-                    <li>
-                      <a href='https://github.com/danielanapoli' target='_blank' rel='noopener noreferrer' title="Daniela's GitHub repository. Opens in a new tab.">
-                        Download the skill on GitHub
-                      </a>
-                    </li>
                   </ul>
+                  <div className='mt-auto'>
+                    <a href='https://github.com/danielanapoli' target='_blank' rel='noopener noreferrer' title="Daniela's GitHub repository. Opens in a new tab.">
+                        Download the skill on GitHub
+                    </a>
+                </div>
                 </CardBody>
               </Card>
             </Col>
 
             <Col md={4} className='d-flex'>
-              <Card className='h-100'>
+              <Card className='h-100 border-0'>
                 <CardBody className='d-flex flex-column'>
-                  <CardTitle as='h3'>Persona Integration &amp; Automation</CardTitle>
+                  <CardTitle as='h4'>Persona Automation</CardTitle>
                   <CardText>
                     Personas sitting in a research report don't change how teams make decisions. I worked with researchers and subject matter experts to define persona characteristics, then built rule-based classification systems that operationalized them across departments. To this day, teams actually use the outputs to make decisions.
                   </CardText>
@@ -107,9 +107,9 @@ function HowIUseAI() {
             </Col>
 
             <Col md={4} className='d-flex'>
-              <Card className='h-100'>
+              <Card className='h-100 border-0'>
                 <CardBody className='d-flex flex-column'>
-                  <CardTitle as='h3'>Requirements Discovery</CardTitle>
+                  <CardTitle as='h4'>Requirements Discovery</CardTitle>
                   <CardText>
                     Early product decisions made without a clear picture of the problem space are expensive to undo. I help teams build that picture before the direction is set.
                   </CardText>
@@ -125,48 +125,6 @@ function HowIUseAI() {
               </Card>
             </Col>
           </Row>
-
-          <Row className='mb-4'>
-            <Col className='fs-5'>
-              <h2>My AI principles</h2>
-              <p>
-                I carefully involve AI in my practice. These are the lines I draw from where I've seen AI help and where I've seen it fail. As technology evolves, so will my approach.
-              </p>
-              </Col>
-            </Row>
-
-            <Row className='justify-content-center'>
-                <Col className='prose-content' style={{ maxWidth: '75%' }}>
-                    <Table size="sm">
-                    <thead>
-                    <tr>
-                        <th>Do ✅</th>
-                        <th>Don't do 🚫</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                        <ul>
-                            <li>Accelerate research tasks that compliment AI-skills like organizing disparate information and summarizing ideas.</li>
-                            <li>Critically probe my interpretations, assumptions, and any other biases in research.</li>
-                            <li>Quickly generate obvious ideas to get those out of the way while problem solving.</li>
-                            <li>Adapt messaging to ensure research insights land with partners depending on their perspectives and needs.</li>
-                        </ul>
-                        </td>
-                        <td>
-                        <ul>
-                            <li>Make decisions for research directions and activities especially during early-stage sensemaking or high-stakes scenarios.</li>
-                            <li>Share what participants said (interviews, responses, observations) with AI tools without their consent and appropriate privacy protections.</li>
-                            <li>Let AI determine what research findings mean or what users and the business need.</li>
-                            <li>Share AI-generated content that is misleading about my own thinking, research best practices, or actual findings.</li>
-                        </ul>
-                        </td>
-                    </tr>
-                    </tbody>
-                </Table>
-                </Col>
-            </Row>
 
           <Row className='mb-4'>
             <Col className='fs-5'>
