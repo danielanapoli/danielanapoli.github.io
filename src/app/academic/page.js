@@ -1,9 +1,9 @@
 export const metadata = {
-  title: { absolute: 'Academic Portfolio | Daniela Napoli, PhD' },
+  title: { absolute: 'Academic Contributions | Daniela Napoli, PhD' },
   description: 'Academic research by Daniela Napoli, PhD. Peer-reviewed publications, HCI conference talks, and design work on usable security and inclusive UX.',
   alternates: { canonical: '/academic' },
   openGraph: {
-    title: 'Academic Portfolio | Daniela Napoli, PhD',
+    title: 'Academic Contributions | Daniela Napoli, PhD',
     description: 'Academic research by Daniela Napoli, PhD. Peer-reviewed publications, HCI conference talks, and design work on usable security and inclusive UX.',
   },
 };
@@ -20,7 +20,7 @@ function Academic() {
       <Container fluid='md'>
         <Row className="mb-3">
           <Col className='prose-content'>
-            <h1>Academic Work</h1>
+            <h1>Academic Contributions</h1>
             <p className='fs-5'>
               Some of my favourite academic works focused on <strong>accessibility</strong> and <strong>usable security</strong>.
               You can learn more about my other academic publications by visiting <a href="https://scholar.google.com/citations?user=qdH8ZZcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Daniela's profile on Google Scholar. Opens in a new tab.">Google Scholar</a>.

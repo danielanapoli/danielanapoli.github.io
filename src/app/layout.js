@@ -11,7 +11,7 @@ import Footer from '@/components/Footer/Footer';
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Daniela Napoli',
+  name: 'Daniela Napoli, PhD',
   url: 'https://danielanapoli.com',
   description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
 };
@@ -31,15 +31,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export const metadata = {
   metadataBase: new URL('https://danielanapoli.com'),
   title: {
-    template: '%s | Daniela Napoli',
-    default: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli',
+    template: '%s | Daniela Napoli, PhD',
+    default: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli, PhD',
   },
   description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
   openGraph: {
-    title: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli',
+    title: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli, PhD',
     description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
     url: 'https://danielanapoli.com',
-    siteName: 'Daniela Napoli',
+    siteName: 'Daniela Napoli, PhD',
     locale: 'en_CA',
     type: 'website',
   },

@@ -14,6 +14,7 @@ const navLinks = [
   { href: '/user-research', label: 'User Research'              },
   { href: '/academic',      label: 'Academic'                   },
   { href: '/resume',        label: 'Resume'                     },
+  { href: '/blog',          label: 'Blog'                       },
   { href: '/contact',       label: 'Contact'                    },
   { href: '/ai',            label: 'AI',            dotted: true },
 ];

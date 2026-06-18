@@ -3,7 +3,7 @@ export const metadata = {
   description: 'Requirements discovery for product teams. Interviews, collaborator alignment, and insight synthesis to ground design directions in real user needs.',
   alternates: { canonical: '/user-research/discovery' },
   openGraph: {
-    title: 'Requirements Discovery Research | Daniela Napoli',
+    title: 'Requirements Discovery Research | Daniela Napoli, PhD',
     description: 'Requirements discovery for product teams. Interviews, collaborator alignment, and insight synthesis to ground design directions in real user needs.',
   },
 };

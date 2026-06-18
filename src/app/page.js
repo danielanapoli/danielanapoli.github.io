@@ -1,7 +1,7 @@
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Daniela Napoli',
+  name: 'Daniela Napoli, PhD',
   url: 'https://danielanapoli.com',
   jobTitle: 'UX Researcher',
   description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
@@ -16,11 +16,11 @@ const personSchema = {
 };
 
 export const metadata = {
-  title: { absolute: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli' },
+  title: { absolute: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli, PhD' },
   description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli',
+    title: 'Mixed-Methods UX Researcher Ontario | Daniela Napoli, PhD',
     description: 'Mixed-methods UX researcher in Ontario. Qualitative depth and quantitative rigour — connecting user needs to product strategy.',
   },
 };
@@ -29,7 +29,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CustomCard from '@/components/CustomCard/CustomCard';
-import { SupascribeFeed } from '@/components/SupascribeFeed/SupascribeFeed';
 
 function Home() {
   return(
@@ -51,7 +50,7 @@ function Home() {
             </Col>
           </Row>
           <Row>
-            <Col md={9}>
+            <Col>
               <div>
                 <h2 className='fs-3'>How I can help</h2>
                 <Row className='g-3'>
@@ -117,16 +116,6 @@ function Home() {
                   </Col>
                 </Row>
               </div>
-            </Col>
-            <Col md={3}>
-              <div>
-                <h2 className='fs-3'>From my blog</h2>
-                <SupascribeFeed
-                  embedId="578213045745"
-                  loaderSrc="https://js.supascribe.com/v1/loader/ytFSFZOVCvWHW0C399390pc70ND3.js"
-                  blogHref="https://www.substack.com/@hellodaniela"
-                />
-                </div>
             </Col>
           </Row>
         </Container>

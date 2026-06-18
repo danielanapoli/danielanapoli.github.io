@@ -3,7 +3,7 @@ export const metadata = {
   description: 'Usability testing for product teams. Moderated and unmoderated studies that surface root causes of friction, prioritized by impact.',
   alternates: { canonical: '/user-research/usability-testing' },
   openGraph: {
-    title: 'Usability Testing Services | Daniela Napoli',
+    title: 'Usability Testing Services | Daniela Napoli, PhD',
     description: 'Usability testing for product teams. Moderated and unmoderated studies that surface root causes of friction, prioritized by impact.',
   },
 };
