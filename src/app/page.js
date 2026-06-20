@@ -45,7 +45,7 @@ function Home() {
                 I combine qualitative depth with quantitative rigour to help multi-disciplinary teams embed user needs into product strategy. My website gives more details about the types of research I do, how I do it, and the impact it has on product decisions.
               </p>
               <p className='fs-5'>
-                Explore my <a href='/academic' rel='noopener noreferrer' title="The academic research portfolio page of Daniela's website.">academic projects</a> and <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a> for more details. Want to connect? <a href='/contact' rel='noopener noreferrer' title="Daniela's contact page.">Get in touch</a> — I'm happy to dive into anything listed here.
+                Explore my <a href='/user-research' rel='noopener noreferrer' title="The industry  research portfolio page of Daniela's website.">industry projects</a>, <a href='/academic' rel='noopener noreferrer' title="The academic research portfolio page of Daniela's website.">academic projects</a> and <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a> for more details. Want to connect? <a href='/contact' rel='noopener noreferrer' title="Daniela's contact page.">Get in touch</a> — I'm happy to dive into anything listed here.
               </p>
             </Col>
           </Row>
