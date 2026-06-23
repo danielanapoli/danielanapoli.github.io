@@ -16,7 +16,7 @@ function Contact() {
           <Container fluid='md'>
             <Row>
               <Col className='prose-content'>
-              <h1>Get in Touch</h1>
+              <h1 className='display-4 fw-bold'>Get in Touch</h1>
                 <p className='fs-5'>
                   I am not currently looking for new opportunities; however, I am always happy to connect with other professionals in the UX and user research community. 
                   Want to talk more? For my fastest response, email me at <a href='mailto:hello@danielanapoli.com'>hello@danielanapoli.com</a> or connect with me on{' '}

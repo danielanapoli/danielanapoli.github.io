@@ -19,7 +19,7 @@ function AcademicTalks() {
       <section id="content">
         <Container fluid='md'>
         <CustomBreadcrumb/>
-        <h1 className="mb-3">Talks and Workshops</h1>
+        <h1 className="display-4 fw-bold mb-3">Talks and Workshops</h1>
         <Row>
             <Col>
               <h2>Considering Privacy & AI in Remote Healthcare Technology for Older Adults</h2>

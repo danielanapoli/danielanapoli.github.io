@@ -15,7 +15,7 @@ function IndustryAutomation() {
           <CustomBreadcrumb/>
           <Row fluid='true' className="mb-3">
             <Col className='prose-content'>
-              <h1>Persona Integration</h1>
+              <h1 className='display-4 fw-bold'>Persona Integration</h1>
               <p className='fs-5'>Personas sitting in a research report don't change how teams make decisions. I can help organizations put them in their work.</p>
             </Col>
           </Row>

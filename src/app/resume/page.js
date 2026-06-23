@@ -12,7 +12,7 @@ function Resume() {
       <Container fluid='md'>
         <section id='content'>
           <Row className='text-center mb-3'>
-            <h1>Daniela Napoli</h1>
+            <h1 className='display-4 fw-bold'>Daniela Napoli</h1>
             <p>
               Ontario, Canada
               <br /><a href='mailto:hello@danielanapoli.com' rel='noopener noreferrer' title="Daniela's email address. Will open the mail app.">hello@danielanapoli.com</a>

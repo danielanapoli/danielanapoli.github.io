@@ -15,7 +15,7 @@ export default function NotFound() {
           <Row className='justify-content-md-center' style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
             <Col className='prose-content text-center'>
               <p style={{ fontSize: '4rem', lineHeight: 1 }}>404</p>
-              <h1 className='mb-3'>Page not found</h1>
+              <h1 className='display-4 fw-bold mb-3'>Page not found</h1>
               <p className='fs-5 mb-4'>
                 The page you&rsquo;re looking for doesn&rsquo;t exist or may have moved.
               </p>

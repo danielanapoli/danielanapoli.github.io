@@ -15,7 +15,7 @@ function ResearchTools() {
           <Container fluid='md'>
             <Row>
               <Col>
-              <h1>Research Tools</h1>
+              <h1 className='display-4 fw-bold'>Research Tools</h1>
               </Col>
             </Row>
         <Row className='g-3'>

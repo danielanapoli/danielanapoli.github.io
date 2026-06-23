@@ -10,13 +10,11 @@ import NavbarToggle from 'react-bootstrap/NavbarToggle';
 import NavLink from 'react-bootstrap/NavLink';
 
 const navLinks = [
-  { href: '/',              label: 'Home',          exact: true },
-  { href: '/user-research', label: 'User Research'              },
-  { href: '/academic',      label: 'Academic'                   },
-  { href: '/resume',        label: 'Resume'                     },
-  { href: '/blog',          label: 'Blog'                       },
-  { href: '/contact',       label: 'Contact'                    },
-  { href: '/ai',            label: 'AI',            dotted: true },
+  { href: '/work',    label: 'Work'    },
+  { href: '/blog',    label: 'Writing' },
+  { href: '/about',   label: 'About'   },
+  { href: '/resume',  label: 'Resume'  },
+  { href: '/ai',      label: 'AI'      },
 ];
 
 function NavBar() {
@@ -29,15 +27,14 @@ function NavBar() {
           <NavbarBrand href='/'>Daniela Napoli</NavbarBrand>
           <NavbarToggle aria-controls='basic-navbar-nav' />
           <NavbarCollapse id='basic-navbar-nav'>
-            <Nav>
-              {navLinks.map(({ href, label, exact, dotted }) => (
+            <Nav className='ms-auto'>
+              {navLinks.map(({ href, label, exact }) => (
                 <NavLink
                   key={href}
                   href={href}
                   active={exact ? pathname === href : pathname.startsWith(href)}
-                  className={dotted ? 'nav-link-dotted' : undefined}
                 >
-                  {label}{dotted && <span aria-hidden='true'> 🧠</span>}
+                  {label}
                 </NavLink>
               ))}
             </Nav>

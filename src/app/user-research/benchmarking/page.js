@@ -18,7 +18,7 @@ function PerformanceBenchmarking() {
           <CustomBreadcrumb/>
             <Row fluid='true' className="mb-3">
               <Col className='prose-content'>
-                <h1>Usability benchmarking</h1>
+                <h1 className='display-4 fw-bold'>Usability benchmarking</h1>
                 <p className='fs-5'>
                   Many teams invest in redesign processes without knowing their true impact on goals and KPIs.
                   I help translate user behaviours into quantifiable metrics that connect design decisions to clear outcomes.

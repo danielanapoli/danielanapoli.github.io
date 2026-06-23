@@ -20,7 +20,7 @@ function Academic() {
       <Container fluid='md'>
         <Row className="mb-3">
           <Col className='prose-content'>
-            <h1>Academic Contributions</h1>
+            <h1 className='display-4 fw-bold'>Academic Contributions</h1>
             <p className='fs-5'>
               Some of my favourite academic works focused on <strong>accessibility</strong> and <strong>usable security</strong>.
               You can learn more about my other academic publications by visiting <a href="https://scholar.google.com/citations?user=qdH8ZZcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Daniela's profile on Google Scholar. Opens in a new tab.">Google Scholar</a>.

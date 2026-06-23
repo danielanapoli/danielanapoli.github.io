@@ -15,7 +15,7 @@ function UsabilityTesting() {
           <CustomBreadcrumb/>
           <Row fluid='true' className="mb-3">
             <Col className='prose-content'>
-              <h1>Usability Testing</h1>
+              <h1 className='display-4 fw-bold'>Usability Testing</h1>
               <p className='fs-5'>Usability issues are rarely surface-level. I help teams investigate user interactions deeply enough to understand what is actually driving friction, and what to do about it.</p>
             </Col>
           </Row>

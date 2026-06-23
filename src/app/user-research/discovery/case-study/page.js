@@ -14,7 +14,7 @@ function DiscoveryCaseStudy() {
           <CustomBreadcrumb />
           <Row fluid='true' className="mb-3">
             <Col className='fs-5'>
-              <h1>What users need from a product that doesn't exist yet</h1>
+              <h1 className='display-4 fw-bold'>What users need from a product that doesn't exist yet</h1>
               <p className='text-muted'>Canadian Institute for Health Information, 2026</p>
               <p className='fs-5'>
                 When CIHI decided to retire a long-standing product for sharing publicly available healthcare data, the team needed more than a redesign plan. They needed a research-grounded strategy for what came next, built from actual user needs rather than assumptions about them.
@@ -45,12 +45,24 @@ function DiscoveryCaseStudy() {
                 What research surfaced was the gap between trust and usability. The workbooks provided data alongside rich, detailed context designed to support interpretation. That context has real value. It's part of what makes CIHI data worth using in the first place. But the packaging made the data cognitively demanding to work with, and the workbooks were large and not standardized across topics. Finding and extracting exactly what you needed, quickly, was close to impossible.
               </p>
               <p>
-                That's not a problem you solve by removing the context. It's a design problem. How do you preserve the depth that makes CIHI data trustworthy while making it genuinely usable? The concept exploration helped validate that some of the proposed redesign directions were on the right track.
+                That's not a problem you solve by removing the context. It's a design problem. How do you preserve the depth that makes CIHI data trustworthy while making it genuinely usable?
+              </p>
+              <p>
+                The usability problems also don't land on everyone equally. Some teams across Canada are lean and working on tight budgets. They have less time and less support to push through when a product gets in their way. The workbook problems hit hardest here.
+              </p>
+              <p>
+                Other teams sit in the opposite position. They are sophisticated, well-resourced, and modernizing their own workflows. They have flexibility when a product doesn't suit them, but their frustration grows when CIHI lags behind what they are already building on their end.
+              </p>
+              <p>
+                The concept exploration helped validate that some of the proposed redesign directions were on the right track.
               </p>
 
               <h2>Where it goes</h2>
               <p>
-                We are working closely with the implementation team, and research findings are now informing technical requirements for the replacement product. Discussions with the implementation team are surfacing open questions that didn't exist until the team started working through what implementation actually requires.
+                We are working closely with the implementation team, and research findings are now informing technical requirements for the replacement product.
+              </p>
+              <p>
+                Integrating research into the product vision means deciding what actually gets built. That means holding the variation in user contexts as part of the decision, not after it. The real risk is narrowing the frame to modernization alone. The teams who haven't gotten there yet get left behind.
               </p>
               <p>
                 Getting research into a product is its own phase of work. That phase is underway.

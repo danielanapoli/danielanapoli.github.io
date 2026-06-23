@@ -40,7 +40,7 @@ function ResearchTools() {
           <Container fluid='md'>
             <Row>
               <Col>
-              <h1>Stats Formula Wizard</h1>
+              <h1 className='display-4 fw-bold'>Stats Formula Wizard</h1>
               </Col>
             </Row>
             <Row>

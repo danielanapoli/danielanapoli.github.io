@@ -128,6 +128,17 @@ html a {
   max-width: 100ch;
 }
 
-.nav-link-dotted {
-  margin-left: 1rem;
+.work-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.work-methods {
+  font-size: 0.85rem;
+  color: #6c757d;
 }

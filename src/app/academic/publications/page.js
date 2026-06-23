@@ -19,7 +19,7 @@ function AcademicPublications() {
       <section id="content">
             <Container fluid='md'>
             <CustomBreadcrumb/>
-            <h1 className="mb-3">Paper Publications</h1>
+            <h1 className="display-4 fw-bold mb-3">Paper Publications</h1>
         <Row className="mb-4">
             <Col>
               <a href="https://dl.acm.org/doi/abs/10.1145/3170427.3180292" target="_blank" rel="noopener noreferrer" title="A link to the ACM Digital Library. Opens in a new tab."><h2>Developing Accessible and Usable Security (ACCUS) Heuristics</h2></a>
