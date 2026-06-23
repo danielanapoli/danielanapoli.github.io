@@ -20,7 +20,7 @@ function Industry() {
         <Container fluid='md'>
           <Row className="mb-3">
             <Col className='prose-content'>
-              <h1>User Research</h1>
+              <h1 className='display-4 fw-bold'>User Research</h1>
               <p className='fs-5'>
                 High-impact research that I offer to product teams.
                 More details about my work experience are available on my <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a>.

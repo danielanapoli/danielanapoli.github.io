@@ -18,7 +18,7 @@ function IndustryRequirements() {
           <CustomBreadcrumb/>
             <Row className="mb-3">
               <Col className='prose-content'>
-                <h1>Requirements Discovery</h1>
+                <h1 className='display-4 fw-bold'>Requirements Discovery</h1>
                 <p className='fs-5'>
                   Early product decisions made without a clear picture of the problem space are expensive to undo. I help teams build that picture before the direction is set.
                 </p>

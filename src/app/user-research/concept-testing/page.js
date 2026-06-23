@@ -15,7 +15,7 @@ function ConceptTesting() {
           <CustomBreadcrumb/>
           <Row fluid='true' className="mb-3">
             <Col className='prose-content'>
-              <h1>Concept Testing</h1>
+              <h1 className='display-4 fw-bold'>Concept Testing</h1>
               <p className='fs-5'>Committing to a direction before testing it with users is an expensive assumption. I help teams validate potential before the cost of building accumulates.</p>
             </Col>
           </Row>

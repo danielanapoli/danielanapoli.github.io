@@ -28,100 +28,89 @@ export const metadata = {
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CustomCard from '@/components/CustomCard/CustomCard';
+import Card from 'react-bootstrap/Card';
+import CardBody from 'react-bootstrap/CardBody';
+import { SubstackFeed, SubstackFeedEntry } from '@/components/SubstackFeed/SubstackFeed';
 
 function Home() {
-  return(
-  <>
-  <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
-  <div className='Home'>
-  <section id='content'>
-        <Container fluid='md'>
-          <Row className='justify-content-md-center'>
-            <Col className='prose-content'>
-              <h1 className='hero'>Hi, I'm Daniela</h1>
-              <p className='fs-5 fw-semibold'>Mixed-Methods UX Researcher, Ontario</p>
-              <p className='fs-5'>
-                I combine qualitative depth with quantitative rigour to help multi-disciplinary teams embed user needs into product strategy. My website gives more details about the types of research I do, how I do it, and the impact it has on product decisions.
-              </p>
-              <p className='fs-5'>
-                Explore my <a href='/academic' rel='noopener noreferrer' title="The academic research portfolio page of Daniela's website.">academic projects</a> and <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a> for more details. Want to connect? <a href='/contact' rel='noopener noreferrer' title="Daniela's contact page.">Get in touch</a> — I'm happy to dive into anything listed here.
-              </p>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <div>
-                <h2 className='fs-3'>How I can help</h2>
-                <Row className='g-3'>
-                  <Col xs={12} md={4}>
-                    <CustomCard
-                      cardImage='./img/statistics.webp'
-                      cardTitle='Usability benchmarking'
-                      cardText='Quantify product design ROI and shifts in competitive advantages over time.'
-                      cardLink='/user-research/benchmarking'
-                      cardLinkText='My benchmarking work'
-                      cardClassName='card-hover'
-                    />
-                  </Col>
-                  <Col xs={12} md={4}>
-                    <CustomCard
-                      cardImage='./img/project.webp'
-                      cardTitle='Requirements discovery'
-                      cardText='Inform early product directions through in-depth exploration of problem spaces.'
-                      cardLink='/user-research/discovery'
-                      cardLinkText='My discovery work'
-                      cardClassName='card-hover'
-                    />
-                  </Col>
-                  <Col xs={12} md={4}>
-                    <CustomCard
-                      cardImage='./img/pie-chart.webp'
-                      cardTitle='Large-scale surveys'
-                      cardText='Drive product decisions with data from large-scale surveys of user needs and attitudes.'
-                      cardLink='/user-research/surveys'
-                      cardLinkText='My survey work'
-                      cardClassName='card-hover'
-                    />
-                  </Col>
-                  <Col xs={12} md={4}>
-                    <CustomCard
-                      cardImage='./img/website-template.webp'
-                      cardTitle='Concept testing'
-                      cardText='De-risk design decisions by validating user needs with wireframes and prototypes.'
-                      cardLink='/user-research/concept-testing'
-                      cardLinkText='My concept testing work'
-                      cardClassName='card-hover'
-                    />
-                  </Col>
-                  <Col xs={12} md={4}>
-                    <CustomCard
-                      cardImage='./img/satisfaction.webp'
-                      cardTitle='Usability testing'
-                      cardText='Uncover user pain points and improvement opportunities through product assessments.'
-                      cardLink='/user-research/usability-testing'
-                      cardLinkText='My usability testing work'
-                      cardClassName='card-hover'
-                    />
-                  </Col>
-                  <Col xs={12} md={4}>
-                    <CustomCard
-                      cardImage='./img/paper.webp'
-                      cardTitle='Research science'
-                      cardText='Leverage expertise from academia for complex product challenges.'
-                      cardLink='/academic'
-                      cardLinkText='My research foundations'
-                      cardClassName='card-hover'
-                    />
-                  </Col>
-                </Row>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-    </section>
-  </div>
-  </>
+  return (
+    <>
+      <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+      <div className='Home'>
+        <section id='content'>
+          <Container fluid='md'>
+
+            {/* Hero */}
+            <Row className='mb-5'>
+              <Col>
+                <p className='text-muted small mb-2'>Daniela Napoli. Mixed-methods UX researcher, Ontario.</p>
+                <h1 className='display-4 fw-bold'>For ten years, one question:<br />Whose voice is missing?</h1>
+                <p className='fs-5 mt-3'>
+                  I started in accessibility and privacy research. 
+                  Now I lead mixed-methods user research with product teams. 
+                  The form keeps changing. The curiosity does not. 
+                  I build the research tools I need. I run mixed method studies with qualitative depth and quantitative rigor. 
+                  And I explore where AI fits responsibly into research practice.</p>
+              </Col>
+            </Row>
+
+            {/* Featured work */}
+            <Row className='mb-4'>
+              <Col>
+                <Card className='border-0 bg-light p-2'>
+                  <CardBody>
+                    <p className='text-uppercase small fw-bold text-primary mb-2'>Featured Work</p>
+                    <h2>Benchmarking cihi.ca redesigns</h2>
+                    <p>Large-scale redesign investments need to be justified. Did it actually get better for users?</p>
+                    <Row className='my-3'>
+                      <Col xs={6} md={4}>
+                        <p className='display-5 fw-bold mb-0'>20%</p>
+                        <p className='text-muted small'>lift in overall task success</p>
+                      </Col>
+                      <Col xs={6} md={5}>
+                        <p className='display-5 fw-bold mb-0'>395%</p>
+                        <p className='text-muted small'>improvement on tasks about how CIHI calculates its metrics</p>
+                      </Col>
+                    </Row>
+                    <a href='/user-research/benchmarking/case-study'>Read the benchmarking case study</a>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+
+            {/* Discovery + Recent thinking */}
+            <Row className='mb-5'>
+              <Col xs={12} md={6} className='mb-4 mb-md-0'>
+                <Card className='p-2 h-100'>
+                  <CardBody>
+                    <h2>The gap between trust and usability</h2>
+                    <p>
+                      CIHI set out to modernize their products. They needed a research-grounded strategy for what came next, built from actual user needs. 
+                      Research surfaced a clear message: Existing usability problems don't land on everyone equally.
+                      Future designs focused on the teams who'd already found workarounds meant leaving everyone else behind.
+                    </p>
+                    <a href='/user-research/discovery/case-study'>Read the discovery case study</a>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs={12} md={6}>
+                <SubstackFeed feedUrl='https://hellodaniela.substack.com/feed' limit={3}>
+                  <SubstackFeedEntry
+                    title="Five Websites, One Claude Skill, and the Thing Prompts Can't Fix"
+                    href='https://www.substack.com/@hellodaniela'
+                  />
+                  <SubstackFeedEntry
+                    title='Using AI Responsibly for User Knowledge Mobilization'
+                    href='https://www.substack.com/@hellodaniela'
+                  />
+                </SubstackFeed>
+              </Col>
+            </Row>
+
+          </Container>
+        </section>
+      </div>
+    </>
   );
 }
 
