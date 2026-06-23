@@ -28,7 +28,7 @@ function HowIUseAI() {
             </Col>
           </Row>
 
-          {/* Stats */}
+          {/* Stats 
           <Row className='mb-5 g-3'>
             <Col xs={6} md={3}>
               <p className='display-5 fw-bold mb-0'>5</p>
@@ -47,6 +47,7 @@ function HowIUseAI() {
               <p className='text-muted small'>Persona tagging system in use today</p>
             </Col>
           </Row>
+          */}
 
           <hr className='mb-5' />
 
