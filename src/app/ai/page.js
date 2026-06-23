@@ -53,7 +53,7 @@ function HowIUseAI() {
           {/* My AI Approach */}
           <Row className='mb-4'>
             <Col>
-              <p className='text-uppercase small fw-bold text-muted mb-3'>My AI approach</p>
+              <h2>My AI approach</h2>
               <p className='fs-4 fw-bold'>
                 Knowing how to use AI responsibly when conducting research is a skill. Knowing when to step away from it entirely is the more important one.
               </p>
@@ -92,14 +92,14 @@ function HowIUseAI() {
           {/* Some of my AI work */}
           <Row className='mb-4'>
             <Col>
-              <p className='text-uppercase small fw-bold text-muted mb-0'>Some of my AI work</p>
+              <h2>Some of my AI work</h2>
             </Col>
           </Row>
 
           {/* Work item 1: UXR Claude Skill */}
           <Row className='mb-5 g-4'>
             <Col md={4}>
-              <p className='fw-bold mb-1'>UXR Claude Skill</p>
+              <h3>UXR Claude Skill</h3>
               <p className='text-muted small mb-3'>Claude &middot; Open source</p>
               <p className='display-5 fw-bold mb-0'>5</p>
               <p className='text-muted small mb-3'>websites tested &middot; 200+ reads &middot; 15 repo clones</p>
@@ -134,7 +134,7 @@ function HowIUseAI() {
           {/* Work item 2: Persona Automation */}
           <Row className='mb-5 g-4'>
             <Col md={4}>
-              <p className='fw-bold mb-1'>Persona Automation</p>
+              <h3>Persona Automation</h3>
               <p className='text-muted small mb-3'>CIHI &middot; Automation</p>
               <p className='fs-3 fw-bold mb-0'>In use today</p>
               <p className='text-muted small mb-3'>across CIHI departments &amp; marketing analytics</p>
@@ -160,7 +160,7 @@ function HowIUseAI() {
           {/* Work item 3: Requirements Discovery */}
           <Row className='mb-5 g-4'>
             <Col md={4}>
-              <p className='fw-bold mb-1'>Requirements Discovery</p>
+              <h3>Requirements Discovery</h3>
               <p className='text-muted small mb-3'>Discovery &middot; Data &amp; APIs</p>
               <p className='display-5 fw-bold mb-0'>3</p>
               <p className='text-muted small mb-3'>generative studies &mdash; survey, interviews, concept testing</p>
@@ -189,7 +189,7 @@ function HowIUseAI() {
           {/* Where my thinking lives */}
           <Row className='mb-3'>
             <Col>
-              <p className='text-uppercase small fw-bold text-muted mb-3'>Where my thinking lives</p>
+              <h2>Where my thinking lives</h2>
               <p>
                 I work through my thinking around AI on Substack. This is where I explore the questions that come up in practice, share what I&rsquo;m learning, and reflect on the implications for UX research, design, and beyond. Here are some of my recent posts:
               </p>
@@ -228,7 +228,7 @@ function HowIUseAI() {
           {/* What's next */}
           <Row className='mb-3'>
             <Col>
-              <p className='text-uppercase small fw-bold text-muted mb-3'>What&rsquo;s next</p>
+              <h2>What&rsquo;s next</h2>
               <p>
                 I&rsquo;m building toward work that sits at the intersection of three threads I&rsquo;ve been pulling at.
               </p>

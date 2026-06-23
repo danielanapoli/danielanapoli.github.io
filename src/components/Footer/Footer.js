@@ -22,8 +22,6 @@ function footer(){
             <p className="smaller-text">
                 Designed & developed by Daniela Napoli <br/>
                 Last updated June 2026<br/>
-                Icons from <a href="https://www.flaticon.com/authors/freepik" target='_blank' rel='noopener noreferrer' title="A website dedicated to royalty-free icons. Opens in new tab.">Freepik</a><br/>
-                <br/>
             </p> 
             </Col>
             </Row>
