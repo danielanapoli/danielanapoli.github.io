@@ -26,7 +26,7 @@ function IndustryRequirements() {
             </Row>
             <Row>
               <Col md={8} className='prose-content'>
-                <Accordion defaultActiveKeys={["0"]} allKeys={["0", "1", "2"]}>
+                <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
                   <AccordionItem index={0} header={"What I deliver"}>
                     <p>Discovery research that informs product strategy and grounds teams in what users actually need. That includes translating insights into design decisions and practical requirements that technical teams can act on.</p>
                     <ul id="accordion-content">

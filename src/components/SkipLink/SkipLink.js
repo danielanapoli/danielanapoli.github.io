@@ -3,7 +3,7 @@
 import Link from 'next/link';
 
 export function SkipToContentLink() {
-    return (<SkipLink skipToId="content">Skip to main</SkipLink>);
+    return (<SkipLink skipToId="content">Skip to main content</SkipLink>);
 }
 
 function SkipLink({skipToId, children}) {

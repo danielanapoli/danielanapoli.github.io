@@ -114,9 +114,9 @@ function Work() {
             </Col>
           </Row>
 
-          {industryGroups.map((group) => (
+          {industryGroups.map((group, i) => (
             <div key={group.section}>
-              <hr />
+              {i > 0 && <hr />}
               <Row className='py-4'>
                 <Col xs={12} md={3}>
                   <h2>{group.section}</h2>
@@ -130,7 +130,7 @@ function Work() {
                       </h3>
                       <p className='mb-1'>{entry.description}</p>
                       <p className='work-methods mb-1'>{entry.methods}</p>
-                      <a href={entry.link}>Read more</a>
+                      <a href={entry.link}>Explore {entry.title.toLowerCase()}</a>
                     </div>
                   ))}
                 </Col>
@@ -141,15 +141,15 @@ function Work() {
           <hr />
 
           <Row className='py-4'>
-            <Col xs={12} md={3}>
+            <Col xs={12} md={3} className='mb-4 mb-md-0'>
               <h2>Academic</h2>
               <p className='work-methods mt-1'>Specialized in accessibility and usable security &amp; privacy.</p>
             </Col>
-            {academicEntries.map((entry) => (
-              <Col key={entry.title} xs={12} md={3}>
+            {academicEntries.map((entry, i) => (
+              <Col key={entry.title} xs={12} md={3} className={i < academicEntries.length - 1 ? 'mb-4 mb-md-0' : ''}>
                 <h3 className='mb-1'>{entry.title}</h3>
                 <p className='work-methods mb-1'>{entry.description}</p>
-                <a href={entry.link}>Read more</a>
+                <a href={entry.link}>Explore {entry.title.toLowerCase()}</a>
               </Col>
             ))}
           </Row>

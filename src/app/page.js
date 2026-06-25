@@ -63,11 +63,11 @@ function Home() {
                     <h2>Benchmarking cihi.ca redesigns</h2>
                     <p>Large-scale redesign investments need to be justified. Did it actually get better for users?</p>
                     <Row className='my-3'>
-                      <Col xs={6} md={4}>
+                      <Col xs={12} sm={6} md={4}>
                         <p className='display-5 fw-bold mb-0'>20%</p>
                         <p className='text-muted small'>lift in overall task success</p>
                       </Col>
-                      <Col xs={6} md={5}>
+                      <Col xs={12} sm={6} md={5}>
                         <p className='display-5 fw-bold mb-0'>395%</p>
                         <p className='text-muted small'>improvement on tasks about how CIHI calculates its metrics</p>
                       </Col>
@@ -104,6 +104,13 @@ function Home() {
                     href='https://www.substack.com/@hellodaniela'
                   />
                 </SubstackFeed>
+              </Col>
+            </Row>
+
+            <Row className='mb-4'>
+              <Col className='d-flex justify-content-end gap-4'>
+                <a href='/work'>View all work &rarr;</a>
+                <a href='/blog'>Read more writing &rarr;</a>
               </Col>
             </Row>
 

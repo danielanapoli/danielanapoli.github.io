@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import BreadcrumbItem from 'react-bootstrap/BreadcrumbItem';
 import Button from 'react-bootstrap/Button';
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 
 const formatLabel = (slug) => slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
@@ -17,6 +17,18 @@ const CustomBreadcrumb = () => {
     const pathNames = paths.split('/').filter( path => path )
     const activePathIndex = pathNames.length - 1;
     const router = useRouter();
+    const [showBack, setShowBack] = useState(false);
+
+    useEffect(() => {
+        try {
+            const referrer = document.referrer;
+            if (referrer && new URL(referrer).hostname === window.location.hostname) {
+                setShowBack(true);
+            }
+        } catch {
+            // malformed referrer — don't show the button
+        }
+    }, []);
 
     return (
         <>
@@ -45,11 +57,13 @@ const CustomBreadcrumb = () => {
                 }
             </Breadcrumb>
         </Row>
-        <Row>
-            <Col xs={12} className='mb-3'>
-                <Button size="sm" className='fs-6' variant='light' onClick={() => router.back()}>← Back</Button>
-            </Col>
-        </Row>
+        {showBack && (
+            <Row>
+                <Col xs={12} className='mb-3'>
+                    <Button size="sm" className='fs-6' variant='light' onClick={() => router.back()}>← Back</Button>
+                </Col>
+            </Row>
+        )}
         </>
     )
 }

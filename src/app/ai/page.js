@@ -49,8 +49,6 @@ function HowIUseAI() {
           </Row>
           */}
 
-          <hr className='mb-5' />
-
           {/* My AI Approach */}
           <Row className='mb-4'>
             <Col>
@@ -116,7 +114,7 @@ function HowIUseAI() {
                 It turns out AI can do a lot. But it&rsquo;s probabilistic. Early iterations confidently flagged problems that didn&rsquo;t exist, especially against dynamic content the model couldn&rsquo;t actually verify. The fix wasn&rsquo;t smarter prompts. It was making freshness verification a required step rather than a nice-to-have. In practice, that means documented assumptions on every claim, clear separation between what the AI generated and what got verified, and freshness checks built into the workflow.
               </p>
               <p>
-                The skill could generate findings. What it couldn&rsquo;t do was decide which findings to take to a team. That&rsquo;s where the researcher&rsquo;s work begins. The skill is open-sourced, with over 200 reads across the two-part build write-up on Substack and six repo clones to date.
+                The skill could generate findings. What it couldn&rsquo;t do was decide which findings to take to a team. That&rsquo;s where the researcher&rsquo;s work begins. The skill is open-sourced, with over 200 reads across the two-part build write-up on Substack and 15 repo clones to date.
               </p>
               <p>
                 <a href='https://hellodaniela.substack.com/p/ai-heuristic-evaluation-building' target='_blank' rel='noopener noreferrer' title="Part 1: Building the skill. Daniela's Substack. Opens in a new tab.">Read Part 1: Building the skill</a>
@@ -129,8 +127,6 @@ function HowIUseAI() {
               </p>
             </Col>
           </Row>
-
-          <hr className='mb-5' />
 
           {/* Work item 2: Persona Automation */}
           <Row className='mb-5 g-4'>
@@ -155,8 +151,6 @@ function HowIUseAI() {
               </p>
             </Col>
           </Row>
-
-          <hr className='mb-5' />
 
           {/* Work item 3: Requirements Discovery */}
           <Row className='mb-5 g-4'>
@@ -220,7 +214,7 @@ function HowIUseAI() {
 
           <Row className='mb-5'>
             <Col>
-              <a href='https://hellodaniela.substack.com' target='_blank' rel='noopener noreferrer' title="Daniela's Substack. Opens in a new tab.">Read more on Substack &rarr;</a>
+              <a href='https://hellodaniela.substack.com' target='_blank' rel='noopener noreferrer' title="Daniela's Substack. Opens in a new tab.">Read more on Substack</a>
             </Col>
           </Row>
 

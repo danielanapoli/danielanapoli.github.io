@@ -36,7 +36,6 @@ function Academic() {
               cardTitle='Paper Publications'
               cardText='Some peer-reviewed contributions to academic literature on human-centered design and usable security.'
               cardLink='/academic/publications'
-              cardLinkText='Read more'
             />
           </Col>
           <Col xs={12} md={4}>
@@ -45,7 +44,6 @@ function Academic() {
               cardTitle='Talks and Workshops'
               cardText='Highlights from some of my invited talks and presentations at HCI conferences and workshops.'
               cardLink='/academic/talks'
-              cardLinkText='Read more'
             />
           </Col>
           <Col xs={12} md={4}>
@@ -54,7 +52,7 @@ function Academic() {
               cardTitle={<>Remote Healthcare Technology<br/>Design Toolkit</>}
               cardText='Samples of our design toolkit to guide the development of remote healthcare technology for older adults.'
               cardLink='/academic/toolkit'
-              cardLinkText='Read more'
+              cardLinkText='Explore the remote healthcare technology design toolkit'
             />
           </Col>
         </Row>

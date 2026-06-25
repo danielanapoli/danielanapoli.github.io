@@ -26,7 +26,6 @@ function Blog() {
                 Published on {' '}
                 <a href='https://hellodaniela.substack.com' target='_blank' rel='noopener noreferrer'>Substack</a>.
               </p>
-              <hr />
             </Col>
           </Row>
           <Row>

@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
+    "generate-pdf": "node scripts/generate-resume-pdf.mjs",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "npm run build && gh-pages -d out --nojekyll --cname danielanapoli.com"
+    "deploy": "npm run build && npm run generate-pdf && gh-pages -d out --nojekyll --cname danielanapoli.com"
   },
   "dependencies": {
     "@next/third-parties": "^15.5.4",
@@ -27,6 +28,7 @@
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "puppeteer": "^24.43.1"
   }
 }

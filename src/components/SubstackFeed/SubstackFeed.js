@@ -55,7 +55,6 @@ export function SubstackFeedEntry({ title, href, date, description, variant = 'l
         {date && <p className='text-muted small mb-1'>{formatDate(date)}</p>}
         <h2><a href={href} target='_blank' rel='noopener noreferrer'>{title}</a></h2>
         {description && <p>{description}</p>}
-        <a href={href} target='_blank' rel='noopener noreferrer'>Read on Substack →</a>
       </div>
     );
   }

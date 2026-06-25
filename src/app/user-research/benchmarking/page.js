@@ -27,7 +27,7 @@ function PerformanceBenchmarking() {
             </Row>
             <Row>
               <Col md={8} className='prose-content'>
-                <Accordion defaultActiveKeys={["0"]} allKeys={["0", "1", "2", "3"]}>
+                <Accordion defaultActiveKeys={["0", "1", "2", "3"]} allKeys={["0", "1", "2", "3"]}>
                   <AccordionItem index={0} header={"What I deliver"}>
                     <p>Benchmarking only works if the measures are worth repeating.</p>
                     <ul id="accordion-content">

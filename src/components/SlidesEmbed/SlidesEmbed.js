@@ -2,18 +2,19 @@
 
 import PropTypes from "prop-types";
 
-const SlidesEmbed = ({ embedId }) => (
+const SlidesEmbed = ({ embedId, title }) => (
     <div className="video-responsive">
     <iframe
         src={embedId}
         allowFullScreen={true}
-        title="My PowerPoint Presentation"
+        title={title}
     />
     </div>
 );
 
 SlidesEmbed.propTypes = {
-  embedId: PropTypes.string.isRequired
+  embedId: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default SlidesEmbed;

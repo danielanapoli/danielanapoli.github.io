@@ -24,7 +24,6 @@ function ResearchTools() {
               cardTitle='Stats Formula Wizard'
               cardText='A handy tool to remember which statistical tests are best suited for your research data. Based on the statistical tests, the tool provides a formula to plug-in to your Excel sheet.'
               cardLink='/research-tools/formula-builder'
-              cardLinkText='Read more'
             />
           </Col>
         </Row>

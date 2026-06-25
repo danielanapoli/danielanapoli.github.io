@@ -53,14 +53,14 @@ export default function RootLayout({ children }) {
       <ImportBootstrap/>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-        <header>
+        <header className='d-print-none'>
           <SkipToContentLink />
           <NavBar />
         </header>
         <main>
           {children}
         </main>
-        <footer>
+        <footer className='d-print-none'>
           <Footer />
         </footer>
       </body>

@@ -35,7 +35,7 @@ function About() {
                 When I moved from academic research into industry, the form of the work changed. The curiosity did not.
               </p>
               <p className='fs-5'>
-                Right now I&rsquo;m leading modernization work at CIHI. The work is about making healthcare data available to the people who need it most. I find myself vouching for the little guys. Like teams in the northern territories with lean budgets, working with what they have.
+                Right now I&rsquo;m leading modernization research at CIHI. The work is about making healthcare data available to the people who need it most. I find myself vouching for the little guys. Like teams in the northern territories with lean budgets, working with what they have.
               </p>
               <p className='fs-5'>
                 Future projects will explore AI more. In the meantime, I{' '}

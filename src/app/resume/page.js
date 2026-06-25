@@ -3,7 +3,6 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import { ResumeEntry } from '@/components/ResumeEntry/ResumeEntry';
 
 function Resume() {
@@ -12,18 +11,20 @@ function Resume() {
       <Container fluid='md'>
         <section id='content'>
           <Row className='text-center mb-3'>
-            <h1 className='display-4 fw-bold'>Daniela Napoli</h1>
-            <p>
-              Ontario, Canada
-              <br /><a href='mailto:hello@danielanapoli.com' rel='noopener noreferrer' title="Daniela's email address. Will open the mail app.">hello@danielanapoli.com</a>
-              <br /><a href='https://danielanapoli.com' target='_blank' rel='noopener noreferrer' title="Daniela's personal website. Opens in new tab.">www.danielanapoli.com</a>
-            </p>
+            <Col>
+              <h1 className='display-4 fw-bold'>Daniela Napoli</h1>
+              <p>
+                Ontario, Canada
+                <br /><a href='mailto:hello@danielanapoli.com' rel='noopener noreferrer' title="Daniela's email address. Will open the mail app.">hello@danielanapoli.com</a>
+                <br /><a href='https://danielanapoli.com' target='_blank' rel='noopener noreferrer' title="Daniela's personal website. Opens in new tab.">www.danielanapoli.com</a>
+              </p>
+            </Col>
           </Row>
           <Row className='justify-content-end mb-3 d-print-none'>
             <Col xs='auto'>
-              <Button variant='dark' onClick={() => window.print()}>
-                Print / Save as PDF
-              </Button>
+              <a href='/Daniela-Napoli-Resume.pdf' download className='btn btn-dark'>
+                Download PDF
+              </a>
             </Col>
           </Row>
 
@@ -161,7 +162,7 @@ function Resume() {
               <h2 className='underlined-heading'>Selected Publications</h2>
               <div className='mb-4'>
                 <ul>
-                  <li>Napoli, D., et al. <a href='https://www.usenix.org/conference/soups2021/presentation/napoli' target='_blank' rel='noopener noreferrer' title='Link to USENIX. Opens in a new tab.'>"I'm Literally Just Hoping This Will Work": Obstacles Blocking the Online Security and Privacy of Users with Visual Disabilities.</a> <em>Symposium on Usable Privacy and Security (SOUPS)</em>, 2021 — 33 citations.</li>
+                  <li>Napoli, D., et al. <a href='https://www.usenix.org/conference/soups2021/presentation/napoli' target='_blank' rel='noopener noreferrer' title='Link to USENIX. Opens in a new tab.'>"I'm Literally Just Hoping This Will Work": Obstacles Blocking the Online Security and Privacy of Users with Visual Disabilities.</a> <em>Symposium on Usable Privacy and Security (SOUPS)</em>, 2021 — 35 citations.</li>
                   <li>Napoli, D., et al. <a href='https://dl.acm.org/doi/abs/10.1145/3170427.3180292' target='_blank' rel='noopener noreferrer' title='Link to the ACM Digital Library. Opens in a new tab.'>Developing Accessible and Usable Security (ACCUS) Heuristics.</a> <em>ACM CHI Extended Abstracts</em>, 2018 — 24 citations.</li>
                   <li>Napoli, D., et al. <a href='https://link.springer.com/chapter/10.1007/978-3-031-92840-6_5' target='_blank' rel='noopener noreferrer' title='Link to Springer. Opens in a new tab.'>Exploring User Perspectives on Data Collection, Data Sharing Preferences, and Privacy Concerns with Remote Healthcare Technology.</a> <em>HCI International (HCII)</em>, 2025 — large-scale survey, n=384.</li>
                   <li>Napoli, D., et al. <a href='https://link.springer.com/chapter/10.1007/978-3-031-94159-7_24' target='_blank' rel='noopener noreferrer' title='Link to Springer. Opens in a new tab.'>Helpful but Terrifying: Older Adults' Perspectives of AI in Remote Healthcare Technology.</a> <em>HCI International (HCII)</em>, 2025.</li>

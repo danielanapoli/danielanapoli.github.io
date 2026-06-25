@@ -13,6 +13,7 @@ export function CustomCard({
     cardLink, cardLinkText,
     cardBg = 'light', cardClassName = ''
 }) {
+    const linkText = cardLinkText ?? (typeof cardTitle === 'string' ? `Explore ${cardTitle.toLowerCase()}` : 'Read more');
 
     return(
        <Card bg={cardBg} className={`border-0 h-100 ${cardClassName}`.trim()}>
@@ -22,7 +23,7 @@ export function CustomCard({
                   <CardText>{cardText}</CardText>
                   {cardSubtitle && <CardSubtitle>{cardSubtitle}</CardSubtitle>}
                   {cardSubtext && <CardText>{cardSubtext}</CardText>}
-                  <CardLink className='mt-auto stretched-link' href={cardLink}>{cardLinkText}</CardLink>
+                  <CardLink className='mt-auto stretched-link' href={cardLink}>{linkText}</CardLink>
                 </CardBody>
         </Card>
     );

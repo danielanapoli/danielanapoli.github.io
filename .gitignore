@@ -20,6 +20,9 @@
 # production
 /build
 
+# generated build artefacts
+/public/Daniela-Napoli-Resume.pdf
+
 # misc
 .DS_Store
 *.pem
