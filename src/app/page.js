@@ -46,11 +46,11 @@ function Home() {
                 <p className='text-muted small mb-2'>Daniela Napoli. Mixed-methods UX researcher, Ontario.</p>
                 <h1 className='display-4 fw-bold'>For ten years, one question:<br />Whose voice is missing?</h1>
                 <p className='fs-5 mt-3'>
-                  I started in accessibility and privacy research. 
-                  Now I lead mixed-methods user research with product teams. 
-                  The form keeps changing. The curiosity does not. 
-                  I build the research tools I need. I run mixed method studies with qualitative depth and quantitative rigor. 
-                  And I explore where AI fits responsibly into research practice.</p>
+                  Products only get designed for the people in the room. 
+                  I study accessibility and privacy because that's where exclusion shows up clearest. 
+                  I work with mixed methods because each one misses what the others catch. 
+                  I explore where AI fits responsibly in research.
+                  </p>
               </Col>
             </Row>
 

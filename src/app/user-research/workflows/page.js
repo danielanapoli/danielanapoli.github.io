@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
+import SlidesEmbed from '@/components/SlidesEmbed/SlidesEmbed';
 
 function IndustryWorkflows() {
   return (
@@ -19,7 +20,7 @@ function IndustryWorkflows() {
               <p className='fs-5'>Aligning product managers, designers, and developers around shared priorities is hard. Each discipline brings different goals, different processes, and different definitions of what good work looks like.</p>
             </Col>
           </Row>
-          <Row>
+          <Row className='mb-4'>
             <Col className='prose-content'>
               <Accordion defaultActiveKeys={["0", "1"]} allKeys={["0", "1"]}>
                 <AccordionItem index={0} header={"Process"}>
@@ -48,6 +49,11 @@ function IndustryWorkflows() {
                   <p>The research reduced silos between teams and uncovered concrete opportunities for workflow improvement. The process itself gave participants space to be self-reflective and co-own a path forward. Empathy and morale across the three teams visibly improved. Full institutionalization of the findings was underway at the time of my departure.</p>
                 </AccordionItem>
               </Accordion>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <SlidesEmbed embedId={"https://docs.google.com/presentation/d/e/2PACX-1vQd5PDpJXKgZfi36N-aW1bIOZo5w62e6Zjwk9AlB_LjlNsq881p2tPvc3wa1jPLfg/pubembed?start=false&loop=true&delayms=3000"} title="Slides: Service Design Case Study: Improving Interdisciplinary Workflows" />
             </Col>
           </Row>
         </Container>
