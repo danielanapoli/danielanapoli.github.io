@@ -83,7 +83,7 @@ function Home() {
               <Col xs={12} md={6} className='mb-4 mb-md-0'>
                 <Card className='p-2 h-100'>
                   <CardBody>
-                    <h2>The gap between trust and usability</h2>
+                    <h2>Easy to trust, hard to use</h2>
                     <p>
                       CIHI set out to modernize their products. They needed a research-grounded strategy for what came next, built from actual user needs. 
                       Research surfaced a clear message: Existing usability problems don't land on everyone equally.
