@@ -45,6 +45,9 @@ function Toolkit() {
                     <p>
                         Check back soon for the full details on the toolkit, including more information on how the toolkit was made and what we plan to do to help remote healthcare technology better serve older adults.
                     </p>
+                    <p>
+                        This work was completed as part of my PhD research at Carleton University, in collaboration with the National Research Council Canada (NRC) and the Human-Centric Cybersecurity Partnership (HC2P). Full thesis is available <a href='https://hdl.handle.net/20.500.14718/44742'>on Carleton's thesis database</a>.
+                    </p>
                  </Col>
                 <Col md={5} className='bg-light text-center p-3'>
                     <h2>Toolkit Samples</h2>

@@ -31,7 +31,7 @@ function DiscoveryCaseStudy() {
                 A Canada-wide survey (n=86) went first. Participants were data analysts and advisors who use the legacy product in their work. The survey mapped the user need landscape, specifically what they were doing with the data, how often, and where the experience was working or breaking down. It gave enough signal to know where to dig deeper.
               </p>
               <p>
-                The interviews (n=20) dug deeper. Semi-structured conversations focused on workflows, challenges, and how people actually use this data in practice, not in theory. Those conversations gave texture to what the survey had outlined and surfaced the specifics that only come up when you give someone room to walk you through their work.
+                The interviews (n=20) dug deeper. Semi-structured conversations focused on workflows, challenges, and how people actually use this data in practice, not in theory. Those conversations gave texture to what the survey had outlined and surfaced the specifics that only come up when you give someone room to walk you through their work. These findings, corraborated by our survey data, were captured and shared through journey maps to highlight the most important user needs and pain points.
               </p>
               <p>
                 The third study (n=8) brought early prototypes to users in a concept exploration phase. With clearer research findings in hand, we put potential directions in front of participants to understand whether the underlying redesign approaches would actually address what the earlier research had uncovered.
