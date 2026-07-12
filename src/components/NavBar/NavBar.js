@@ -24,7 +24,7 @@ function NavBar() {
     <Container fluid>
       <Navbar collapseOnSelect expand='lg' bg='light' data-bs-theme='light'>
         <Container>
-          <NavbarBrand href='/'>Daniela Napoli</NavbarBrand>
+          <NavbarBrand href='/' style={{ fontSize: '2rem' }}>Daniela Napoli</NavbarBrand>
           <NavbarToggle aria-controls='basic-navbar-nav' />
           <NavbarCollapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>

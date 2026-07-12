@@ -22,20 +22,20 @@ function About() {
             <Col className='prose-content'>
               <h1 className='display-4 fw-bold'>About</h1>
               <p className='fs-5'>
-                When I look back at the last decade of my research, one thing keeps surfacing: Curiosity around who gets left behind as technology changes.
+                When I look back at the last decade of my research, one thing keeps surfacing: curiosity about who gets left behind as technology changes.
               </p>
               <p className='fs-5'>
-                My master&rsquo;s thesis was about the{' '}
-                <a href='https://www.usenix.org/conference/soups2021/presentation/napoli' target='_blank' rel='noopener noreferrer' title='Opens in a new tab.'>privacy concerns of people who are blind and visually impaired</a>.
-                My PhD looked at{' '}
-                <a href='https://link.springer.com/chapter/10.1007/978-3-031-92840-6_5' target='_blank' rel='noopener noreferrer' title='Opens in a new tab.'>what helps older adults trust their privacy and well-being will be protected when using healthcare technology</a>.
-                A lot of them mentioned fear and hesitation around AI, which I didn&rsquo;t go in looking for. It just kept coming up.
+                My master&rsquo;s thesis focused on the{' '}
+                <a href='https://www.usenix.org/conference/soups2021/presentation/napoli' target='_blank' rel='noopener noreferrer' title='Opens in a new tab.'>privacy worries of people who are blind and visually impaired</a>.
+                My PhD studied{' '}
+                <a href='https://link.springer.com/chapter/10.1007/978-3-031-92840-6_5' target='_blank' rel='noopener noreferrer' title='Opens in a new tab.'>what makes older adults feel confident that their privacy and safety are protected when using healthcare technology</a>.
+                Many of them talked about fear and doubt around AI, which I wasn&rsquo;t expecting. It just kept appearing.
               </p>
               <p className='fs-5'>
                 When I moved from academic research into industry, the form of the work changed. The curiosity did not.
               </p>
               <p className='fs-5'>
-                Right now I&rsquo;m leading modernization research at CIHI. The work is about making healthcare data available to the people who need it most. I find myself vouching for the little guys. Like teams in the northern territories with lean budgets, working with what they have.
+                Right now I&rsquo;m leading modernization research at CIHI. The work is about making healthcare data available to the people who need it most. I often support the smaller teams. Like groups in the northern territories with tight budgets, doing their best with limited resources.
               </p>
               <p className='fs-5'>
                 Future projects will explore AI more. In the meantime, I{' '}

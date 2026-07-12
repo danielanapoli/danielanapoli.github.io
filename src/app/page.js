@@ -30,7 +30,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import CardBody from 'react-bootstrap/CardBody';
-import { SubstackFeed, SubstackFeedEntry } from '@/components/SubstackFeed/SubstackFeed';
+import { SubstackFeed } from '@/components/SubstackFeed/SubstackFeed';
 
 function Home() {
   return (
@@ -43,24 +43,24 @@ function Home() {
             {/* Hero */}
             <Row className='mb-5'>
               <Col>
-                <p className='text-muted small mb-2'>Daniela Napoli. Mixed-methods UX researcher, Ontario.</p>
+                <p className='text-muted small mb-2'>Mixed-methods UX researcher. Ontario, Canada.</p>
                 <h1 className='display-4 fw-bold'>For ten years, one question:<br />Whose voice is missing?</h1>
                 <p className='fs-5 mt-3'>
-                  Products only get designed for the people in the room. 
-                  I study accessibility and privacy because that's where exclusion shows up clearest. 
-                  I work with mixed methods because each one misses what the others catch. 
-                  I explore where AI fits responsibly in research.
+                  Products often get designed only for the voices already at the table.
+                  I work in usability, accessibility, and privacy, where that exclusion shows up first.
+                  I use mixed methods to avoid a narrow approach that leaves something out.
+                  And I am exploring how AI fits into UX research without leaving critical voices behind.
                   </p>
               </Col>
             </Row>
 
             {/* Featured work */}
-            <Row className='mb-4'>
+            <Row className='mb-5'>
               <Col>
                 <Card className='border-0 bg-light p-2'>
                   <CardBody>
-                    <p className='text-uppercase small fw-bold text-primary mb-2'>Featured Work</p>
-                    <h2>Benchmarking cihi.ca redesigns</h2>
+                    <p className='text-uppercase small fw-bold text-primary mb-2'>Featured</p>
+                    <h2>Benchmarking redesigns</h2>
                     <p>Large-scale redesign investments need to be justified. Did it actually get better for users?</p>
                     <Row className='my-3'>
                       <Col xs={12} sm={6} md={4}>
@@ -78,39 +78,49 @@ function Home() {
               </Col>
             </Row>
 
-            {/* Discovery + Recent thinking */}
-            <Row className='mb-5'>
+            {/* Discovery + Surveys case studies */}
+            <Row className='mb-3'>
               <Col xs={12} md={6} className='mb-4 mb-md-0'>
                 <Card className='p-2 h-100'>
                   <CardBody>
                     <h2>Easy to trust, hard to use</h2>
                     <p>
-                      CIHI set out to modernize their products. They needed a research-grounded strategy for what came next, built from actual user needs. 
+                      CIHI set out to modernize their products. They needed a research-grounded strategy for what came next, built from actual user needs.
                       Research surfaced a clear message: Existing usability problems don't land on everyone equally.
                       Future designs focused on the teams who'd already found workarounds meant leaving everyone else behind.
                     </p>
-                    <a href='/user-research/discovery/case-study'>Read the discovery case study</a>
+                    <a href='/user-research/discovery/case-study'>Read about my discovery work</a>
                   </CardBody>
                 </Card>
               </Col>
               <Col xs={12} md={6}>
-                <SubstackFeed feedUrl='https://hellodaniela.substack.com/feed' limit={3}>
-                  <SubstackFeedEntry
-                    title="Five Websites, One Claude Skill, and the Thing Prompts Can't Fix"
-                    href='https://www.substack.com/@hellodaniela'
-                  />
-                  <SubstackFeedEntry
-                    title='Using AI Responsibly for User Knowledge Mobilization'
-                    href='https://www.substack.com/@hellodaniela'
-                  />
-                </SubstackFeed>
+                <Card className='p-2 h-100'>
+                  <CardBody>
+                    <h2>Transforming data into insight</h2>
+                    <p>
+                      My doctoral work included a national survey on remote healthcare technology. We surfaced a clear trust gap by age. Our end-to-end process for making every cleaning and validation decision traceable is what lets the team stand behind the findings and later incorporate them into a design toolkit.
+                    </p>
+                    <a href='/user-research/surveys/case-study'>Read about my data processing work</a>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+            <Row className='mb-5'>
+              <Col className='d-flex justify-content-start gap-4'>
+                <a href='/work'>View all my work &rarr;</a>
               </Col>
             </Row>
 
-            <Row className='mb-4'>
-              <Col className='d-flex justify-content-end gap-4'>
-                <a href='/work'>View all work &rarr;</a>
-                <a href='/blog'>Read more writing &rarr;</a>
+            {/* Recent writing */}
+            <Row className='mb-3'>
+              <Col>
+              <h2>Recent writing</h2>
+                <SubstackFeed feedUrl='https://hellodaniela.substack.com/feed' limit={3} variant='list' />
+              </Col>
+            </Row>
+            <Row className='mb-5'>
+              <Col className='d-flex justify-content-start gap-4'>
+                <a href='/blog'>Read more of my blog &rarr;</a>
               </Col>
             </Row>
 

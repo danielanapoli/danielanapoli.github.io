@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
+import CustomCard from '@/components/CustomCard/CustomCard';
 
 function Surveys() {
   return (
@@ -20,7 +21,7 @@ function Surveys() {
             </Col>
           </Row>
           <Row>
-            <Col className='prose-content'>
+            <Col md={8} className='prose-content'>
               <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
                 <AccordionItem index={0} header={"What I deliver"}>
                   <p>Large-scale surveys that give teams a quantitative foundation for confident decisions and sharper qualitative research.</p>
@@ -63,6 +64,15 @@ function Surveys() {
                   <p className="mt-3">When you're ready to track how design changes affect those baselines, <a href="/user-research/benchmarking">usability benchmarking</a> closes the loop.</p>
                 </AccordionItem>
               </Accordion>
+            </Col>
+            <Col md={4} className='mt-3 align-self-start'>
+              <CustomCard
+                cardImage='/img/paper.webp'
+                cardTitle='Building a survey dataset that a design team could trust'
+                cardText='A national mixed-methods survey of 384 adults, run online and on paper, hit an influx of fraudulent responses. The fix was a modular Python ETL pipeline with validation as its own auditable stage, ahead of any cleaning, that turned into a design toolkit for remote healthcare technology.'
+                cardLink='/user-research/surveys/case-study'
+                cardLinkText='Read the case study'
+              />
             </Col>
           </Row>
         </Container>

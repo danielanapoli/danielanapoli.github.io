@@ -48,19 +48,21 @@ async function fetchPosts(feedUrl, limit) {
   }
 }
 
-export function SubstackFeedEntry({ title, href, date, description, variant = 'list' }) {
+export function SubstackFeedEntry({ title, href, date, description, variant = 'list', last = false }) {
   if (variant === 'card') {
     return (
-      <div className='mb-4'>
+      <div className={last ? '' : 'mb-4'}>
         {date && <p className='text-muted small mb-1'>{formatDate(date)}</p>}
-        <h2><a href={href} target='_blank' rel='noopener noreferrer'>{title}</a></h2>
+        <h2>
+          <a href={href} target='_blank' rel='noopener noreferrer'>{title}</a>
+        </h2>
         {description && <p>{description}</p>}
       </div>
     );
   }
 
   return (
-    <div className='mb-3'>
+    <div className={last ? '' : 'mb-3'}>
       <a href={href} target='_blank' rel='noopener noreferrer' className='d-block'>
         {title}
       </a>
@@ -73,12 +75,11 @@ export async function SubstackFeed({ feedUrl, limit = 5, variant = 'list', child
   const posts = feedUrl ? await fetchPosts(feedUrl, limit) : [];
 
   if (variant === 'card') {
-    const entries = posts.length > 0 ? posts : null;
-    return entries
-      ? entries.map((post, i) => (
+    return posts.length > 0
+      ? posts.map((post, i) => (
           <div key={i}>
-            <SubstackFeedEntry variant='card' {...post} />
-            {i < entries.length - 1 && <hr />}
+            <SubstackFeedEntry variant='card' last={i === posts.length - 1} {...post} />
+            {i < posts.length - 1 && <hr />}
           </div>
         ))
       : children;
@@ -86,12 +87,10 @@ export async function SubstackFeed({ feedUrl, limit = 5, variant = 'list', child
 
   return (
     <>
-      <h2>Recent thinking</h2>
-      <p className='text-muted small'>
-        Where AI fits into research practice, and where human judgment stays in the loop.
-      </p>
       {posts.length > 0
-        ? posts.map((post, i) => <SubstackFeedEntry key={i} {...post} />)
+        ? posts.map((post, i) => (
+            <SubstackFeedEntry key={i} last={i === posts.length - 1} {...post} />
+          ))
         : children}
     </>
   );
