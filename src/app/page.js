@@ -72,7 +72,7 @@ function Home() {
                         <p className='text-muted small'>improvement on tasks about how CIHI calculates its metrics</p>
                       </Col>
                     </Row>
-                    <a href='/user-research/benchmarking/case-study'>Read the benchmarking case study</a>
+                    <a href='/user-research/benchmarking/case-study' className='stretched-link'>Read the benchmarking case study</a>
                   </CardBody>
                 </Card>
               </Col>
@@ -89,7 +89,7 @@ function Home() {
                       Research surfaced a clear message: Existing usability problems don't land on everyone equally.
                       Future designs focused on the teams who'd already found workarounds meant leaving everyone else behind.
                     </p>
-                    <a href='/user-research/discovery/case-study'>Read about my discovery work</a>
+                    <a href='/user-research/discovery/case-study' className='stretched-link'>Read about my discovery work</a>
                   </CardBody>
                 </Card>
               </Col>
@@ -100,7 +100,7 @@ function Home() {
                     <p>
                       My doctoral work included a national survey on remote healthcare technology. We surfaced a clear trust gap by age. Our end-to-end process for making every cleaning and validation decision traceable is what lets the team stand behind the findings and later incorporate them into a design toolkit.
                     </p>
-                    <a href='/user-research/surveys/case-study'>Read about my data processing work</a>
+                    <a href='/user-research/surveys/case-study' className='stretched-link'>Read about my data processing work</a>
                   </CardBody>
                 </Card>
               </Col>

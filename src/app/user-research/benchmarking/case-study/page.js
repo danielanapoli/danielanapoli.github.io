@@ -17,34 +17,51 @@ function BenchmarkingCaseStudy() {
               <h1 className='display-4 fw-bold'>Measuring what a redesign actually changed</h1>
               <p className='text-muted'>Canadian Institute for Health Information, 2026</p>
               <p className='fs-5'>
-                CIHI runs a publicly available tool that gives health system advisors, journalists, and patient advocates access to pre-analyzed healthcare data across all 13 Canadian provinces and territories.
+                CIHI redesigned their public data tool that health system advisors, journalists, and patient advocates used to find pre-analyzed healthcare data across 13 Canadian provinces and territories. They migrated it to their main site, rebuilt the interface, and rearchitected the content structure.
               </p>
               <p className='fs-5'>
-                When CIHI migrated it to their main site and rebuilt the experience from the ground up, the investment needed justification: Did it actually get better for users?
+                The question was simple: did it actually work?
+              </p>
+              <p className='fs-5'>
+                This is critical for CIHI's leadership; the measurement is meant to justify the modernization investment across the organization's highest-priority program.
               </p>
 
-              <h2>The study</h2>
+              <h2>How I set it up</h2>
               <p>
-                I ran two parallel unmoderated usability tests in Loop11. One in the legacy product and one in the redesign. Both had identical protocols and eight tasks built around validated user needs. I then compared task success rates, abandonment, time on task, pages viewed, and ease ratings across both conditions.
+                In 2021, I ran foundational discovery research to understand key usability obstacles impacting users' experiences of the legacy product. 15 user interviews and 10 stakeholder interviews shaped the initial target model — the design vision for the redesign. A key insight was that future tools needed to better support the contextual information describing the data displayed in the tool: "How is it calculated? How are variables defined?"
               </p>
               <p>
-                Two constraints shaped the design. CIHI had already retired the legacy product by the time this study ran, so testing took place in a UAT environment. I recruited internal CIHI staff who with data analyst expertise as to serve as proxies for our target audience.
-              </p>
-
-              <h2>What we found</h2>
-              <p>
-                The redesign showed a 20% overall improvement in task success. For methodology-finding tasks, the improvement was 395%.
+                Years of work went into the redesign. Now, I needed to measure whether the implementation matched that vision. I ran two parallel unmoderated usability tests in Loop11: one for the legacy product, one for the redesign. Each had an identical protocol. 8 tasks built around the validated user needs from Discovery. I measured and compared task success, abandonment, time on task, and ease ratings.
               </p>
               <p>
-                That number has a story. In the legacy product, the methodology lived in a secondary drawer, so users had trouble locating it. The redesign gave the methodology dedicated, visible space. Users who consistently failed that task before have now succeeded.
-              </p>
-              <p>
-                Some tasks scored lower in the redesign because content hadn't migrated yet. These gaps were anticipated, but the study added quantified evidence of their impact on real users, moving them higher on the roadmap.
+                The catch: CIHI had already retired the legacy product, so UAT was the only option. The study required us to recruit internal staff with data analyst expertise as proxy users. Despite not having a 1-to-1 comparison in end-users' mental models, the findings could point to universal issues that would be issues for anyone, such as hidden information and restrictive task flows.
               </p>
 
-              <h2>What it moved</h2>
+              <h2>What I found</h2>
               <p>
-                Results went to the redesign team, product owners, and organizational directors accountable for the program. Collaborators got confirmation that the investment paid off. The gaps in the data surfaced are actively being addressed.
+                The redesign showed that overall task success increased by 20%. On methodology-finding tasks, it lifted 395%.
+              </p>
+              <p>
+                Originally, the methodology had lived in a secondary drawer in the legacy product. Users missed it constantly. The redesign gave it dedicated, visible space — this was an integral structural change leading to massive success.
+              </p>
+
+              <h2>What changed</h2>
+              <p>
+                I presented findings several times to various partners in the redesign team, product owners, and leadership.
+              </p>
+              <p>
+                The overall improvements were appreciated. They validated the hard work of dedicated initiatives.
+              </p>
+              <p>
+                Yet, the study also found some tasks scored lower. The problems were tied to known issues that needed to be deprioritized in the backlog. So, poor scores were anticipated, but the study quantified their impact on real users and ultimately moved them higher on the roadmap.
+              </p>
+
+              <h2>What I carry forward</h2>
+              <p>
+                If the old system is gone, sometimes modernization work means you can't test against production. You work with what you have: UAT environments and proxy users. The constraint becomes a research design point in a tight protocol given what's actually available. You name the boundaries and frame findings so the team can be confident to act on them immediately.
+              </p>
+              <p>
+                This work shapes how I think about research and strategy. Planning for benchmarking doesn't always happen upfront. This constrains the team's ability to define success metrics early, so future research and strategy can align from the start. That's the difference between research that informs products and research that influences products.
               </p>
             </Col>
           </Row>

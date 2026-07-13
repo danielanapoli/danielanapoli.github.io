@@ -97,7 +97,7 @@ function HowIUseAI() {
           </div>
 
           {/* Case study: Persona Automation */}
-          <Row className='mb-5 g-4'>
+          <Row className='mb-5 g-4 position-relative'>
             <Col md={4}>
               <h3>Persona automation</h3>
               <p className='text-muted small mb-3'>Personas &middot; Python</p>
@@ -115,13 +115,13 @@ function HowIUseAI() {
                 Pre-dating current AI tools, my program was designed so machine learning could later replace more rudimentary automations. This meant I focused on the key goals of the automation processes without focusing on technical builds. Ultimately, landing on validated data structures that future AI could easily plug into.
               </p>
               <p>
-                <a href='/user-research/automation' rel='noopener noreferrer' title="Daniela's persona integration and research automation work.">Read more about my automation work</a>
+                <a href='/user-research/automation' rel='noopener noreferrer' title="Daniela's persona integration and research automation work." className='stretched-link'>Read more about my automation work</a>
               </p>
             </Col>
           </Row>
 
           {/* Case study: Requirements Discovery */}
-          <Row className='mb-5 g-4'>
+          <Row className='mb-5 g-4 position-relative'>
             <Col md={4}>
               <h3>Requirements discovery</h3>
               <p className='text-muted small mb-3'>Discovery &middot; UX for APIs</p>
@@ -142,7 +142,7 @@ function HowIUseAI() {
                 This user-centred collaboration is where research stops being a report and starts being implemented. These recommendations are what make AI actually work for users downstream.
               </p>
               <p>
-                <a href='/user-research/discovery/case-study' rel='noopener noreferrer' title="Daniela's requirements discovery work.">Read more about my discovery work</a>
+                <a href='/user-research/discovery/case-study' rel='noopener noreferrer' title="Daniela's requirements discovery work." className='stretched-link'>Read more about my discovery work</a>
               </p>
             </Col>
           </Row>
