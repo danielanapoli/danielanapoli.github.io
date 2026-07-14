@@ -20,7 +20,7 @@ function stripHtml(html) {
 
 async function fetchPosts(feedUrl, limit) {
   try {
-    const res = await fetch(feedUrl, { cache: 'no-store' });
+    const res = await fetch(feedUrl);
     const xml = await res.text();
     return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)]
       .slice(0, limit)

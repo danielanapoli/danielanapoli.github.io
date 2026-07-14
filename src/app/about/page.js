@@ -18,9 +18,9 @@ function About() {
     <div className='About'>
       <section id='content'>
         <Container fluid='md'>
-          <Row>
-            <Col className='prose-content'>
-              <h1 className='display-4 fw-bold'>About</h1>
+          <Row className='align-items-center'>
+            <Col xs={12} md={8} className='prose-content'>
+              <h1 className='display-4 fw-bold'>More about me</h1>
               <p className='fs-5'>
                 When I look back at the last decade of my research, one thing keeps surfacing: curiosity about who gets left behind as technology changes.
               </p>
@@ -49,10 +49,8 @@ function About() {
                 <a href='/contact'>glad to hear from you</a>.
               </p>
             </Col>
-          </Row>
-          <Row className='justify-content-center'>
-            <Col sm='auto' xs='auto' md='auto' lg='6' className='text-center'>
-              <Image width='60%' alt='Photo of smiling Daniela wearing a bucket hat' src='/img/daniela.jpg' roundedCircle thumbnail/>
+            <Col xs={12} md={4} className='text-center mt-4 mt-md-0'>
+              <Image width='80%' alt='Photo of Daniela wearing glasses and smiling' src='/img/daniela2.png' roundedCircle thumbnail/>
             </Col>
           </Row>
         </Container>
