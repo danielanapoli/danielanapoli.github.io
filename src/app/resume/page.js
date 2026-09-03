@@ -63,7 +63,7 @@ function Resume() {
                 location='Toronto, Ontario'
                 bullets={[
                   'Lead 3 generative discovery studies (20+ user interviews, Canada-wide survey, concept testing) to guide modernization of legacy products serving clients across all 13 Canadian provinces and territories.',
-                  'Conducted several studies within a longitudinal findability benchmarking program (2022–2026); the 2026 study quantified a 20% overall lift in task success and a 395% improvement on methodology-finding tasks in a redesigned product vs. its legacy version.',
+                  'Conducted several studies within a longitudinal findability benchmarking program (2021–2026); the 2026 study quantified a 20% overall lift in task success and a 395% improvement on methodology-finding tasks in a redesigned product vs. its legacy version.',
                   "Serve as embedded researcher on CIHI's highest-priority program across two senior-role tenures; 12+ studies delivered to date.",
                   'Insights have directly informed design decisions, feature prioritization processes, and technical requirements definitions for the program.',
                   'Mentor a junior researcher on study design, analysis, research strategy, and collaborator communication.',

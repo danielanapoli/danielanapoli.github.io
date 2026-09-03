@@ -60,14 +60,37 @@ function Home() {
                 <Card className='border-0 bg-light p-2'>
                   <CardBody>
                     <p className='text-uppercase small fw-bold text-primary mb-2'>Featured</p>
+                    <h2>Designing a research repository people will actually use</h2>
+                    <p>Directors and managers had questions user research could answer, but no idea where to find them. The obvious fix was findability. The real challenge was facilitating the confidence people needed to actually use the repository.</p>
+                    <Row className='my-3'>
+                      <Col xs={12} sm={6} md={4}>
+                        <p className='display-5 fw-bold mb-0'>36</p>
+                        <p className='text-muted small'>staff listening sessions</p>
+                      </Col>
+                      <Col xs={12} sm={6} md={5}>
+                        <p className='display-5 fw-bold mb-0'>vibe coded</p>
+                        <p className='text-muted small'>prototype to share user needs</p>
+                      </Col>
+                    </Row>
+                    <a href='/user-research/automation/case-study' className='stretched-link'>Read the research repository case study</a>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+
+            {/* Discovery + Surveys + Benchmarking case studies */}
+            <Row className='mb-3'>
+              <Col xs={12} md={4} className='mb-4 mb-md-0'>
+                <Card className='p-2 h-100'>
+                  <CardBody>
                     <h2>Benchmarking redesigns</h2>
                     <p>Large-scale redesign investments need to be justified. Did it actually get better for users?</p>
                     <Row className='my-3'>
-                      <Col xs={12} sm={6} md={4}>
+                      <Col xs={6}>
                         <p className='display-5 fw-bold mb-0'>20%</p>
                         <p className='text-muted small'>lift in overall task success</p>
                       </Col>
-                      <Col xs={12} sm={6} md={5}>
+                      <Col xs={6}>
                         <p className='display-5 fw-bold mb-0'>395%</p>
                         <p className='text-muted small'>improvement on tasks about how CIHI calculates its metrics</p>
                       </Col>
@@ -76,31 +99,28 @@ function Home() {
                   </CardBody>
                 </Card>
               </Col>
-            </Row>
-
-            {/* Discovery + Surveys case studies */}
-            <Row className='mb-3'>
-              <Col xs={12} md={6} className='mb-4 mb-md-0'>
+              <Col xs={12} md={4} className='mb-4 mb-md-0'>
+                <Card className='p-2 h-100'>
+                  <CardBody>
+                    <h2>Transforming data into insight</h2>
+                    <p>
+                      My doctoral work included a national survey on remote healthcare technology. We surfaced a clear trust gap by age.
+                      An end-to-end process made every cleaning and validation decision traceable, so teams could stand behind the findings with confidence.
+                    </p>
+                    <a href='/user-research/surveys/case-study' className='stretched-link'>Read about my data processing work</a>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col xs={12} md={4}>
                 <Card className='p-2 h-100'>
                   <CardBody>
                     <h2>Easy to trust, hard to use</h2>
                     <p>
                       CIHI set out to modernize their products. They needed a research-grounded strategy for what came next, built from actual user needs.
                       Research surfaced a clear message: Existing usability problems don't land on everyone equally.
-                      Future designs focused on the teams who'd already found workarounds meant leaving everyone else behind.
+                      If future designs focused on the teams who'd already found workarounds that would leave everyone else behind.
                     </p>
                     <a href='/user-research/discovery/case-study' className='stretched-link'>Read about my discovery work</a>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col xs={12} md={6}>
-                <Card className='p-2 h-100'>
-                  <CardBody>
-                    <h2>Transforming data into insight</h2>
-                    <p>
-                      My doctoral work included a national survey on remote healthcare technology. We surfaced a clear trust gap by age. Our end-to-end process for making every cleaning and validation decision traceable is what lets the team stand behind the findings and later incorporate them into a design toolkit.
-                    </p>
-                    <a href='/user-research/surveys/case-study' className='stretched-link'>Read about my data processing work</a>
                   </CardBody>
                 </Card>
               </Col>

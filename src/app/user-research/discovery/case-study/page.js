@@ -14,45 +14,51 @@ function DiscoveryCaseStudy() {
           <CustomBreadcrumb />
           <Row fluid='true' className="mb-3">
             <Col className='fs-5'>
-              <h1 className='display-4 fw-bold'>What users need from a product that doesn't exist yet</h1>
+              <h1 className='display-4 fw-bold'>What users need from a product that doesn't exist</h1>
               <p className='text-muted'>Canadian Institute for Health Information, 2026</p>
               <p className='fs-5'>
-                When CIHI decided to retire its legacy data-sharing product, the team needed a grounded strategy for what came next. The goal was clear: understand what users actually need, not guess what to build.
+                When CIHI decided to retire its legacy data-sharing product, the team needed a grounded strategy in what users actually need. The current product distributes data in files to analysts and researchers across the country. The data helps users plan and deliver care.
               </p>
               <p className='fs-5'>
-                The legacy product distributes healthcare data files to analysts and researchers across Canada who build them into decisions about how to plan and deliver care. The replacement would have to serve both people and automated systems, through machine-readable connections that other software can pull from directly. The question was how to do both well without losing the people who depend on the current product. That decision sets the terms for how users across the country get their data for years, so building on assumptions was a real risk.
+                Moving forward, the replacement would have to serve both people and automated systems. The data had to be machine-readable so that other software (and AI) could read it. Our challenge was determining how to design for the sometimes contradictory needs of humans and machines.
               </p>
 
               <h2>How I set it up</h2>
               <p>
-                I led three connected studies to answer that question. A Canada-wide survey (n=86) mapped what users were doing with the data and where the experience broke down. Semi-structured interviews (n=20) added texture and surfaced the specifics of real workflows. A concept exploration (n=8) put early redesign directions in front of users to check whether the proposed solutions addressed what the research had uncovered.
+                I led three connected studies to explore this challenge. A Canada-wide survey (n=86) mapped what users were doing with the data and where the experience broke down. Semi-structured interviews (n=20) added context and surfaced real workflows. A concept exploration (n=8) put early directions in front of users to see whether the proposed solutions could address the challenges our research had uncovered.
               </p>
               <p>
-                The catch was that the replacement didn't exist yet. The point was not to test a product, only potential directions. So the concept exploration had to do double duty, confirm the problem was real and pressure-test the response at the same time.
+                In the final phase, the point was not to test a product; instead, we simultaneously confirmed the problem was real and pressure-tested our envisioned directions.
               </p>
 
               <h2>What I found</h2>
               <p>
-                Users trust CIHI's data and build it into decisions that carry real consequences in health care. That trust is foundational. But the research surfaced a gap. The product carried rich context that made the data trustworthy, and that same packaging made the data cognitively demanding to work with. The design challenge wasn't stripping the context out. It was keeping the depth and making it usable.
+                Users trust CIHI's data and build it into their decisions. The actions of CIHI's audience have real consequences in health care. Trust is foundational.
               </p>
               <p>
-                The usability problems don't affect everyone equally. Lean teams with tight budgets struggle hardest when a product gets in their way, for example, the analysts in northern territories working without much slack. Well-resourced teams have room to absorb friction, but even they feel it when their own workflows outgrow what the product supports without manual tweaks.
+                But our research surfaced a gap. While the legacy product carries rich context to make data trustworthy, it also makes the data cognitively demanding to work with. Then, a critical step for our team was to strike a balance between contextualized depth and easy use.
               </p>
               <p>
-                Though the concept exploration was small, it was enough to confirm that our design direction pointed to a real potential to serve a variety of unmet needs.
+                Also, the findings shown usability problems don't affect everyone equally. Lean teams with tight budgets struggle hardest when a product gets in their way. While well-resourced teams have room to absorb friction. However, even these teams felt the friction of usability issues when their own workflows outgrew what the product supported without manual tweaks.
               </p>
 
               <h2>Where it's going</h2>
               <p>
-                Currently, the findings are shaping the technical requirements for what the team builds. The real risk from here is treating modernization as the only goal. The priority I hold is that the least-resourced teams keep getting what they need from the product as it modernizes, not as an afterthought once the machine-readable pieces land.
+                Currently, the Discovery findings are shaping the technical requirements and product direction. The real risk from here is treating modernization as the only goal.
+              </p>
+              <p>
+                My top priority is to ensure the least-resourced teams get what they need from the product as it changes and avoid these groups from becoming an afterthought once the dust from futuristic technology settles.
               </p>
 
               <h2>What I carry forward</h2>
               <p>
-                The value of this research is in its timing. It set direction and named risk while the team was still defining the vision, before either one hardened into what the team built. The pushback that moved the room wasn't a principle about equity. It was specific users and the specific ways the current product fails them, which is a lot harder to wave off.
+                The value of this research is in its timing.
               </p>
               <p>
-                As a product modernizes, the teams with the least time and money are the easiest to leave out. They were the voice most at risk of going missing, and keeping them in the requirements is what the research was for.
+                Studies like these set direction and name risk while the team was still defining the vision. It enables specific, data-driven pushback on ways a future product can fail users. It is especially critical to support advocacy for the users who are at most risk of being left unheard.
+              </p>
+              <p>
+                At this stage, findings like these are a lot harder to wave off and a lot easier to integrate.
               </p>
             </Col>
           </Row>

@@ -46,7 +46,7 @@ function About() {
               </p>
               <p className='fs-5'>
                 If any of this resonates, I&rsquo;d be{' '}
-                <a href='/contact'>glad to hear from you</a>.
+                <a href='mailto:hello@danielanapoli.com'>glad to hear from you</a>.
               </p>
             </Col>
             <Col xs={12} md={4} className='text-center mt-4 mt-md-0'>

@@ -22,7 +22,7 @@ function Industry() {
             <Col className='prose-content'>
               <h1 className='display-4 fw-bold'>User Research</h1>
               <p className='fs-5'>
-                High-impact research that I offer to product teams.
+                High-impact research that I contribute to product teams.
                 More details about my work experience are available on my <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a>.
                 You can also explore my <a href='/academic' rel='noopener noreferrer' title="The academic research portfolio page of Daniela's website.">academic projects</a>.
                 Feel free to connect if you'd like to talk more about anything listed here!

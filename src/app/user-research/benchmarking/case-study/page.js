@@ -28,13 +28,13 @@ function BenchmarkingCaseStudy() {
 
               <h2>How I set it up</h2>
               <p>
-                In 2021, I ran foundational discovery research to understand key usability obstacles impacting users' experiences of the legacy product. 15 user interviews and 10 stakeholder interviews shaped the initial target model — the design vision for the redesign. A key insight was that future tools needed to better support the contextual information describing the data displayed in the tool: "How is it calculated? How are variables defined?"
+                In 2022, I conducted foundational discovery research to understand key usability obstacles affecting users' experiences with the legacy product. 15 user interviews and 10 stakeholder interviews shaped the initial target model and the design vision for the redesign. A key insight was that future tools needed to better support the contextual information describing the data displayed in the tool: "How is it calculated? How are variables defined?"
               </p>
               <p>
-                Years of work went into the redesign. Now, I needed to measure whether the implementation matched that vision. I ran two parallel unmoderated usability tests in Loop11: one for the legacy product, one for the redesign. Each had an identical protocol. 8 tasks built around the validated user needs from Discovery. I measured and compared task success, abandonment, time on task, and ease ratings.
+                Years of work went into the redesign. Now, CIHI needed to assess whether the implementation improved users' experiences. I ran two parallel unmoderated usability tests in Loop11: one for the legacy product, one for the redesign. Each had an identical protocol. 8 tasks built around the validated user needs from Discovery. I measured and compared task success, abandonment, time on task, and ease ratings.
               </p>
               <p>
-                The catch: CIHI had already retired the legacy product, so UAT was the only option. The study required us to recruit internal staff with data analyst expertise as proxy users. Despite not having a 1-to-1 comparison in end-users' mental models, the findings could point to universal issues that would be issues for anyone, such as hidden information and restrictive task flows.
+                The catch: CIHI had already retired the legacy product, so UAT was the only option. The study required us to recruit internal staff with data analyst expertise as proxy users. Staff don't have a 1-to-1 comparison in end-users' mental models; yet, findings would still point to universal issues that would be issues for anyone, such as hidden information and restrictive task flows.
               </p>
 
               <h2>What I found</h2>
@@ -42,26 +42,29 @@ function BenchmarkingCaseStudy() {
                 The redesign showed that overall task success increased by 20%. On methodology-finding tasks, it lifted 395%.
               </p>
               <p>
-                Originally, the methodology had lived in a secondary drawer in the legacy product. Users missed it constantly. The redesign gave it dedicated, visible space — this was an integral structural change leading to massive success.
+                Originally, the methodology had lived in a hidden drawer in the legacy product. Users missed it constantly. The redesign gave it dedicated, visible space, and that structural change led to massive success.
               </p>
 
               <h2>What changed</h2>
               <p>
-                I presented findings several times to various partners in the redesign team, product owners, and leadership.
+                I presented findings several times to various partners across the organization, including the redesign team, product owners, and leadership.
               </p>
               <p>
-                The overall improvements were appreciated. They validated the hard work of dedicated initiatives.
+                The overall improvements were appreciated because they validated the hard work of dedicated initiatives.
               </p>
               <p>
-                Yet, the study also found some tasks scored lower. The problems were tied to known issues that needed to be deprioritized in the backlog. So, poor scores were anticipated, but the study quantified their impact on real users and ultimately moved them higher on the roadmap.
+                Yet, the study also found gaps in the current design's usability; some tasks scored lower in the redesign. The underlying problems were tied to known issues that had to be deprioritized in the backlog. While some poor scores were anticipated, the study quantified their impact on real users; ultimately, the study moved fixes higher on the roadmap.
               </p>
 
               <h2>What I carry forward</h2>
               <p>
-                If the old system is gone, sometimes modernization work means you can't test against production. You work with what you have: UAT environments and proxy users. The constraint becomes a research design point in a tight protocol given what's actually available. You name the boundaries and frame findings so the team can be confident to act on them immediately.
+                I learned two lessons from this work.
               </p>
               <p>
-                This work shapes how I think about research and strategy. Planning for benchmarking doesn't always happen upfront. This constrains the team's ability to define success metrics early, so future research and strategy can align from the start. That's the difference between research that informs products and research that influences products.
+                First, when evaluating modernization work, an old system may be gone; you can't always test against production. But this doesn't have to be a blocker. With UAT environments and proxy users, these constraints become a study design point in a careful protocol based on what's actually feasible. When taking this approach, it's critical to name boundaries and frame findings so that teams can still be confident in acting on insights immediately.
+              </p>
+              <p>
+                Second, planning for benchmarking takes foresight. When long-term thinking doesn't happen upfront, it can constrain the team's ability to define success metrics early. Without this foundation, future research and strategy can't align effectively. By advocating for forward-thinking approaches, research can influence product success, not just inform it.
               </p>
             </Col>
           </Row>

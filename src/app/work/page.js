@@ -17,14 +17,14 @@ const industryGroups = [
     section: 'Discovery & strategy',
     entries: [
       {
-        title: 'Requirements Discovery',
+        title: 'Requirements discovery',
         badge: 'Qualitative',
         description: 'Exploring user needs and pain points to guide future design work.',
         methods: 'Interviews, journey mapping, focus groups, design studio workshops',
         link: '/user-research/discovery',
       },
       {
-        title: 'Large-scale Surveys',
+        title: 'Large-scale surveys',
         badge: 'Quantitative',
         description: 'Driving product decisions with data from large-scale surveys of needs and attitudes.',
         methods: 'SUS, SUPR-Q, UX-Lite, NPS, descriptive statistics, chi-square',
@@ -36,21 +36,21 @@ const industryGroups = [
     section: 'Evaluation & testing',
     entries: [
       {
-        title: 'Usability Benchmarking',
+        title: 'Usability benchmarking',
         badge: 'Quantitative',
         description: 'How iterative design updates influence usability over time. On cihi.ca: +20% task success, +395% on methodology-finding tasks.',
         methods: 'Task-based testing, metadata analysis, t-tests, ANOVA, thematic analysis',
         link: '/user-research/benchmarking',
       },
       {
-        title: 'Concept Testing',
+        title: 'Concept testing',
         badge: 'Qualitative',
         description: 'De-risking design decisions by validating needs with wireframes and prototypes.',
         methods: 'First-impression capture, conceptual walkthroughs, laddering, comparative evaluations',
         link: '/user-research/concept-testing',
       },
       {
-        title: 'Usability Testing',
+        title: 'Usability testing',
         badge: 'Qualitative',
         description: 'Uncovering pain points and improvement opportunities through product assessments.',
         methods: 'Think-aloud, task observation, post-task questionnaires, affinity mapping, severity ranking',
@@ -62,14 +62,14 @@ const industryGroups = [
     section: 'Build & service design',
     entries: [
       {
-        title: 'Persona Integration',
+        title: 'Persona integration',
         badge: 'Technical',
         description: 'An automation module that processes user data and metadata to group insights and inform personas.',
         methods: 'Python, data scraping, standardization, natural language processing',
         link: '/user-research/automation',
       },
       {
-        title: 'Service Design Case Study',
+        title: 'Service design case study',
         badge: 'Qualitative',
         description: 'Investigating design, dev, and PM workflows to recommend cross-functional improvements.',
         methods: 'Collaborator interviews, scenario mapping, dot-voting, affinity diagramming, service blueprinting',
@@ -81,17 +81,17 @@ const industryGroups = [
 
 const academicEntries = [
   {
-    title: 'Paper Publications',
+    title: 'Paper publications',
     description: 'Peer-reviewed contributions on human-centered design and usable security.',
     link: '/academic/publications',
   },
   {
-    title: 'Talks & Workshops',
+    title: 'Talks & workshops',
     description: 'Invited talks and presentations at HCI conferences and workshops.',
     link: '/academic/talks',
   },
   {
-    title: 'Remote Healthcare Toolkit',
+    title: 'Remote healthcare toolkit',
     description: 'A design toolkit guiding remote healthcare technology for older adults.',
     link: '/academic/toolkit',
   },
@@ -104,9 +104,9 @@ function Work() {
         <Container fluid='md'>
           <Row className='mb-4'>
             <Col>
-              <h1 className='display-4 fw-bold'>Work in User Research</h1>
+              <h1 className='display-4 fw-bold'>Work in user research</h1>
               <p className='fs-5'>
-                High-impact research that I offer to product teams.
+                High-impact research I contribute to product development teams.
                 More details about my work experience are available on my <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a>.
                 You can also explore my <a href='/academic' rel='noopener noreferrer' title="The academic research portfolio page of Daniela's website.">academic projects</a>.
                 Feel free to connect if you'd like to talk more about anything listed here!
