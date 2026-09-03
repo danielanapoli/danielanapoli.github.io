@@ -31,26 +31,30 @@ function Resume() {
           <Row>
             <Col className='prose-content-narrow'>
 
-              <h2 className='underlined-heading'>Highlight Summary</h2>
+              <h2 className='underlined-heading'>Professional Summary</h2>
               <div className='mb-4'>
                 <ul>
-                  <li>User researcher with a PhD in HCI and nearly a decade of mixed-methods research experience across industry UX and academic HCI.</li>
-                  <li>Pairs qualitative depth (discovery, contextual inquiry, journey mapping) with rigorous quantitative benchmarking (SUS, SUPR-Q, inferential statistics).</li>
-                  <li>Most recently served as embedded researcher on CIHI's highest-priority program; 12+ studies delivered across two senior-role tenures inform design, feature prioritization, and technical requirements.</li>
-                  <li>Domain experience in healthcare data, enterprise software, aviation training, accessibility, usable privacy.</li>
+                  <li>User researcher who drives mixed-methods studies end to end, synthesizes complex qualitative and quantitative data, and turns it into decisions senior leaders act on. Integrates AI to accelerate analysis while keeping interpretation and validity under researcher judgment. Latest benchmarking study showed a 20% lift in task success and 395% improvement on a key findability metric.</li>
+                  <li>Sets research strategy and builds scalable systems, including reusable methods (question banks, collaborator FAQ guides) and an AI-enabled research repository, so cross-functional product, design, and engineering teams leverage user insight at scale. Mentors junior researchers and sets research standards.</li>
+                  <li>10 years of user research across industry UX and academic HCI, including a PhD in Computer Science examining trust and adoption of emerging technology, and hands-on delivery inside Agile product teams. Writes publicly on where researcher judgment can't be automated.</li>
                 </ul>
               </div>
 
-              <h2 className='underlined-heading'>Research Methods & Tools</h2>
+              <h2 className='underlined-heading'>Skills</h2>
+              <div className='mb-4'>
+                <p>Design Research • Research Strategy • Generative and Evaluative Research • Qualitative and Quantitative Methodologies • Interview and Survey Design • Usability Testing and Prototype Evaluation • Heuristic Evaluation • Accessibility and Inclusive Design • Design Thinking • Agile Product Development • Stakeholder Engagement • Cross-Functional Collaboration • Research Mentorship • AI-Assisted Research</p>
+              </div>
+
+              <h2 className='underlined-heading'>Research Methods and Tools</h2>
               <div className='mb-4'>
                 <ul>
-                  <li><strong>Qualitative methods:</strong> Semi-structured interviews, contextual inquiry, journey mapping, concept testing, heuristic evaluations, think-aloud usability testing, affinity mapping, severity ranking, thematic analysis.</li>
-                  <li><strong>Quantitative methods:</strong> Unmoderated task-based testing, validated questionnaires (SUS, SUPR-Q, UX-Lite, NPS), descriptive & inferential statistics (t-tests, ANOVA, chi-square).</li>
-                  <li><strong>Research platforms:</strong> Optimal Workshop, Loop11, Questback.</li>
-                  <li><strong>Surveys:</strong> Qualtrics, SurveyMonkey, Google Forms, Microsoft Forms.</li>
-                  <li><strong>Analysis:</strong> Python, R, SPSS, NVivo, Excel.</li>
-                  <li><strong>Collaboration:</strong> Mural, Miro, Confluence, Figma.</li>
-                  <li><strong>Analytics:</strong> Hotjar, GA4.</li>
+                  <li><strong>Generative research:</strong> Semi-structured interviews, contextual inquiry, journey mapping, concept testing and concept evaluation, research protocol design (interview guides, observation grids, questionnaires).</li>
+                  <li><strong>Evaluative research:</strong> Heuristic evaluations, think-aloud usability testing, unmoderated task-based usability testing, longitudinal benchmarking studies.</li>
+                  <li><strong>Questionnaire and survey design:</strong> Survey design, statistical analysis of survey data, validated questionnaires (SUS, SUPR-Q, UX-Lite); Qualtrics, SurveyMonkey, Google Forms, Microsoft Forms.</li>
+                  <li><strong>Qualitative analysis:</strong> Thematic analysis, affinity mapping, severity ranking; NVivo.</li>
+                  <li><strong>Quantitative analysis:</strong> Descriptive and inferential statistics (t-tests, ANOVA, chi-square); Python, R, SPSS, Excel; Hotjar, GA4.</li>
+                  <li><strong>Research platforms:</strong> Optimal Workshop, Loop11, Questback, Qualtrics.</li>
+                  <li><strong>Stakeholder engagement and cross-functional collaboration:</strong> Design Thinking workshops, Mural, Miro, Confluence, Jira.</li>
                 </ul>
               </div>
 
@@ -62,11 +66,23 @@ function Resume() {
                 organization='Canadian Institute for Health Information'
                 location='Toronto, Ontario'
                 bullets={[
-                  'Lead 3 generative discovery studies (20+ user interviews, Canada-wide survey, concept testing) to guide modernization of legacy products serving clients across all 13 Canadian provinces and territories.',
-                  'Conducted several studies within a longitudinal findability benchmarking program (2021–2026); the 2026 study quantified a 20% overall lift in task success and a 395% improvement on methodology-finding tasks in a redesigned product vs. its legacy version.',
-                  "Serve as embedded researcher on CIHI's highest-priority program across two senior-role tenures; 12+ studies delivered to date.",
-                  'Insights have directly informed design decisions, feature prioritization processes, and technical requirements definitions for the program.',
-                  'Mentor a junior researcher on study design, analysis, research strategy, and collaborator communication.',
+                  "Design, run, and synthesize concurrent generative discovery (20+ interviews, Canada-wide survey) and evaluative longitudinal benchmarking for CIHI's highest-priority modernization program, embedded within Agile cross-functional product, design, and engineering teams building products for users across all Canadian provinces and territories.",
+                  'Benchmarking measures products before and after release; latest outcomes: 20% task success lift, 395% improvement on key findability metric.',
+                  'Analyze discovery interviews with AI in parallel with fieldwork, surfacing participant feedback to the team before sessions close while keeping interpretation and validity under researcher judgment. Lead prompt-writing workshops to build the team’s AI fluency.',
+                  'Anchor ambiguous project vision through storytelling and journey maps. Translate user needs into feature priorities, technical requirements, and success criteria, and present findings to senior leadership, including Branch Directors who use them to reprioritize development backlogs.',
+                  'Design and build an AI-enabled UX research repository, a scalable system that consolidates findings, reduces redundancy, and lets cross-functional teams leverage user insight at organizational scale.',
+                ]}
+              />
+
+              <ResumeEntry
+                title='Doctoral Researcher (Full-Time Focus)'
+                dateRange='Apr 2023 – Sep 2025'
+                organization='Carleton University'
+                location='Ottawa, Ontario'
+                bullets={[
+                  'Computer Science PhD Researcher focused on tailoring remote healthcare technology to the needs and privacy expectations of older adults, examining how trust shapes adoption of emerging technology.',
+                  'Designed and executed qualitative interviews and a national survey (n=384) on data collection, data sharing preferences, and privacy concerns, and published two peer-reviewed papers at HCII 2025 on privacy and on AI in remote healthcare.',
+                  "Senior member and junior research mentor for Carleton's Human Oriented Research in Usable Security Laboratory.",
                 ]}
               />
 
@@ -76,9 +92,9 @@ function Resume() {
                 organization='Canadian Institute for Health Information'
                 location='Toronto, Ontario'
                 bullets={[
-                  'Designed and ran early studies in a longitudinal findability benchmarking program for a flagship KPI report, establishing the baseline and methodology that anchored multi-year measurement.',
-                  "Led requirements discovery shaping the program's initial target model (future vision and modernization strategy): 15 user interviews and 10 collaborator interviews.",
-                  'Recommendations were implemented in the retirement of legacy offerings and the release of new products designed around the user needs surfaced in discovery.',
+                  "Led generative requirements discovery shaping the program's target model (future vision and modernization strategy) through 15 user interviews and 10 stakeholder interviews.",
+                  'Designed and executed evaluative studies in a longitudinal findability benchmarking program, establishing the baseline and methodology that anchored a multi-year research roadmap.',
+                  'Partnered cross-functionally with product, design, and engineering teams and presented recommendations to leadership; findings implemented in retirement of legacy offerings and release of new products designed around user needs.',
                 ]}
                 featuredProject={{
                   href: '/user-research/discovery',
@@ -93,9 +109,8 @@ function Resume() {
                 organization='Canadian Institute for Health Information'
                 location='Ottawa, Ontario'
                 bullets={[
-                  'Facilitated 2–3 cross-departmental workshops focused on refining user personas.',
-                  'Contributed to ~10 user interviews to validate and develop user personas.',
-                  "Developed Python modules to automate persona mapping from research findings and website metadata — replaced a manual process that previously took the team a week or more per cycle; became part of the team's ongoing persona refresh workflow.",
+                  "Developed Python modules to automate persona mapping from research findings and website metadata, replacing a manual process that took a week per cycle; automation became part of the team's ongoing persona refresh workflow. Identified gap in how research translates to decisions and built infrastructure to solve it.",
+                  'Facilitated 2 cross-departmental workshops and 10 user interviews to refine and validate user personas.',
                 ]}
                 featuredProject={{
                   href: '/user-research/automation',
@@ -110,9 +125,9 @@ function Resume() {
                 organization='IBM'
                 location='Ottawa, Ontario'
                 bullets={[
-                  'Conducted and analyzed ~15 user interviews across Design, Development, and Product Management to map workflows, identify organizational pain points, and uncover collaboration opportunities.',
-                  'Designed and facilitated a cross-department design-thinking workshop (~20 participants) using as-is scenario mapping, value proposition analysis, and need-statement techniques to ideate solutions for workflow challenges.',
-                  'Packaged and presented key findings to internal collaborators and at an internship-related conference.',
+                  'Conducted and analyzed 15 user interviews across Design, Development, and Product Management to map workflows, identify organizational pain points, and uncover collaboration opportunities.',
+                  'Designed and facilitated a cross-department design-thinking workshop (20 participants) using as-is scenario mapping, value proposition analysis, and need-statement techniques to ideate solutions for workflow challenges.',
+                  'Packaged and presented key findings to internal stakeholders and at an internship-related conference.',
                 ]}
                 featuredProject={{
                   href: '/user-research/workflows',
@@ -130,7 +145,7 @@ function Resume() {
                 bullets={[
                   "Collaborated with developers on a proof-of-concept for a cost-effective virtual-reality aviation training system; conducted usability studies (n=10) assessing impact on users' learning goals and situational awareness.",
                   'Co-designed and co-facilitated a director-level workshop using emergency-scenario simulations; captured findings and synthesized them into a recommendations report informing formal organizational response plans.',
-                  'Systematically reviewed academic literature on AR in military training to support an R&D proposal.',
+                  'Systematically reviewed academic literature on AR in military training to support R&D proposals.',
                 ]}
               />
 
