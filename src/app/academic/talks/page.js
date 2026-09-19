@@ -18,7 +18,7 @@ function AcademicTalks() {
     <div className="AcademicTalks">
       <section id="content">
         <Container fluid='md'>
-          <CustomBreadcrumb/>
+          {/* <CustomBreadcrumb/> */}
           <h1 className="display-4 fw-bold mb-4">Talks and Workshops</h1>
 
           <div className='border rounded p-4 mb-4'>

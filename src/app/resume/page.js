@@ -98,7 +98,7 @@ function Resume() {
                 ]}
                 featuredProject={{
                   href: '/user-research/discovery',
-                  label: 'Requirements Discovery',
+                  label: 'Requirements discovery',
                   linkTitle: "Link to a project page on Daniela's website. Opens in a new tab.",
                 }}
               />

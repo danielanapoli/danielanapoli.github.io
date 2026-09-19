@@ -6,8 +6,8 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import React, { useState } from "react";
 
-export function Accordion({defaultActiveKeys, allKeys, children}) {
-    const [activeKeys, setActiveKeys] = useState(defaultActiveKeys);
+export function Accordion({allKeys, children}) {
+    const [activeKeys, setActiveKeys] = useState(allKeys.slice(0, 1));
 
     const handleExpandAll = () => {
       setActiveKeys(allKeys);

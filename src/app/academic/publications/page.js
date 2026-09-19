@@ -18,7 +18,7 @@ function AcademicPublications() {
     <div className="AcademicPublications">
       <section id="content">
         <Container fluid='md'>
-          <CustomBreadcrumb/>
+          {/* <CustomBreadcrumb/> */}
           <h1 className="display-4 fw-bold mb-4">Paper Publications</h1>
 
           {/* 2025 */}

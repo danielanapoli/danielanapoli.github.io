@@ -12,7 +12,7 @@ function IndustryAutomation() {
     <div className="IndustryAutomation">
       <section id="content">
         <Container fluid="md">
-          <CustomBreadcrumb/>
+          {/* <CustomBreadcrumb/> */}
           <Row fluid='true' className="mb-3">
             <Col className='prose-content'>
               <h1 className='display-4 fw-bold'>Persona Integration</h1>
@@ -21,7 +21,7 @@ function IndustryAutomation() {
           </Row>
           <Row>
             <Col className='prose-content'>
-              <Accordion defaultActiveKeys={["0", "1", "2", "3"]} allKeys={["0", "1", "2", "3"]}>
+              <Accordion allKeys={["0", "1", "2", "3"]}>
                 <AccordionItem index={0} header={"What I deliver"}>
                   <p>Integrating persona frameworks to translate user insights into audience segmentation protocols other departments can adopt and act on. That includes the technical work of building those systems, not just recommending them.</p>
                   <ul id="accordion-content">

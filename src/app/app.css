@@ -142,3 +142,12 @@ html a {
   font-size: 0.85rem;
   color: #6c757d;
 }
+
+.diamond-card {
+  border: 0;
+  border-top: 4px solid var(--stage-color, #0d6efd);
+}
+
+.diamond-card .stage-label {
+  color: var(--stage-label-color, var(--stage-color, #0d6efd));
+}

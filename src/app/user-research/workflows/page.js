@@ -13,7 +13,7 @@ function IndustryWorkflows() {
     <div className="IndustryWorkflows">
       <section id="content">
         <Container fluid="md">
-          <CustomBreadcrumb/>
+          {/* <CustomBreadcrumb/> */}
           <Row fluid='true' className="mb-3">
             <Col className='prose-content'>
               <h1 className='display-4 fw-bold'>Service Design Case Study: Improving Interdisciplinary Workflows</h1>
@@ -22,7 +22,7 @@ function IndustryWorkflows() {
           </Row>
           <Row className='mb-4'>
             <Col className='prose-content'>
-              <Accordion defaultActiveKeys={["0", "1"]} allKeys={["0", "1"]}>
+              <Accordion allKeys={["0", "1"]}>
                 <AccordionItem index={0} header={"Process"}>
                   <h3>Explore cross-departmental workflows</h3>
                   <p>Before proposing any changes, I needed to understand how each team actually worked. As-Is Scenario Mapping was a deliberate choice to surface the current state before introducing any new direction.</p>

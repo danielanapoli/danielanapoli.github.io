@@ -3,31 +3,81 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import CardBody from 'react-bootstrap/CardBody';
+import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert';
 import AlertHeading from 'react-bootstrap/AlertHeading';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
-import CustomCard from '@/components/CustomCard/CustomCard';
 
 function IndustryRequirements() {
   return (
     <div className="IndustryRequirements">
       <section id="content">
           <Container fluid="md">
-          <CustomBreadcrumb/>
+          {/* <CustomBreadcrumb/> */}
             <Row className="mb-3">
               <Col className='prose-content'>
-                <h1 className='display-4 fw-bold'>Requirements Discovery</h1>
+                <h1 className='display-4 fw-bold'>Requirements discovery</h1>
                 <p className='fs-5'>
                   Early product decisions made without a clear picture of the problem space are expensive to undo. I help teams build that picture before the direction is set.
                 </p>
               </Col>
             </Row>
             <Row>
-              <Col md={8} className='prose-content'>
-                <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
-                  <AccordionItem index={0} header={"What I deliver"}>
+              <Col md={8} className='mb-4 mb-md-0'>
+                <Card bg='light' className='border-0'>
+                  <CardBody className='p-4'>
+                    <p className='text-uppercase small fw-bold text-muted mb-2'>Case study</p>
+                    <h2 className='mb-3'>Informing strategy with user needs</h2>
+                    <p>CIHI was retiring a long-standing public health data product. They needed a user-centered strategy for what came next. Three connected generative studies surfaced the core tension: users trust the data deeply, but the current packaging made it close to impossible to find and extract what they needed quickly.</p>
+                    <hr/>
+                    <Row className='mb-4'>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Position</p>
+                        <p className='mb-0'>Senior UX Researcher, CIHI</p>
+                      </Col>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Approach</p>
+                        <p className='mb-0'>Three connected generative studies</p>
+                      </Col>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Output</p>
+                        <p className='mb-0'>User-centered product strategy</p>
+                      </Col>
+                    </Row>
+                    <Button as='a' href='/user-research/discovery/case-study' variant='primary'>Read more</Button>
+                  </CardBody>
+                </Card>
+                <Card bg='light' className='border-0 mt-4'>
+                  <CardBody className='p-4'>
+                    <p className='text-uppercase small fw-bold text-muted mb-2'>Case study</p>
+                    <h2 className='mb-3'>Backing qualitative findings with survey data</h2>
+                    <p>Interviews can surface the right themes, but they can't tell a team how widely those themes hold. A large-scale survey adds that scope, giving teams the confidence to commit to a direction during discovery. This case study walks through running that kind of survey research end-to-end: designing the questions, collecting the data, building the ETL processes to clean and merge it, and running the statistical analyses that turned it into insight.</p>
+                    <hr/>
+                    <Row className='mb-4'>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Position</p>
+                        <p className='mb-0'>Doctoral researcher, Carleton University</p>
+                      </Col>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Approach</p>
+                        <p className='mb-0'>End-to-end survey design, ETL pipeline, statistical analysis</p>
+                      </Col>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Output</p>
+                        <p className='mb-0'>Validated, actionable insights at scale</p>
+                      </Col>
+                    </Row>
+                    <Button as='a' href='/user-research/surveys/case-study' variant='primary'>Read more</Button>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md={4} className='prose-content'>
+                <Accordion allKeys={["0", "1", "2"]}>
+                  <AccordionItem index={0} header={"What I usually deliver"}>
                     <p>Discovery research that informs product strategy and grounds teams in what users actually need. That includes translating insights into design decisions and practical requirements that technical teams can act on.</p>
                     <ul id="accordion-content">
                       <li>In-depth interviews and contextual inquiries</li>
@@ -76,15 +126,6 @@ function IndustryRequirements() {
                     <p className="mt-3">Once direction is set, <a href="/user-research/usability-testing">usability testing</a> validates the execution.</p>
                   </AccordionItem>
                 </Accordion>
-              </Col>
-              <Col md={4} className='mt-3 align-self-start'>
-                <CustomCard
-                  cardImage='/img/project.webp'
-                  cardTitle='Informing strategy with user needs'
-                  cardText='CIHI was retiring a long-standing public health data product. They needed a user-centered strategy for what came next. Three connected generative studies surfaced the core tension: users trust the data deeply, but the current packaging made it close to impossible to find and extract what they needed quickly.'
-                  cardLink='/user-research/discovery/case-study'
-                  cardLinkText='Read the case study'
-                />
               </Col>
             </Row>
           </Container>

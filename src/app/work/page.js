@@ -1,9 +1,9 @@
 export const metadata = {
-  title: 'Work',
+  title: 'Research',
   description: 'UX research for product teams, organized by stage of the process — discovery, evaluation, and build. With a decade of academic work on accessibility and usable security.',
   alternates: { canonical: '/work' },
   openGraph: {
-    title: 'Work | Daniela Napoli, PhD',
+    title: 'Research | Daniela Napoli, PhD',
     description: 'UX research for product teams, organized by stage of the process — discovery, evaluation, and build. With a decade of academic work on accessibility and usable security.',
   },
 };
@@ -104,7 +104,7 @@ function Work() {
         <Container fluid='md'>
           <Row className='mb-4'>
             <Col>
-              <h1 className='display-4 fw-bold'>Work in user research</h1>
+              <h1 className='display-4 fw-bold'>Research experience</h1>
               <p className='fs-5'>
                 High-impact research I contribute to product development teams.
                 More details about my work experience are available on my <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a>.

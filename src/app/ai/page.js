@@ -20,12 +20,7 @@ function HowIUseAI() {
 
           {/* Hero */}
           <Row className='mb-4'>
-            <Col>
               <h1 className='display-4 fw-bold'>AI is part of my practice.<br />Not just a topic I research.</h1>
-              <p className='fs-4 mt-3'>
-                I shape corporate products to be AI-friendly. I build tools to accelerate UX research. And I use it daily to sharpen how I understand users&rsquo; needs in AI.
-              </p>
-            </Col>
           </Row>
 
           {/* Stats 
@@ -53,8 +48,8 @@ function HowIUseAI() {
           <Row className='mb-5 g-4'>
             <Col md={6}>
               <h3>The challenge</h3>
-              <p>AI makes researchers nervous; the concern is legitimate. Not only can AI mislead, but it also makes it easier to get the answer we&rsquo;re looking for rather than the one we actually need.</p>
-              <p>Knowing how to use AI responsibly when conducting research is a skill. But, knowing when to step away from it entirely is the more important one.</p>
+              <p>AI makes researchers nervous; the concern is legitimate. Not only can AI mislead, but it also makes it easier to get the answer we're looking for rather than the one we actually need.
+              Knowing how to use AI responsibly when conducting research is a skill. But, knowing when to step away from it entirely is the more important one.</p>
             </Col>
             <Col md={6}>
               <h3>My approach</h3>
@@ -62,6 +57,7 @@ function HowIUseAI() {
                 <li>Ground my knowledge in what LLMs actually do and don't do</li>
                 <li>Create my own AI tools to learn where they fail</li>
                 <li>Experiment with AI to strengthen my understanding</li>
+                <li>Share back my ideas and lessons learned with peers</li>
               </ul>
             </Col>
           </Row>
@@ -97,6 +93,7 @@ function HowIUseAI() {
           </div>
 
           {/* Case study: Persona Automation */}
+          {/*
           <Row className='mb-5 g-4 position-relative'>
             <Col md={4}>
               <h3>Persona automation</h3>
@@ -119,8 +116,8 @@ function HowIUseAI() {
               </p>
             </Col>
           </Row>
+          *}
 
-          {/* Case study: Requirements Discovery */}
           <Row className='mb-5 g-4 position-relative'>
             <Col md={4}>
               <h3>Requirements discovery</h3>
@@ -146,36 +143,27 @@ function HowIUseAI() {
               </p>
             </Col>
           </Row>
-
-          <hr className='mb-5' />
-
-          {/* What's next */}
-          <Row className='mb-3'>
-            <Col>
-              <h2>What&rsquo;s next</h2>
-              <p>
-                I&rsquo;m building toward work that sits at the intersection of three threads I&rsquo;ve been pulling at.
-              </p>
-            </Col>
-          </Row>
+          */}
 
           <Row className='mb-4 g-3'>
             <Col md={4}>
               <div className='border rounded p-3 h-100'>
                 <p className='text-uppercase small fw-bold text-muted mb-2'>Practice Development</p>
-                <p className='mb-0'>Designing a UX research repository that connects what researchers produce to what teams actually use when making product decisions. Currently in planning, with case studies to come.</p>
+                <p className='mb-0'>Designing and rapid prototyping an AI-enabled UX research repository that connects what researchers produce to what teams actually use when making product decisions.</p>
+                <p><a href='/ai/research-repository' className='stretched-link mt-2'>Read about the research repository</a></p>
+              </div>
+            </Col>
+            <Col md={4}>
+              <div className='border rounded p-3 h-100'>
+                <p className='text-uppercase small fw-bold text-muted mb-2'>AI Research</p>
+                <p className='mb-0'>Exploring how AI can be used to accelerate UX research, and how it can be used responsibly to avoid bias and exclusion.</p>
+                <p><a href='/blog' className='stretched-link mt-2'>Read more on my blog</a></p>
               </div>
             </Col>
             <Col md={4}>
               <div className='border rounded p-3 h-100'>
                 <p className='text-uppercase small fw-bold text-muted mb-2'>AI Fluency</p>
                 <p className='mb-0'>Deepening AI fluency through structured learning, including <a href='https://anthropic.skilljar.com/ai-fluency-framework-foundations' target='_blank' rel='noopener noreferrer' title='Anthropic. Opens in a new tab.'>Anthropic&rsquo;s AI Fluency Framework</a>.</p>
-              </div>
-            </Col>
-            <Col md={4}>
-              <div className='border rounded p-3 h-100'>
-              <p className='text-uppercase small fw-bold text-muted mb-2'>Responsible AI</p>
-                <p className='mb-0'>Exploring how AI can build a stronger sense of duty to the people being researched, not just speed up research.</p>
               </div>
             </Col>
           </Row>

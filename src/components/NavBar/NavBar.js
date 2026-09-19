@@ -10,9 +10,8 @@ import NavbarToggle from 'react-bootstrap/NavbarToggle';
 import NavLink from 'react-bootstrap/NavLink';
 
 const navLinks = [
-  { href: '/work',    label: 'Work'    },
-  { href: '/blog',    label: 'Writing' },
   { href: '/about',   label: 'About'   },
+  { href: '/blog',    label: 'Blog'    },
   { href: '/resume',  label: 'Resume'  },
   { href: '/ai',      label: 'AI'      },
 ];

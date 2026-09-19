@@ -1,0 +1,110 @@
+export const metadata = {
+  title: 'User Research Services for Product Teams',
+  description: 'UX research for product teams: discovery, usability benchmarking, concept testing, and large-scale surveys. PhD researcher, Ontario.',
+  alternates: { canonical: '/user-research' },
+  openGraph: {
+    title: 'User Research Services for Product Teams | Daniela Napoli, PhD',
+    description: 'UX research for product teams: discovery, usability benchmarking, concept testing, and large-scale surveys. PhD researcher, Ontario.',
+  },
+};
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import CustomCard from '@/components/CustomCard/CustomCard';
+
+function Industry() {
+  return (
+    <div className='Industry'>
+      <section id='content'>
+        <Container fluid='md'>
+          <Row className="mb-3">
+            <Col className='prose-content'>
+              <h1 className='display-4 fw-bold'>User research</h1>
+              <p className='fs-5'>
+                High-impact research that I contribute to product teams.
+                More details about my work experience are available on my <a href='/resume' rel='noopener noreferrer' title="A link to Daniela's online resume.">resume</a>.
+                You can also explore my <a href='/academic' rel='noopener noreferrer' title="The academic research portfolio page of Daniela's website.">academic projects</a>.
+                Feel free to connect if you'd like to talk more about anything listed here!
+              </p>
+            </Col>
+          </Row>
+          <Row className='g-3'>
+            <Col xs={12} md={4}>
+              <CustomCard
+                cardImage='/img/statistics.webp'
+                cardTitle='Usability Benchmarking'
+                cardText='Assessing how iterative design updates influenced usability and SEO metrics over time.'
+                cardSubtitle='Quantitative methods:'
+                cardSubtext='Unmoderated task-based usability testing, metadata analysis, descriptive statistics, t-tests, ANOVA, chi-square tests, thematic analysis'
+                cardLink='/user-research/benchmarking'
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <CustomCard
+                cardImage='/img/project.webp'
+                cardTitle='Requirements Discovery'
+                cardText='Exploring user needs and pain points. Formulating actionable recommendations to guide the direction of future design work.'
+                cardSubtitle='Qualitative methods:'
+                cardSubtext='User interviews, collaborator interviews, journey mapping, cross-department focus groups, design studio workshops'
+                cardLink='/user-research/discovery'
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <CustomCard
+                cardImage='/img/pie-chart.webp'
+                cardTitle='Large-scale Surveys'
+                cardText='Driving product decisions with data from large-scale surveys of user needs and attitudes.'
+                cardSubtitle='Quantitative methods:'
+                cardSubtext='User surveys, SUS, SUPR-Q, UX-Lite, NPS, descriptive statistics, chi-square tests'
+                cardLink='/user-research/surveys'
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <CustomCard
+                cardImage='/img/website-template.webp'
+                cardTitle='Concept Testing'
+                cardText='De-risking design decisions by validating user needs with wireframes and prototypes.'
+                cardSubtitle='Qualitative methods:'
+                cardSubtext='First impression capturing, conceptual walkthroughs, laddering, comparative evaluations'
+                cardLink='/user-research/concept-testing'
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <CustomCard
+                cardImage='/img/satisfaction.webp'
+                cardTitle='Usability testing'
+                cardText='Uncovering user pain points and improvement opportunities through product assessments.'
+                cardSubtitle='Qualitative methods:'
+                cardSubtext='Think-aloud protocol, task completion observation, non-verbal cue observation, post-task questionnaires, affinity mapping, severity ranking'
+                cardLink='/user-research/usability-testing'
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <CustomCard
+                cardImage='/img/python.png'
+                cardTitle='Persona Integration'
+                cardText='Creating an automation module for processing user data and website metadata to thematically group insights and inform persona implementation.'
+                cardSubtitle='Technical skills:'
+                cardSubtext='Python programming, data scraping, data standardization, natural language processing'
+                cardLink='/user-research/automation'
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <CustomCard
+                cardImage='/img/team.png'
+                cardTitle='Service Design Case Study: Improving Interdisciplinary Workflows'
+                cardText='Investigating design, development, and product manager workflows to uncover challenges. Formulating recommendations for cross-functional improvement.'
+                cardSubtitle='Qualitative methods:'
+                cardSubtext='Collaborator interviews, as-is scenario mapping, dot-voting, affinity diagramming, service blueprinting'
+                cardLink='/user-research/workflows'
+              />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </div>
+  );
+}
+
+export default Industry;

@@ -12,7 +12,7 @@ function SurveysCaseStudy() {
     <div className="SurveysCaseStudy">
       <section id="content">
         <Container fluid="md">
-          <CustomBreadcrumb />
+          {/* <CustomBreadcrumb /> */}
           <Row fluid='true' className="mb-3">
             <Col className='fs-5'>
               <h1 className='display-4 fw-bold'>Creating an ETL pipeline to translate raw data into reliable insights</h1>

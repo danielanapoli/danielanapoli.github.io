@@ -11,7 +11,7 @@ function DiscoveryCaseStudy() {
     <div className="DiscoveryCaseStudy">
       <section id="content">
         <Container fluid="md">
-          <CustomBreadcrumb />
+          {/* <CustomBreadcrumb /> */}
           <Row fluid='true' className="mb-3">
             <Col className='fs-5'>
               <h1 className='display-4 fw-bold'>What users need from a product that doesn't exist</h1>

@@ -13,7 +13,7 @@ function Surveys() {
     <div className="Surveys">
       <section id="content">
         <Container fluid="md">
-          <CustomBreadcrumb/>
+          {/* <CustomBreadcrumb/> */}
           <Row fluid='true' className="mb-3">
             <Col className='prose-content'>
               <h1 className='display-4 fw-bold'>Large-scale Surveys</h1>
@@ -22,7 +22,7 @@ function Surveys() {
           </Row>
           <Row>
             <Col md={8} className='prose-content'>
-              <Accordion defaultActiveKeys={["0", "1", "2"]} allKeys={["0", "1", "2"]}>
+              <Accordion allKeys={["0", "1", "2"]}>
                 <AccordionItem index={0} header={"What I deliver"}>
                   <p>Large-scale surveys that give teams a quantitative foundation for confident decisions and sharper qualitative research.</p>
                   <ul id="accordion-content">

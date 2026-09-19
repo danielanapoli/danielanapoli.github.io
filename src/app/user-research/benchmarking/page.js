@@ -5,17 +5,19 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Table from 'react-bootstrap/Table';
+import Card from 'react-bootstrap/Card';
+import CardBody from 'react-bootstrap/CardBody';
+import Button from 'react-bootstrap/Button';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
-import CustomCard from '@/components/CustomCard/CustomCard';
 
 function PerformanceBenchmarking() {
   return (
     <div className="PerformanceBenchmarking">
       <section id="content">
         <Container fluid="md">
-          <CustomBreadcrumb/>
+          {/* <CustomBreadcrumb/> */}
             <Row fluid='true' className="mb-3">
               <Col className='prose-content'>
                 <h1 className='display-4 fw-bold'>Usability benchmarking</h1>
@@ -25,9 +27,34 @@ function PerformanceBenchmarking() {
                 </p>
               </Col>
             </Row>
-            <Row>
-              <Col md={8} className='prose-content'>
-                <Accordion defaultActiveKeys={["0", "1", "2", "3"]} allKeys={["0", "1", "2", "3"]}>
+            <Row className='align-items-start'>
+              <Col md={8} className='mb-4 mb-md-0'>
+                <Card bg='light' className='border-0'>
+                  <CardBody className='p-4'>
+                    <p className='text-uppercase small fw-bold text-muted mb-2'>Case study</p>
+                    <h2 className='mb-3'>Quantifying the impact of redesign</h2>
+                    <p>When CIHI rebuilt its public health data tool from the ground up, they needed evidence the investment paid off. Parallel usability tests following the same protocol could help detect major shifts between the legacy product and the redesign. The findings showed a 20% overall improvement in task success, including a 395% jump for a task the original design had quietly buried.</p>
+                    <hr/>
+                    <Row className='mb-4'>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Position</p>
+                        <p className='mb-0'>Senior UX Researcher, CIHI</p>
+                      </Col>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Approach</p>
+                        <p className='mb-0'>Two parallel unmoderated usability tests</p>
+                      </Col>
+                      <Col xs={4}>
+                        <p className='text-uppercase small fw-bold text-muted mb-1'>Output</p>
+                        <p className='mb-0'>Quantified redesign impact</p>
+                      </Col>
+                    </Row>
+                    <Button as='a' href='/user-research/benchmarking/case-study' variant='primary'>Read more</Button>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col md={4} className='prose-content'>
+                <Accordion allKeys={["0", "1", "2", "3"]}>
                   <AccordionItem index={0} header={"What I deliver"}>
                     <p>Benchmarking only works if the measures are worth repeating.</p>
                     <ul id="accordion-content">
@@ -78,15 +105,6 @@ function PerformanceBenchmarking() {
                     <p className="mt-3">For broader quantitative context, <a href="/user-research/surveys">large-scale surveys</a> pair naturally with benchmarking studies.</p>
                   </AccordionItem>
                 </Accordion>
-              </Col>
-              <Col md={4} className='mt-3 align-self-start'>
-                <CustomCard
-                  cardImage='/img/statistics.webp'
-                  cardTitle='Quantifying the impact of redesign'
-                  cardText='When CIHI rebuilt its public health data tool from the ground up, they needed evidence the investment paid off. Parallel usability tests following the same protocol could help detect major shifts between the legacy product and the redesign. The findings showed a 20% overall improvement in task success, including a 395% jump for a task the original design had quietly buried.'
-                  cardLink='/user-research/benchmarking/case-study'
-                  cardLinkText='Read the case study'
-                />
               </Col>
             </Row>
         </Container>

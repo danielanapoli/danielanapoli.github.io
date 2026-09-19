@@ -1,9 +1,9 @@
 export const metadata = {
-  title: 'Writing',
+  title: 'Blog',
   description: 'Writing by Daniela Napoli, PhD on the practice of UX research — AI tools built and tested, the limits prompts can\'t fix, and what stays irreplaceable about the researcher\'s role.',
   alternates: { canonical: '/blog' },
   openGraph: {
-    title: 'Writing | Daniela Napoli, PhD',
+    title: 'Blog | Daniela Napoli, PhD',
     description: 'Writing by Daniela Napoli, PhD on the practice of UX research — AI tools built and tested, the limits prompts can\'t fix, and what stays irreplaceable about the researcher\'s role.',
   },
 };
@@ -20,7 +20,7 @@ function Blog() {
         <Container fluid='md'>
           <Row className='mb-4'>
             <Col>
-            <h1 className='display-4 fw-bold'>Writing on research practice</h1>
+            <h1 className='display-4 fw-bold'>Blog on research practice</h1>
               <p className='fs-5'>
                 I explore UX research, AI inside the practice, and the role of human-led expertise. My writing is inspired by work in the field and other ideas rattling around in my head. 
                 Published on {' '}

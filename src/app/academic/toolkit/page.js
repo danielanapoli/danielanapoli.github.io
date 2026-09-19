@@ -14,7 +14,7 @@ function Toolkit() {
     <div className='Toolkit'>
       <section id='content'>
         <Container fluid='md'>
-            <CustomBreadcrumb/>
+            {/* <CustomBreadcrumb/> */}
             <h1 className="display-4 fw-bold mb-3">Remote Healthcare Technology Design Toolkit</h1>
             <Row fluid='true'>
                 <Col md={7}>

@@ -12,7 +12,7 @@ function ResearchRepositoryCaseStudy() {
     <div className="ResearchRepositoryCaseStudy">
       <section id="content">
         <Container fluid="md">
-          <CustomBreadcrumb />
+          {/* <CustomBreadcrumb /> */}
           <Row fluid='true' className="mb-3">
             <Col className='fs-5'>
               <h1 className='display-4 fw-bold'>Designing a research repository people will actually use</h1>
@@ -39,7 +39,7 @@ function ResearchRepositoryCaseStudy() {
                 During these sessions, I focused on paying rapt attention to each individual&rsquo;s experiences and ways of thinking. One question guided my prompts: &ldquo;What makes this person feel confident enough to rely on a research finding they didn&rsquo;t produce themselves?&rdquo;
               </p>
 
-              <h2>The real problem wasn&rsquo;t findability.</h2>
+              <h2>The real problem wasn&rsquo;t findability</h2>
               <p>
                 Throughout the interviews, it became clear that someone&rsquo;s proximity to the research influenced how much they trusted it. A lead embedded in a study never doubted the findings: &ldquo;I was on the journey, so there was never a moment where I had to be unsure.&rdquo; But a manager on the periphery wasn&rsquo;t sure research could help at all.
               </p>
