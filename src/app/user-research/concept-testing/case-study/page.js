@@ -4,8 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
-import AiUseCallout from '@/components/AiUseCallout/AiUseCallout';
+const PROTOTYPE_URL = '/prototypes/uxr-repo/index.html';
 
 function ResearchRepositoryCaseStudy() {
   return (
@@ -18,20 +17,47 @@ function ResearchRepositoryCaseStudy() {
               <h1 className='display-4 fw-bold'>Designing a research repository people will actually use</h1>
               <p className='text-muted'>Canadian Institute for Health Information, 2026</p>
               <p className='fs-5'>
-                A manager told me they had questions user research could answer, but they had no idea where to find the answers: &ldquo;I don&rsquo;t even know where to go. I don&rsquo;t know who to ask.&rdquo;
+                I set out to design the organization&rsquo;s first UX research repository; in true User Researcher fashion, I started this journey by trying to understand the people who would need the final solution most. 
               </p>
-              <p className='fs-5'>
-                Across CIHI, directors, managers, and leads who decide what to build and how to position it were making calls without user insights, not because they didn&rsquo;t exist but because they couldn&rsquo;t reliably find them or feel sure enough to act on them.
+              <p>
+                Once the findings were in, I suggested next steps. On a slide, recommendations can feel abstract; leaders can&rsquo;t engage with a diagram the same way they can engage with something that behaves like the real thing. So, I built an interactive prototype using AI.
               </p>
-              <p className='fs-5'>
-                The challenge: CIHI had no shared home for its user insights. The information lived with the people who ran the studies, and it couldn&rsquo;t easily travel to everyone who needed it. I set out to design the organization&rsquo;s first UX research repository; in true User Researcher fashion, I started this journey by trying to understand the people who would need the final solution most.
-              </p>
+              {/* Prototype frame */}
+              <Row>
+                <Col>
+                  <p className='fs-6 text-muted'>Note: This is not the prototype I built for CIHI. It is a recreated version, with fabricated content, for demonstration purposes only.</p>
+                </Col>
+              </Row>
+              <Row>
+              <Col>
+                <div className='ratio ratio-16x9 border rounded-3 overflow-hidden shadow-sm'>
+                  <iframe
+                    src={PROTOTYPE_URL}
+                    title='UXR Repository interactive prototype'
+                    loading='lazy'
+                    style={{ border: 0 }}
+                  />
+                </div>
+              </Col>
+              <Row>
+                <Col>
+                  <div className='float-end mt-2'>
+                    <a
+                      className='btn btn-outline-primary btn-sm'
+                      href={PROTOTYPE_URL}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Open full screen &#8599;
+                    </a>
+                  </div>
+                </Col>
+              </Row>
+
+              <h2>Learning partners' needs</h2>
               <p className='fs-5'>
                 The obvious answer to this problem relates to findability: build a searchable library, fill it with insights, and people will use them. But the research showed that isn&rsquo;t necessarily true. While making insights easy to find is important, it doesn&rsquo;t make everyone confident enough to actually use them.
               </p>
-              <AiUseCallout items={['transcribe recordings instantly', 'analyze data in days', 'prototype an MVP in hours', 'share insights across the organization']} />
-
-              <h2>How I set it up</h2>
               <p>
                 I ran listening sessions with 36 CIHI staff across a range of roles and relationships to the research, including project leads closely embedded in research practices to branch directors who weren&rsquo;t even sure what UX Research had to offer.
               </p>
@@ -59,18 +85,15 @@ function ResearchRepositoryCaseStudy() {
                 I dive into why this is important when responsibly democratizing user research in my article: <a href='https://hellodaniela.substack.com/p/the-bot-is-the-easy-part-a-researchers'>Researcher’s Guide to Using AI for User Knowledge Mobilization</a>.
               </p>
 
-              <a href='https://hellodaniela.substack.com/p/the-bot-is-the-easy-part-a-researchers'><img src='/img/bot-is-the-easy-part.png' alt='Flow chart of enabling AI in a UX Research Repository' className='img-fluid my-3' /></a>
-
               <h2>Prototyping the structure in hours, not weeks</h2>
-              <p>
-                On a slide, recommendations can feel abstract; leaders can&rsquo;t engage with a diagram the same way they can engage with something that behaves like the real thing. So, I built an interactive prototype using AI.
-              </p>
               <p>
                 I gave the model my findings and recommendations, then directed it with design language (think: list views, accordions, faceted filtering, sticky sorting bars).
               </p>
               <p>
                 Together, the AI and I iteratively refined the interactive prototype into something that could effectively facilitate discussion with the project leaders. This process took about two hours and saved me the days, possibly weeks, it would have taken me to do this by hand.
               </p>
+            </Row>
+              
 
               <h2>Where it stands now</h2>
               <p>

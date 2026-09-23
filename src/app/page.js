@@ -57,6 +57,7 @@ const academicEntries = [
 const caseStudies = [
   {
     name: 'Discover ⬖ ',
+    title: 'Discovery research',
     color: 'var(--bs-primary-bg-subtle)',
     labelColor: 'var(--bs-primary)',
     body: "Teams set product strategy with confidence when they understand what users need. I start with the research the organization already has. Then I interview the leaders shaping the direction and the users living with the product. Teams get requirements developers can build against. I stay involved through early design so the findings reach real decisions.",
@@ -65,6 +66,7 @@ const caseStudies = [
   },
   {
     name: 'Design ⬗',
+    title: 'Concept testing',
     color: 'var(--bs-primary)',
     body: "Concept testing shows whether a design direction has real potential. I run moderated sessions on wireframes, sketches, or mockups. I probe past first reactions to find out what users are ready to adopt. Teams learn this while changing course is still cheap. Findings shape what gets built next.",
     href: '/user-research/concept-testing',
@@ -72,6 +74,7 @@ const caseStudies = [
   },
   {
     name: 'Develop ⬖',
+    title: 'Usability testing',
     color: 'var(--bs-primary)',
     body: "Usability testing shows teams what is actually causing friction. I run moderated and unmoderated studies with real end users. I rate each issue against established heuristics to guide backlog prioritization. Teams get a ranked set of fixes and video clips to help make the problems tangible for the people who decide what to build.",
     href: '/user-research/usability-testing',
@@ -79,6 +82,7 @@ const caseStudies = [
   },
   {
     name: 'Deliver ⬗',
+    title: 'Benchmarking',
     color: 'var(--bs-primary)',
     body: "Benchmarking turns user behaviour into numbers leadership can act on. I run task-based studies with the same protocol on the legacy product and the redesign. Teams see exactly how much the experience improved. Repeat the study and the numbers become a trend line. Leaders can track how the product performs over time.",
     href: '/user-research/benchmarking',
@@ -95,8 +99,8 @@ function Home() {
           <Container fluid='md'>
 
             {/* Hero */}
-            <Row className='mb-3'>
-              <Col>
+            <Row className='mb-5 g-4'>
+              <Col md={8}>
                 <p className='text-muted small mb-2'>Mixed-methods UX researcher. Ontario, Canada.</p>
                 <h1 className='display-4 fw-bold'>For ten years, one question:<br />Whose voice is missing?</h1>
                 <p className='fs-5 mt-3'>
@@ -104,8 +108,16 @@ function Home() {
                   I've worked in usability, accessibility, and privacy, where that exclusion shows up first.
                   Now, I support decisions in the public and private sectors with research that connects user needs to product strategy.
                   I mix qualitative depth and quantitative rigour to make sure people's voices are heard.
-                  And I explore how <a href='/ai'>AI fits into UX research effectively and responsibly</a>.
                   </p>
+              </Col>
+              <Col md={4}>
+                <div className='border-start ps-3 h-100 position-relative'>
+                  <p className='text-uppercase small text-muted mb-2'>AI in my work</p>
+                  <p className='small mb-2'>
+                    Artificial intelligence shows up in my practice and my work. I have researched people's attitudes and expectations around AI's role in healthcare technology. I use AI to acclerate my research work responsibly. I experiment with AI to understand it deeply.
+                  </p>
+                  <a href='/ai' className='stretched-link small'>Read more on my AI page</a>
+                </div>
               </Col>
             </Row>
 
@@ -124,7 +136,7 @@ function Home() {
                       <CardSubtitle className='text-uppercase small fw-bold mb-2 stage-label'>
                         {stage.name}
                       </CardSubtitle>
-                      <CardTitle as='h3' className='h5'>{stage.title}</CardTitle>
+                      <CardTitle as='h4'>{stage.title}</CardTitle>
                       <CardText>{stage.body}</CardText>
                       {stage.stats && (
                         <Row className='my-2'>
@@ -149,7 +161,7 @@ function Home() {
               </Col>
               {academicEntries.map((entry, i) => (
                 <Col key={entry.title} xs={12} md={3} className={i < academicEntries.length - 1 ? 'mb-4 mb-md-0' : ''}>
-                  <h3 className='mb-1'>{entry.title}</h3>
+                  <h4 className='mb-1'>{entry.title}</h4>
                   <p className='work-methods mb-1'>{entry.description}</p>
                   <a href={entry.link}>Explore {entry.title.toLowerCase()}</a>
                 </Col>
