@@ -3,6 +3,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 const PROTOTYPE_URL = '/prototypes/uxr-repo/index.html';
 
@@ -84,6 +85,8 @@ function ResearchRepositoryCaseStudy() {
                 Further, I recommended metadata to carry the rest of the contextual information people needed, including the sample, the method, the participant characteristics, how fresh a finding is, and who to ask when a question remains. While this metadata provides critical details people need to trust an insight, it also provides a solid foundation for future potential AI interactions. 
                 I dive into why this is important when responsibly democratizing user research in my article: <a href='https://hellodaniela.substack.com/p/the-bot-is-the-easy-part-a-researchers'>Researcher’s Guide to Using AI for User Knowledge Mobilization</a>.
               </p>
+
+              <Image src='/img/rapid-prototyping-flowchart.png' alt='A diagram showing the three stages of including collecting user requirements and additional contextal that Daniela used to build a conceptual prototype for the UX Research repository.' className='img-fluid' />
 
               <h2>Prototyping the structure in hours, not weeks</h2>
               <p>
