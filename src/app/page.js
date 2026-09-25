@@ -104,11 +104,10 @@ function Home() {
                 <p className='text-muted small mb-2'>Mixed-methods UX researcher. Ontario, Canada.</p>
                 <h1 className='display-4 fw-bold'>For ten years, one question:<br />Whose voice is missing?</h1>
                 <p className='fs-5 mt-3'>
-                  Products often get designed only for the voices already at the table.
-                  I've worked in usability, accessibility, and privacy, where that exclusion shows up first.
-                  Now, I support decisions in the public and private sectors with research that connects user needs to product strategy.
-                  I mix qualitative depth and quantitative rigour to make sure people's voices are heard.
-                  </p>
+                  Products are often designed around the voices already at the table. 
+                  My work in usability, accessibility, and privacy has shown me how easily people can be forgotten in product decisions.
+                  Today, I help organizations make better decisions by connecting user needs with product strategy. 
+                  I mix qualitative depth with quantitative rigour to bring overlooked perspectives into the decisions that shape products and services. </p>
               </Col>
               <Col md={4}>
                 <div className='border-start ps-3 h-100 position-relative'>
@@ -154,10 +153,47 @@ function Home() {
                 </Col>
               ))}
             </Row>
+
+            {/* Featured: Accessibility research */}
+            <Row>
+              <h2>Accessibility Research</h2>
+            </Row>
+            <Row className='mb-5'>
+              <Col>
+                <div className='bg-light rounded-3 p-4 p-md-5'>
+                  <Row className='g-4'>
+                    <Col md={5}>
+                      <h3>&ldquo;I&rsquo;m Literally Just Hoping This Will Work:&rdquo; Obstacles Blocking the Online Security and Privacy of Users with Visual Disabilities</h3>
+                      <p className='text-uppercase small fw-bold text-primary mb-3'>Featured &middot; SOUPS 2021 &middot; Full paper</p>
+                      <p className='display-5 fw-bold mb-0'>34</p>
+                      <p className='text-muted small mb-3'>citations</p>
+                      <p className='text-uppercase small fw-bold text-muted mb-1'>Outcome</p>
+                      <p className='small mb-0'>Serious usability issues identified across Gmail, Amazon, and a phishing site, plus four states of security and privacy users experience during sensitive tasks.</p>
+                    </Col>
+                    <Col md={7}>
+                      <p className='fw-bold mb-3'>Accessibility barriers prevent users with visual disabilities from perceiving the security and privacy information they need to manage online threats.</p>
+                      <p className='mb-0'>
+                        We observed how these users protect their online security while interacting with Gmail, Amazon, and a phishing site mimicking CNIB.
+                        When users can&rsquo;t access the cues that signal a threat, they can misinterpret how secure they actually are.
+                      </p>
+                      <p className='mb-0'>
+                        <a href='https://www.usenix.org/conference/soups2021/presentation/napoli' target='_blank' rel='noopener noreferrer' title='A link to the USENIX website. Opens in a new tab.' className='mt-2 d-inline-block'>Read the full paper on USENIX</a>
+                      </p>
+                      <p className='mb-0'>
+                        <a href='https://www.youtube.com/watch?v=wPes4YF4bxY' target='_blank' rel='noopener noreferrer' title='Conference talk on YouTube. Opens in a new tab.' className='mt-2 d-inline-block'>Watch the conference talk</a>
+                      </p>
+                      <p className='mb-0'>
+                        <a href='/academic/publications' className='mt-2 d-inline-block'>See all my publications</a>
+                      </p>
+                    </Col>
+                  </Row>
+                </div>
+              </Col>
+            </Row>
             <hr/>
             <Row className='mb-5'>
               <Col xs={12} md={3} className='mb-4 mb-md-0'>
-                <h2>Academic Research</h2>
+                <h2>More Academic Research</h2>
               </Col>
               {academicEntries.map((entry, i) => (
                 <Col key={entry.title} xs={12} md={3} className={i < academicEntries.length - 1 ? 'mb-4 mb-md-0' : ''}>
