@@ -2,6 +2,7 @@
 
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -15,6 +16,7 @@ function Toolkit() {
       <section id='content'>
         <Container fluid='md'>
             {/* <CustomBreadcrumb/> */}
+            <BackButton />
             <h1 className="display-4 fw-bold mb-3">Remote Healthcare Technology Design Toolkit</h1>
             <Row fluid='true'>
                 <Col md={7}>

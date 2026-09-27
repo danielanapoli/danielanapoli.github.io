@@ -1,6 +1,8 @@
 'use client'
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
+import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -12,7 +14,8 @@ function ResearchRepositoryCaseStudy() {
     <div className="ResearchRepositoryCaseStudy">
       <section id="content">
         <Container fluid="md">
-          {/* <CustomBreadcrumb /> */}
+          <CustomBreadcrumb />
+          <BackButton />
           <Row fluid='true' className="mb-3">
             <Col className='fs-5'>
               <h1 className='display-4 fw-bold'>Designing a research repository people will actually use</h1>

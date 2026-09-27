@@ -1,6 +1,7 @@
 'use client'
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -11,7 +12,8 @@ function BenchmarkingCaseStudy() {
     <div className="BenchmarkingCaseStudy">
       <section id="content">
         <Container fluid="md">
-          {/* <CustomBreadcrumb /> */}
+          <CustomBreadcrumb />
+          <BackButton />
           <Row fluid='true' className="mb-3">
             <Col className='fs-5'>
               <h1 className='display-4 fw-bold'>Measuring what a redesign actually changed</h1>

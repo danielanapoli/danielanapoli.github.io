@@ -1,6 +1,7 @@
 'use client'
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -18,6 +19,7 @@ function PerformanceBenchmarking() {
       <section id="content">
         <Container fluid="md">
           {/* <CustomBreadcrumb/> */}
+          <BackButton />
             <Row fluid='true' className="mb-3">
               <Col className='prose-content'>
                 <h1 className='display-4 fw-bold'>Usability benchmarking</h1>

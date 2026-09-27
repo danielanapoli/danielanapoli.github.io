@@ -1,6 +1,7 @@
 'use client';
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { ResumeEntry } from '@/components/ResumeEntry/ResumeEntry';
@@ -9,12 +10,13 @@ function Resume() {
   return (
     <div className='Resume'>
       <Container fluid='md'>
+        <BackButton />
         <section id='content'>
           <Row className='text-center mb-3'>
             <Col>
               <h1 className='display-4 fw-bold'>Daniela Napoli</h1>
               <p>
-                Ontario, Canada
+                Hamilton, Ontario, Canada
                 <br /><a href='mailto:hello@danielanapoli.com' rel='noopener noreferrer' title="Daniela's email address. Will open the mail app.">hello@danielanapoli.com</a>
                 <br /><a href='https://danielanapoli.com' target='_blank' rel='noopener noreferrer' title="Daniela's personal website. Opens in new tab.">www.danielanapoli.com</a>
               </p>

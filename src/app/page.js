@@ -34,25 +34,6 @@ import CardSubtitle from 'react-bootstrap/CardSubtitle';
 import CardTitle from 'react-bootstrap/CardTitle';
 import CardText from 'react-bootstrap/CardText';
 import CardLink from 'react-bootstrap/CardLink';
-import { SubstackFeed } from '@/components/SubstackFeed/SubstackFeed';
-
-const academicEntries = [
-  {
-    title: 'Paper publications',
-    description: 'Peer-reviewed contributions on human-centered design and usable security.',
-    link: '/academic/publications',
-  },
-  {
-    title: 'Talks & workshops',
-    description: 'Invited talks and presentations at HCI conferences and workshops.',
-    link: '/academic/talks',
-  },
-  {
-    title: 'Remote healthcare toolkit',
-    description: 'A design toolkit guiding remote healthcare technology for older adults.',
-    link: '/academic/toolkit',
-  },
-];
 
 const caseStudies = [
   {
@@ -60,7 +41,7 @@ const caseStudies = [
     title: 'Discovery research',
     color: 'var(--bs-primary-bg-subtle)',
     labelColor: 'var(--bs-primary)',
-    body: "Teams set product strategy with confidence when they understand what users need. I start with the research the organization already has. Then I interview the leaders shaping the direction and the users living with the product. Teams get requirements developers can build against. I stay involved through early design so the findings reach real decisions.",
+    body: "Teams can set product strategy with confidence when they understand what users need. I start with the research the organization already has. Then I interview the leaders shaping the direction. And then I talk to the users living with the product. From this work, teams can design and build with purpose.",
     href: '/user-research/discovery',
     linkText: 'Read about how I inform product strategy',
   },
@@ -68,7 +49,7 @@ const caseStudies = [
     name: 'Design ⬗',
     title: 'Concept testing',
     color: 'var(--bs-primary)',
-    body: "Concept testing shows whether a design direction has real potential. I run moderated sessions on wireframes, sketches, or mockups. I probe past first reactions to find out what users are ready to adopt. Teams learn this while changing course is still cheap. Findings shape what gets built next.",
+    body: "Concept testing shows whether a design direction has real potential. I run sessions on wireframes, sketches, or mockups. I probe past first reactions to find out what users are ready to adopt. These findings help when changing course is still cheap.",
     href: '/user-research/concept-testing',
     linkText: 'Read about how I test designs with users',
   },
@@ -76,7 +57,7 @@ const caseStudies = [
     name: 'Develop ⬖',
     title: 'Usability testing',
     color: 'var(--bs-primary)',
-    body: "Usability testing shows teams what is actually causing friction. I run moderated and unmoderated studies with real end users. I rate each issue against established heuristics to guide backlog prioritization. Teams get a ranked set of fixes and video clips to help make the problems tangible for the people who decide what to build.",
+    body: "Usability testing shows teams what is actually causing friction. I run unmoderated and moderated studies with real end users. I rate issues against established heuristics to guide backlog prioritization. Teams get a ranked set of fixes with accompanying video clips to help make the problems tangible for the people who decide the next steps.",
     href: '/user-research/usability-testing',
     linkText: 'Read about how I work with dev teams',
   },
@@ -84,7 +65,7 @@ const caseStudies = [
     name: 'Deliver ⬗',
     title: 'Benchmarking',
     color: 'var(--bs-primary)',
-    body: "Benchmarking turns user behaviour into numbers leadership can act on. I run task-based studies with the same protocol on the legacy product and the redesign. Teams see exactly how much the experience improved. Repeat the study and the numbers become a trend line. Leaders can track how the product performs over time.",
+    body: "Benchmarking turns user behaviour into numbers leadership can act on. I run task-based studies with the same protocol on legacy products and redesigns. This way, teams see exactly what improved and what declined over time.",
     href: '/user-research/benchmarking',
     linkText: 'Read about how I monitor product performance over time',
   },
@@ -111,9 +92,9 @@ function Home() {
               </Col>
               <Col md={4}>
                 <div className='border-start ps-3 h-100 position-relative'>
-                  <p className='text-uppercase small text-muted mb-2'>AI in my work</p>
+                  <h2 className='text-uppercase small text-muted fw-normal lh-base mb-2'>AI in my work</h2>
                   <p className='small mb-2'>
-                    Artificial intelligence shows up in my practice and my work. I have researched people's attitudes and expectations around AI's role in healthcare technology. I use AI to acclerate my research work responsibly. I experiment with AI to understand it deeply.
+                    I've have researched people's attitudes and expectations around AI's role in healthcare technology. I use AI to acclerate my research work responsibly. I experiment with AI to understand it deeply.
                   </p>
                   <a href='/ai' className='stretched-link small'>Read more on my AI page</a>
                 </div>
@@ -135,7 +116,7 @@ function Home() {
                       <CardSubtitle className='text-uppercase small fw-bold mb-2 stage-label'>
                         {stage.name}
                       </CardSubtitle>
-                      <CardTitle as='h4'>{stage.title}</CardTitle>
+                      <CardTitle as='h3' className='h4'>{stage.title}</CardTitle>
                       <CardText>{stage.body}</CardText>
                       {stage.stats && (
                         <Row className='my-2'>
@@ -158,13 +139,13 @@ function Home() {
             <Row>
               <h2>Accessibility Research</h2>
             </Row>
-            <Row className='mb-5'>
+            <Row className='mb-2'>
               <Col>
                 <div className='bg-light rounded-3 p-4 p-md-5'>
                   <Row className='g-4'>
                     <Col md={5}>
                       <h3>&ldquo;I&rsquo;m Literally Just Hoping This Will Work:&rdquo; Obstacles Blocking the Online Security and Privacy of Users with Visual Disabilities</h3>
-                      <p className='text-uppercase small fw-bold text-primary mb-3'>Featured &middot; SOUPS 2021 &middot; Full paper</p>
+                      <p className='text-uppercase small fw-bold text-primary mb-3'>SOUPS 2021 &middot; Peer-reviewed</p>
                       <p className='display-5 fw-bold mb-0'>34</p>
                       <p className='text-muted small mb-3'>citations</p>
                       <p className='text-uppercase small fw-bold text-muted mb-1'>Outcome</p>
@@ -182,26 +163,41 @@ function Home() {
                       <p className='mb-0'>
                         <a href='https://www.youtube.com/watch?v=wPes4YF4bxY' target='_blank' rel='noopener noreferrer' title='Conference talk on YouTube. Opens in a new tab.' className='mt-2 d-inline-block'>Watch the conference talk</a>
                       </p>
+                    </Col>
+                  </Row>
+                </div>
+              </Col>
+            </Row>
+            <Row className='mb-2'>
+              <Col>
+                <div className='bg-light rounded-3 p-4 p-md-5'>
+                  <Row className='g-4'>
+                    <Col md={5}>
+                      <h3>Developing Accessible and Usable Security (ACCUS) Heuristics</h3>
+                      <p className='text-uppercase small fw-bold text-primary mb-3'>CHI 2018 &middot; Extended abstract</p>
+                      <p className='display-5 fw-bold mb-0'>25</p>
+                      <p className='text-muted small mb-3'>citations</p>
+                      <p className='text-uppercase small fw-bold text-muted mb-1'>Outcome</p>
+                      <p className='small mb-0'>A set of heuristics merging usable security and web accessibility, applied to ten websites to uncover issues that stop users from following standard security advice.</p>
+                    </Col>
+                    <Col md={7}>
+                      <p className='fw-bold mb-3'>Usable security and web accessibility are often treated as separate issues, leaving a gap in how users with vision loss secure their online experiences.</p>
                       <p className='mb-0'>
-                        <a href='/academic/publications' className='mt-2 d-inline-block'>See all my publications</a>
+                        We created heuristics that bring both fields together and used them to evaluate ten websites.
+                        The evaluation uncovered multiple issues that prevent users with vision loss from following standard security advice.
+                      </p>
+                      <p className='mb-0'>
+                        <a href='https://dl.acm.org/doi/abs/10.1145/3170427.3180292' target='_blank' rel='noopener noreferrer' title='A link to the ACM Digital Library. Opens in a new tab.' className='mt-2 d-inline-block'>Read the full paper on the ACM Digital Library</a>
                       </p>
                     </Col>
                   </Row>
                 </div>
               </Col>
             </Row>
-            <hr/>
             <Row className='mb-5'>
-              <Col xs={12} md={3} className='mb-4 mb-md-0'>
-                <h2>More Academic Research</h2>
+              <Col className='text-end'>
+                <a href='/academic'>Read more about my academic work</a>
               </Col>
-              {academicEntries.map((entry, i) => (
-                <Col key={entry.title} xs={12} md={3} className={i < academicEntries.length - 1 ? 'mb-4 mb-md-0' : ''}>
-                  <h4 className='mb-1'>{entry.title}</h4>
-                  <p className='work-methods mb-1'>{entry.description}</p>
-                  <a href={entry.link}>Explore {entry.title.toLowerCase()}</a>
-                </Col>
-              ))}
             </Row>
           </Container>
         </section>

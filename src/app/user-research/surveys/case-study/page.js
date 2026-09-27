@@ -1,6 +1,7 @@
 'use client'
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
@@ -12,7 +13,8 @@ function SurveysCaseStudy() {
     <div className="SurveysCaseStudy">
       <section id="content">
         <Container fluid="md">
-          {/* <CustomBreadcrumb /> */}
+          <CustomBreadcrumb />
+          <BackButton />
           <Row fluid='true' className="mb-3">
             <Col className='fs-5'>
               <h1 className='display-4 fw-bold'>Creating an ETL pipeline to translate raw data into reliable insights</h1>

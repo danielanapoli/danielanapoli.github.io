@@ -1,12 +1,15 @@
 'use client'
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import CardBody from 'react-bootstrap/CardBody';
+import Button from 'react-bootstrap/Button';
 
 import { Accordion, AccordionItem } from '@/components/Accordion/Accordion';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
-import SlidesEmbed from '@/components/SlidesEmbed/SlidesEmbed';
 
 function IndustryWorkflows() {
   return (
@@ -14,14 +17,49 @@ function IndustryWorkflows() {
       <section id="content">
         <Container fluid="md">
           {/* <CustomBreadcrumb/> */}
+          <BackButton />
           <Row fluid='true' className="mb-3">
             <Col className='prose-content'>
               <h1 className='display-4 fw-bold'>Service Design Case Study: Improving Interdisciplinary Workflows</h1>
               <p className='fs-5'>Aligning product managers, designers, and developers around shared priorities is hard. Each discipline brings different goals, different processes, and different definitions of what good work looks like.</p>
             </Col>
           </Row>
-          <Row className='mb-4'>
-            <Col className='prose-content'>
+          <Row className='align-items-start'>
+            <Col md={8} className='mb-4 mb-md-0'>
+              <Card bg='light' className='border-0'>
+                <CardBody className='p-4'>
+                  <p className='text-uppercase small fw-bold text-muted mb-2'>Case study</p>
+                  <h2 className='mb-3'>Aligning three teams around one workflow</h2>
+                  <p>Product managers, designers, and developers each had their own picture of how work got done. Fifteen one-on-one As-Is Scenario Mapping workshops surfaced where collaboration broke down, and a Hills workshop with all 20 participants turned those findings into shared priorities for improving how the teams worked together.</p>
+                  <hr/>
+                  <Row className='mb-4'>
+                    <Col xs={4}>
+                      <p className='text-uppercase small fw-bold text-muted mb-1'>Position</p>
+                      <p className='mb-0'>Design Research Intern, IBM</p>
+                    </Col>
+                    <Col xs={4}>
+                      <p className='text-uppercase small fw-bold text-muted mb-1'>Approach</p>
+                      <p className='mb-0'>As-Is Scenario Mapping and Hills workshops</p>
+                    </Col>
+                    <Col xs={4}>
+                      <p className='text-uppercase small fw-bold text-muted mb-1'>Output</p>
+                      <p className='mb-0'>Improved alignment among cross-disciplinary product teams</p>
+                    </Col>
+                  </Row>
+                  <Button
+                    as='a'
+                    href='https://docs.google.com/presentation/d/e/2PACX-1vQd5PDpJXKgZfi36N-aW1bIOZo5w62e6Zjwk9AlB_LjlNsq881p2tPvc3wa1jPLfg/pub?start=false&loop=false&delayms=3000'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    title='Case study slides. Opens in a new tab.'
+                    variant='primary'
+                  >
+                    Read more
+                  </Button>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col md={4} className='prose-content'>
               <Accordion allKeys={["0", "1"]}>
                 <AccordionItem index={0} header={"Process"}>
                   <h3>Explore cross-departmental workflows</h3>
@@ -49,11 +87,6 @@ function IndustryWorkflows() {
                   <p>The research reduced silos between teams and uncovered concrete opportunities for workflow improvement. The process itself gave participants space to be self-reflective and co-own a path forward. Empathy and morale across the three teams visibly improved. Full institutionalization of the findings was underway at the time of my departure.</p>
                 </AccordionItem>
               </Accordion>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <SlidesEmbed embedId={"https://docs.google.com/presentation/d/e/2PACX-1vQd5PDpJXKgZfi36N-aW1bIOZo5w62e6Zjwk9AlB_LjlNsq881p2tPvc3wa1jPLfg/pubembed?start=false&loop=true&delayms=3000"} title="Slides: Service Design Case Study: Improving Interdisciplinary Workflows" />
             </Col>
           </Row>
         </Container>

@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CustomCard from '@/components/CustomCard/CustomCard';
@@ -18,6 +19,7 @@ function Academic() {
   <div className="Academic">
     <section id="content">
       <Container fluid='md'>
+        <BackButton />
         <Row className="mb-3">
           <Col className='prose-content'>
             <h1 className='display-4 fw-bold'>Academic Contributions</h1>

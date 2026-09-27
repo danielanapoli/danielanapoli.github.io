@@ -1,6 +1,7 @@
 'use client'
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
@@ -18,6 +19,7 @@ function IndustryRequirements() {
       <section id="content">
           <Container fluid="md">
           {/* <CustomBreadcrumb/> */}
+          <BackButton />
             <Row className="mb-3">
               <Col className='prose-content'>
                 <h1 className='display-4 fw-bold'>Requirements discovery</h1>

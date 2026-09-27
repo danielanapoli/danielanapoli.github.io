@@ -4,6 +4,7 @@ export const metadata = {
 };
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CustomCard from '@/components/CustomCard/CustomCard';
@@ -13,6 +14,7 @@ function ResearchTools() {
     <div className='Tools'>
       <section id='content'>
           <Container fluid='md'>
+            <BackButton />
             <Row>
               <Col>
               <h1 className='display-4 fw-bold'>Research Tools</h1>

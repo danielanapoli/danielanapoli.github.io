@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -17,10 +18,11 @@ function HowIUseAI() {
     <div className='HowIUseAI'>
       <section id='content'>
         <Container fluid='md'>
+<BackButton />
 
           {/* Hero */}
           <Row className='mb-4'>
-              <h1 className='display-4 fw-bold'>Putting AI in practice</h1>
+              <h1 className='display-4 fw-bold'>Putting AI into practice</h1>
           </Row>
           <Row className='mb-5'>
               <Col>

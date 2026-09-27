@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -18,6 +19,7 @@ function About() {
     <div className='About'>
       <section id='content'>
         <Container fluid='md'>
+          <BackButton />
           <Row className='align-items-center'>
             <Col xs={12} md={8} className='prose-content'>
               <h1 className='display-4 fw-bold'>More about me</h1>
@@ -29,16 +31,13 @@ function About() {
                 <a href='https://www.usenix.org/conference/soups2021/presentation/napoli' target='_blank' rel='noopener noreferrer' title='Opens in a new tab.'>privacy worries of people who are blind and visually impaired</a>.
                 My PhD studied{' '}
                 <a href='https://link.springer.com/chapter/10.1007/978-3-031-92840-6_5' target='_blank' rel='noopener noreferrer' title='Opens in a new tab.'>what makes older adults feel confident that their privacy and safety are protected when using healthcare technology</a>.
-                Many of them talked about fear and doubt around AI, which I wasn&rsquo;t expecting. It just kept appearing.
+                Many of them talked about fear and doubt around AI, which I wasn&rsquo;t expecting. It just kept appearing. 
+                When I moved from academic research into industry, the form of the work changed. The curiosity did not. I bring that focus on the people who are most affected by technology into my work as a UX researcher.
               </p>
               <p className='fs-5'>
-                When I moved from academic research into industry, the form of the work changed. The curiosity did not.
-              </p>
+                </p>
               <p className='fs-5'>
-                Right now I&rsquo;m leading modernization research at CIHI. The work is about making healthcare data available to the people who need it most. I often support the smaller teams. Like groups in the northern territories with tight budgets, doing their best with limited resources.
-              </p>
-              <p className='fs-5'>
-                Future projects will explore AI more. In the meantime, I{' '}
+                Outside of work I like to explore technology hands-on. Recently, I{' '}
                 <a href='https://github.com/danielanapoli/ux-heuristic-evaluation' target='_blank' rel='noopener noreferrer' title='Opens in a new tab.'>built a Claude skill for heuristic evaluations and open-sourced it</a>.
                 I write{' '}
                 <a href='https://hellodaniela.substack.com/' target='_blank' rel='noopener noreferrer' title="Daniela's Substack. Opens in a new tab.">on Substack</a>{' '}

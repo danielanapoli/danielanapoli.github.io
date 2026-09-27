@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -19,6 +20,7 @@ function UXRRepoPrototype() {
     <div className='UXRRepoPrototype'>
       <section id='content'>
         <Container fluid='md'>
+<BackButton />
 
           {/* Prototype frame */}
           <Row className='mb-3'>

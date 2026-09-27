@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -102,6 +103,7 @@ function Work() {
     <div className='Work'>
       <section id='content'>
         <Container fluid='md'>
+          <BackButton />
           <Row className='mb-4'>
             <Col>
               <h1 className='display-4 fw-bold'>Research experience</h1>

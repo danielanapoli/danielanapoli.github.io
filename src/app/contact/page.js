@@ -5,6 +5,7 @@ export const metadata = {
 };
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
@@ -14,6 +15,7 @@ function Contact() {
     <div className='Contact'> 
       <section id='content'>
           <Container fluid='md'>
+            <BackButton />
             <Row>
               <Col className='prose-content'>
               <h1 className='display-4 fw-bold'>Get in Touch</h1>

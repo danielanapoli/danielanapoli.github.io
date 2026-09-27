@@ -5,6 +5,7 @@ export const metadata = {
 };
 
 import Container from 'react-bootstrap/Container';
+import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
@@ -19,6 +20,7 @@ function AcademicTalks() {
       <section id="content">
         <Container fluid='md'>
           {/* <CustomBreadcrumb/> */}
+          <BackButton />
           <h1 className="display-4 fw-bold mb-4">Talks and Workshops</h1>
 
           <div className='border rounded p-4 mb-4'>
