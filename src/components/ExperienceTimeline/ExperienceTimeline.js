@@ -73,12 +73,6 @@ export function ExperienceTimeline() {
 
   return (
     <div className='timeline'>
-      <ul className='timeline-legend' aria-hidden='true'>
-        <li><span className='timeline-key timeline-key-role' />Industry role</li>
-        <li><span className='timeline-key timeline-key-degree' />Degree</li>
-        <li><span className='timeline-key timeline-key-paper' />Peer-reviewed paper</li>
-      </ul>
-
       <div className='timeline-lane timeline-industry'>
         <h3 className='timeline-lane-label'>Industry</h3>
         <ol className='timeline-list'>
@@ -104,6 +98,12 @@ export function ExperienceTimeline() {
           ))}
         </ol>
       </div>
+
+      <ul className='timeline-legend' aria-hidden='true'>
+        <li><span className='timeline-key timeline-key-role' />Industry role</li>
+        <li><span className='timeline-key timeline-key-degree' />Degree</li>
+        <li><span className='timeline-key timeline-key-paper' />Peer-reviewed paper</li>
+      </ul>
     </div>
   );
 }
