@@ -151,3 +151,229 @@ html a {
 .diamond-card .stage-label {
   color: var(--stage-label-color, var(--stage-color, #0d6efd));
 }
+
+/* Experience timeline: vertical lists below xl, horizontal track from xl up */
+.timeline {
+  --tl-years: 11;
+  --tl-year: calc(100% / var(--tl-years));
+  --tl-line: 1.5px;
+  --tl-grid: rgba(var(--bs-body-color-rgb), 0.05);
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.timeline-legend,
+.timeline-axis,
+.timeline-bar {
+  display: none;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.timeline-lane-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bs-secondary-color);
+  margin-bottom: 0.75rem;
+}
+
+.timeline-entry {
+  border-left: 3px solid var(--bs-primary);
+  padding-left: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-degree,
+.timeline-focus {
+  border-left-color: var(--bs-primary-border-subtle);
+}
+
+.timeline-paper {
+  border-left-style: dotted;
+}
+
+.timeline-label > span {
+  display: block;
+}
+
+.timeline-date,
+.timeline-paper-title {
+  color: var(--bs-primary);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.timeline-paper-title {
+  letter-spacing: 0.05em;
+}
+
+.timeline-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.timeline-org {
+  color: var(--bs-secondary-color);
+}
+
+@media (min-width: 1200px) {
+  .timeline {
+    padding: 0.5rem;
+  }
+
+  .timeline-legend {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.5rem;
+    color: var(--bs-secondary-color);
+  }
+
+  .timeline-key {
+    display: inline-block;
+    width: 1.25rem;
+    height: 0.5rem;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+  }
+
+  .timeline-key-role { background: var(--bs-primary); }
+  .timeline-key-degree { background: var(--bs-primary-bg-subtle); border: 1px solid var(--bs-primary); }
+  .timeline-key-paper { width: 0.55rem; height: 0.55rem; margin-left: 0.35rem; background: var(--bs-primary); transform: rotate(45deg); }
+
+  /* Each lane is the positioning context and the container for cqi units */
+  .timeline-lane {
+    position: relative;
+    container-type: inline-size;
+    background: repeating-linear-gradient(to right, var(--tl-grid) 0 1px, transparent 1px var(--tl-year));
+  }
+
+  .timeline-industry { height: 12.5rem; }
+  .timeline-academia { height: 13rem; }
+
+  .timeline-list {
+    margin: 0;
+    height: 100%;
+  }
+
+  .timeline-lane-label {
+    position: absolute;
+    left: 0.25rem;
+    top: 0;
+    margin: 0;
+  }
+
+  .timeline-academia .timeline-lane-label {
+    top: auto;
+    bottom: 0;
+  }
+
+  .timeline-axis {
+    display: grid;
+    grid-template-columns: repeat(var(--tl-years), 1fr);
+    border-top: 1.5px solid var(--bs-body-color);
+    border-bottom: 1px solid var(--bs-body-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .timeline-axis span {
+    padding: 0.4rem 0.25rem;
+    border-left: 1px solid var(--tl-grid);
+  }
+
+  .timeline-entry {
+    position: absolute;
+    left: calc(var(--start) * 1%);
+    width: calc(var(--span) * 1%);
+    margin: 0;
+    padding: 0;
+    border-left: var(--tl-line) solid var(--bs-primary);
+  }
+
+  .timeline-bar {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.65rem;
+  }
+
+  .timeline-label {
+    position: absolute;
+    left: 0.5rem;
+    width: calc(100cqi / var(--tl-years) * 1.3);
+  }
+
+  /* Industry: label at its tier, leader line down to the bar above the axis */
+  .timeline-role { bottom: 0.75rem; }
+  .timeline-tier-1 { top: 0; }
+  .timeline-tier-2 { top: 5.75rem; }
+  .timeline-role .timeline-bar { bottom: 0; background: var(--bs-primary); }
+  .timeline-role .timeline-label { top: 0; }
+
+  .timeline-align-end {
+    border-left: 0;
+    border-right: var(--tl-line) solid var(--bs-primary);
+  }
+
+  .timeline-align-end .timeline-label {
+    left: auto;
+    right: 0.5rem;
+    text-align: right;
+  }
+
+  /* Academia: degree bars just under the axis, labels below them */
+  .timeline-degree,
+  .timeline-focus {
+    top: 1rem;
+    height: 7rem;
+    border-left-color: var(--bs-primary);
+  }
+
+  .timeline-degree .timeline-bar,
+  .timeline-focus .timeline-bar {
+    top: 0;
+    left: calc(var(--tl-line) * -1);
+    width: calc(100% + var(--tl-line));
+    border: 1px solid var(--bs-primary);
+  }
+
+  .timeline-degree .timeline-bar { background: var(--bs-primary-bg-subtle); }
+
+  .timeline-focus { z-index: 1; }
+  .timeline-focus .timeline-bar {
+    background: repeating-linear-gradient(135deg, var(--bs-primary-bg-subtle) 0 3px, rgba(var(--bs-primary-rgb), 0.45) 3px 4px);
+  }
+
+  .timeline-degree .timeline-label,
+  .timeline-focus .timeline-label { top: 1.5rem; }
+
+  /* Papers: diamond on the axis, dotted leader down to a lower label */
+  .timeline-paper {
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left-style: dotted;
+    z-index: 2;
+  }
+
+  .timeline-paper .timeline-bar {
+    top: -0.35rem;
+    left: calc(-0.35rem - var(--tl-line) / 2);
+    width: 0.7rem;
+    height: 0.7rem;
+    background: var(--bs-primary);
+    transform: rotate(45deg);
+  }
+
+  .timeline-paper .timeline-label { top: 8.5rem; }
+}

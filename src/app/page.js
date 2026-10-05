@@ -34,6 +34,7 @@ import CardSubtitle from 'react-bootstrap/CardSubtitle';
 import CardTitle from 'react-bootstrap/CardTitle';
 import CardText from 'react-bootstrap/CardText';
 import CardLink from 'react-bootstrap/CardLink';
+import ExperienceTimeline from '@/components/ExperienceTimeline/ExperienceTimeline';
 
 const caseStudies = [
   {
@@ -96,6 +97,23 @@ function Home() {
                   </p>
                   <a href='/ai' className='stretched-link small'>Read more on my AI page</a>
                 </div>
+              </Col>
+            </Row>
+
+            {/* Experience timeline */}
+            <Row>
+              <h2>Experience Timeline</h2>
+            </Row>
+            <Row className='mb-2'>
+              <Col>
+                <Card className='p-2 diamond-card' style={{ '--stage-color': 'var(--bs-primary)' }}>
+                  <ExperienceTimeline />
+                </Card>
+              </Col>
+            </Row>
+            <Row className='mb-5'>
+              <Col className='text-end'>
+                <a href='/resume'>Read more on my resume</a>
               </Col>
             </Row>
 
