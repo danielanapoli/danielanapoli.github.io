@@ -183,6 +183,47 @@ html a {
   margin-bottom: 0.75rem;
 }
 
+/* Collapsible lane toggle, list view only */
+.timeline-lane-text {
+  display: none;
+}
+
+.timeline-toggle {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  text-align: left;
+}
+
+.timeline-toggle-hint {
+  color: var(--bs-link-color);
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.timeline-toggle-hint::after {
+  content: ' ▾';
+}
+
+.timeline-toggle[aria-expanded='true'] .timeline-toggle-hint::after {
+  content: ' ▴';
+}
+
+@media (max-width: 1199.98px) {
+  .timeline-collapsed .timeline-list {
+    display: none;
+  }
+}
+
 .timeline-entry {
   border-left: 3px solid var(--bs-primary);
   padding-left: 0.75rem;
@@ -274,6 +315,9 @@ html a {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
   }
+
+  .timeline-lane-text { display: inline; }
+  .timeline-toggle { display: none; }
 
   .timeline-axis {
     display: grid;
@@ -375,4 +419,26 @@ html a {
   }
 
   .timeline-paper .timeline-label { top: 8.5rem; }
+
+  /* Minor papers: smaller diamond, no leader, label kept for screen readers only */
+  .timeline-minor {
+    border-left: 0;
+    z-index: 1;
+  }
+
+  .timeline-minor .timeline-bar {
+    top: -0.25rem;
+    left: -0.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .timeline-minor .timeline-label {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
 }

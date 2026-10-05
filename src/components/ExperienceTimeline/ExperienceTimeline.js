@@ -2,6 +2,8 @@
 // lists; from xl up, CSS positions each entry on a horizontal 2016–2026 track
 // using the --start and --span percentages calculated here.
 
+import CollapsibleLane from './CollapsibleLane';
+
 const FIRST_YEAR = 2016;
 const LAST_YEAR = 2026;
 const TOTAL_MONTHS = (LAST_YEAR - FIRST_YEAR + 1) * 12;
@@ -22,6 +24,14 @@ const academia = [
   { kind: 'paper', start: '2018-04', title: 'CHI 2018', org: 'ACCUS heuristics' },
   { kind: 'paper', start: '2021-08', title: 'SOUPS 2021', org: 'Security for users with visual disabilities' },
   { kind: 'paper', start: '2025-06', title: 'HCII 2025 ×2', org: 'Privacy and AI in remote care' },
+  // Minor papers get an unlabelled diamond on desktop; they still appear in the list view.
+  // Drawn two months after CHI so its diamond isn't hidden under the ACCUS one.
+  { kind: 'paper', minor: true, start: '2018-06', title: 'CHI 2018', org: 'Colour-blindness and game performance' },
+  { kind: 'paper', minor: true, start: '2018-10', title: 'CCS 2018', org: 'Non-visual SSL certificates (poster)' },
+  { kind: 'paper', minor: true, start: '2019-08', title: 'PST 2019', org: 'Trust and responsibility for account security' },
+  { kind: 'paper', minor: true, start: '2020-08', title: 'SOUPS 2020', org: 'Thermal warnings for security awareness' },
+  { kind: 'paper', minor: true, start: '2023-10', title: 'EuroUSEC 2023', org: 'Perceptions of at-home DNA testing' },
+  { kind: 'paper', minor: true, start: '2026-07', title: 'HCII 2026', org: 'Recruiting older adults' },
 ];
 
 function parse(ym) {
@@ -90,19 +100,16 @@ export function ExperienceTimeline() {
         {years.map((year) => <span key={year}>{year}</span>)}
       </div>
 
-      <div className='timeline-lane timeline-academia'>
-        <h3 className='timeline-lane-label'>Academia</h3>
-        <ol className='timeline-list'>
-          {[...academia].sort(newestFirst).map((entry) => (
-            <Entry key={entry.start} entry={entry} className={`timeline-entry timeline-${entry.kind}`} />
-          ))}
-        </ol>
-      </div>
+      <CollapsibleLane label='Academia' className='timeline-academia'>
+        {[...academia].sort(newestFirst).map((entry) => (
+          <Entry key={entry.start} entry={entry} className={`timeline-entry timeline-${entry.kind}${entry.minor ? ' timeline-minor' : ''}`} />
+        ))}
+      </CollapsibleLane>
 
       <ul className='timeline-legend' aria-hidden='true'>
-        <li><span className='timeline-key timeline-key-role' />Industry role</li>
+        <li><span className='timeline-key timeline-key-role' />Industry Role</li>
         <li><span className='timeline-key timeline-key-degree' />Degree</li>
-        <li><span className='timeline-key timeline-key-paper' />Peer-reviewed paper</li>
+        <li><span className='timeline-key timeline-key-paper' />Publication</li>
       </ul>
     </div>
   );
