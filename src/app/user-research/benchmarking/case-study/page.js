@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ExpandableImage from '@/components/ExpandableImage/ExpandableImage';
 
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 
@@ -19,14 +20,13 @@ function BenchmarkingCaseStudy() {
               <h1 className='display-4 fw-bold'>Measuring what a redesign actually changed</h1>
               <p className='text-muted'>Canadian Institute for Health Information, 2026</p>
               <p className='fs-5'>
-                CIHI redesigned their public data tool that health system advisors, journalists, and patient advocates used to find pre-analyzed healthcare data across 13 Canadian provinces and territories. They migrated it to their main site, rebuilt the interface, and rearchitected the content structure.
+                CIHI redesigned their public data tool for finding pre-analyzed healthcare data across the 13 Canadian provinces and territories. They migrated it to their main site, rebuilt the interface, and rearchitected the content structure.
               </p>
               <p className='fs-5'>
-                The question was simple: did it actually work?
+                The question was simple: did the improvements actually work? This was critical for CIHI's leadership; the study helped justify the investment in the organization's highest-priority program.
               </p>
-              <p className='fs-5'>
-                This is critical for CIHI's leadership; the measurement is meant to justify the modernization investment across the organization's highest-priority program.
-              </p>
+
+              <ExpandableImage src='/img/benchmarking-process.png' alt='Diagram of the benchmarking study in three stages. Study design: four inputs (validated user needs from 2022 discovery research, the key insight that users need context behind the data, known constraints, and comparable measures). Benchmark: two parallel unmoderated usability tests in Loop11 running the same 8 tasks, one on the legacy product in a UAT environment and one on the redesign on the live site, both measuring task success, abandonment, time on task and ease ratings. Results: overall task success up 20% for the redesign, task success for finding methodology up 395%, and lower-scoring tasks tied to known backlog issues, which moved those fixes higher on the roadmap.' />
 
               <h2>How I set it up</h2>
               <p>

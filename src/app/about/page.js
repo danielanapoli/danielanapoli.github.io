@@ -13,6 +13,7 @@ import BackButton from '@/components/BackButton/BackButton';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import ExpandableImage from '@/components/ExpandableImage/ExpandableImage';
 
 function About() {
   return (
@@ -50,6 +51,15 @@ function About() {
             </Col>
             <Col xs={12} md={4} className='text-center mt-4 mt-md-0'>
               <Image width='80%' alt='Photo of Daniela wearing glasses and smiling' src='/img/daniela2.png' roundedCircle thumbnail/>
+            </Col>
+          </Row>
+          <Row className='mt-5'>
+            <Col xs={12} className='prose-content'>
+              <h2>Testimonials</h2>
+              <p className='fs-5'>
+                Thank you to the amazing team at CIHI who generously gifted me this mural filled with gratitude after working together during 2025/2026.
+              </p>
+              <ExpandableImage src='/img/cihi-thankyou.png' alt='Illustrated thank-you mural from the CIHI team. On the left, a cartoon of Daniela flying like a superhero in a purple cape and UX t-shirt, holding a notebook, beside the words "You are amazing". On the right, dozens of colourful sticky notes from colleagues thank her for her user advocacy, research skills, collaborative spirit, and sense of humour, and wish her well in her next chapter.' />
             </Col>
           </Row>
         </Container>

@@ -39,6 +39,7 @@ export function ResumeEntry({
   const orgNode = organizationHref
     ? <a href={organizationHref} target='_blank' rel='noopener noreferrer'>{organization}</a>
     : organization;
+  const featuredProjects = [].concat(featuredProject ?? []);
 
   return (
     <Row className={className}>
@@ -52,17 +53,22 @@ export function ResumeEntry({
         </div>
         <div>{orgNode}{location ? `, ${location}` : ''}</div>
         {bullets.length > 0 && <BulletList bullets={bullets} />}
-        {featuredProject && (
+        {featuredProjects.length > 0 && (
           <Alert variant='light'>
             💡 Read more:{' '}
-            <a
-              href={featuredProject.href}
-              target='_blank'
-              rel='noopener noreferrer'
-              title={featuredProject.linkTitle}
-            >
-              {featuredProject.label}
-            </a>
+            {featuredProjects.map((project, i) => (
+              <span key={project.href}>
+                {i > 0 && ' · '}
+                <a
+                  href={project.href}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  title={project.linkTitle}
+                >
+                  {project.label}
+                </a>
+              </span>
+            ))}
           </Alert>
         )}
       </Col>

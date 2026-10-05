@@ -5,7 +5,7 @@ import BackButton from '@/components/BackButton/BackButton';
 import CustomBreadcrumb from '@/components/BreadCrumb/BreadCrumb';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+import ExpandableImage from '@/components/ExpandableImage/ExpandableImage';
 
 const PROTOTYPE_URL = '/prototypes/uxr-repo/index.html';
 
@@ -21,42 +21,12 @@ function ResearchRepositoryCaseStudy() {
               <h1 className='display-4 fw-bold'>Designing a research repository people will actually use</h1>
               <p className='text-muted'>Canadian Institute for Health Information, 2026</p>
               <p className='fs-5'>
-                I set out to design the organization&rsquo;s first UX research repository; in true User Researcher fashion, I started this journey by trying to understand the people who would need the final solution most. 
+                I was tasked to design the organization&rsquo;s first UX research repository; in true User Researcher fashion, I started this journey by trying to understand the people who would need the final solution most. 
               </p>
               <p>
-                Once the findings were in, I suggested next steps. On a slide, recommendations can feel abstract; leaders can&rsquo;t engage with a diagram the same way they can engage with something that behaves like the real thing. So, I built an interactive prototype using AI.
+                Once the findings were in, I suggested next steps. But, on a slide, recommendations can feel abstract; leaders can&rsquo;t engage with a diagram the same way they can engage with something that behaves like the real thing. So, I built an interactive prototype using AI.
               </p>
-              {/* Prototype frame */}
-              <Row>
-                <Col>
-                  <p className='fs-6 text-muted'>Note: This is not the prototype I built for CIHI. It is a recreated version, with fabricated content, for demonstration purposes only.</p>
-                </Col>
-              </Row>
-              <Row>
-              <Col>
-                <div className='ratio ratio-16x9 border rounded-3 overflow-hidden shadow-sm'>
-                  <iframe
-                    src={PROTOTYPE_URL}
-                    title='UXR Repository interactive prototype'
-                    loading='lazy'
-                    style={{ border: 0 }}
-                  />
-                </div>
-              </Col>
-              <Row>
-                <Col>
-                  <div className='float-end mt-2'>
-                    <a
-                      className='btn btn-outline-primary btn-sm'
-                      href={PROTOTYPE_URL}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      Open full screen &#8599;
-                    </a>
-                  </div>
-                </Col>
-              </Row>
+              <ExpandableImage src='/img/rapid-prototyping-process.png' alt='Diagram of the rapid prototyping process in three stages. Gather inputs: four requirements drawn from user need statements and problem statements, content considerations, known constraints, and existing systems and frameworks. Initial prompt: a request for an interactive conceptual prototype of the UX Research repository, delivered as a single HTML file, that traces each design choice back to the four requirements. Follow-up: a repeating prompt asking for a completely different design approach that still meets the same four requirements.' />
 
               <h2>Learning partners' needs</h2>
               <p className='fs-5'>
@@ -89,7 +59,38 @@ function ResearchRepositoryCaseStudy() {
                 I dive into why this is important when responsibly democratizing user research in my article: <a href='https://hellodaniela.substack.com/p/the-bot-is-the-easy-part-a-researchers'>Researcher’s Guide to Using AI for User Knowledge Mobilization</a>.
               </p>
 
-              <Image src='/img/rapid-prototyping-flowchart.png' alt='A diagram showing the three stages of including collecting user requirements and additional contextal that Daniela used to build a conceptual prototype for the UX Research repository.' className='img-fluid' />
+              {/* Prototype frame */}
+              <Row>
+                <Col>
+                  <p className='fs-6 text-muted'>Note: This is not the prototype I built for CIHI. It is a recreated version, with fabricated content, for demonstration purposes only.</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <div className='ratio ratio-16x9 border rounded-3 overflow-hidden shadow-sm'>
+                    <iframe
+                      src={PROTOTYPE_URL}
+                      title='UXR Repository interactive prototype'
+                      loading='lazy'
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <div className='float-end mt-2'>
+                    <a
+                      className='btn btn-outline-primary btn-sm'
+                      href={PROTOTYPE_URL}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Open full screen &#8599;
+                    </a>
+                  </div>
+                </Col>
+              </Row>
 
               <h2>Prototyping the structure in hours, not weeks</h2>
               <p>
@@ -98,8 +99,7 @@ function ResearchRepositoryCaseStudy() {
               <p>
                 Together, the AI and I iteratively refined the interactive prototype into something that could effectively facilitate discussion with the project leaders. This process took about two hours and saved me the days, possibly weeks, it would have taken me to do this by hand.
               </p>
-            </Row>
-              
+
 
               <h2>Where it stands now</h2>
               <p>

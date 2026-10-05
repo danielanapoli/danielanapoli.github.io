@@ -34,7 +34,7 @@ function AcademicPublications() {
                 <h2 className='mb-2'>Exploring User Perspectives on Data Collection, Data Sharing Preferences, and Privacy Concerns with Remote Healthcare Technology</h2>
                 <p>Remote healthcare technology enhances access to quality care and improves diagnoses through continuous monitoring.</p>
                 <p className='mb-3'>We surveyed 384 people in Canada aged 20 to 93 years old to explore participants' comfort with data collection, sharing preferences, and potential privacy concerns related to remote healthcare technology.</p>
-                <p className='text-muted small mb-2'>553 reads &middot; 3 citations</p>
+                <p className='text-muted small mb-2'>612 reads &middot; 7 citations</p>
                 <a href="https://link.springer.com/chapter/10.1007/978-3-031-92840-6_5" target="_blank" rel="noopener noreferrer" title="A link to the Springer research database. Opens in a new tab.">Read full publication on Springer</a>
               </Col>
               <Col xs={12} md={5}>
@@ -53,7 +53,7 @@ function AcademicPublications() {
                 <h2 className='mb-2'>Helpful but Terrifying: Older Adults' Perspectives of AI in Remote Healthcare Technology</h2>
                 <p>Canada is prioritizing digital healthcare solutions to help address staffing shortages, access inequities, and the needs of an aging population where remote healthcare can be critical.</p>
                 <p className='mb-3'>We interviewed 21 Canadians aged 65 to 87 with chronic health conditions about remote healthcare technology. They were interested in AI features but had concerns about safety and privacy. While they recognized that AI integration is inevitable, they felt powerless to avoid AI-driven solutions when seeking care.</p>
-                <p className='text-muted small mb-2'>954 reads</p>
+                <p className='text-muted small mb-2'>1,066 reads &middot; 2 citations</p>
                 <a href="https://link.springer.com/chapter/10.1007/978-3-031-94159-7_24" target="_blank" rel="noopener noreferrer" title="A link to the Springer research database. Opens in a new tab.">Read full publication on Springer</a>
               </Col>
               <Col xs={12} md={5}>
@@ -113,7 +113,7 @@ function AcademicPublications() {
                 <h2 className='mb-2'>Developing Accessible and Usable Security (ACCUS) Heuristics</h2>
                 <p>Usable security and web accessibility are often treated as separate issues. Existing research does not adequately address how users with vision loss secure their online experiences.</p>
                 <p className='mb-3'>We created heuristics that merge both fields and evaluated ten websites, uncovering multiple issues that prevent users from following standard security advice.</p>
-                <p className='text-muted small mb-2'>24 citations</p>
+                <p className='text-muted small mb-2'>409 reads &middot; 25 citations</p>
                 <a href="https://dl.acm.org/doi/abs/10.1145/3170427.3180292" target="_blank" rel="noopener noreferrer" title="A link to the ACM Digital Library. Opens in a new tab.">Read full publication on ACM Digital Library</a>
               </Col>
               <Col xs={12} md={5}>

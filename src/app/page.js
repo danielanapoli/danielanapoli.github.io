@@ -41,33 +41,33 @@ const caseStudies = [
     title: 'Discovery research',
     color: 'var(--bs-primary-bg-subtle)',
     labelColor: 'var(--bs-primary)',
-    body: "Teams can set product strategy with confidence when they understand what users need. I start with the research the organization already has. Then I interview the leaders shaping the direction. And then I talk to the users living with the product. From this work, teams can design and build with purpose.",
+    body: "I start with the research the organization already has. Then I interview the leaders shaping the direction and talk to the users living with the product. Teams come out knowing what users need before they commit to a strategy.",
     href: '/user-research/discovery',
-    linkText: 'Read about how I inform product strategy',
+    linkText: 'How I inform product strategy',
   },
   {
     name: 'Design ⬗',
     title: 'Concept testing',
     color: 'var(--bs-primary)',
-    body: "Concept testing shows whether a design direction has real potential. I run sessions on wireframes, sketches, or mockups. I probe past first reactions to find out what users are ready to adopt. These findings help when changing course is still cheap.",
+    body: "I run sessions on wireframes, sketches, or mockups to see whether a design direction is worth building. I probe past first reactions to find out what users are ready to adopt. At this stage, changing course is still cheap.",
     href: '/user-research/concept-testing',
-    linkText: 'Read about how I test designs with users',
+    linkText: 'How I test designs with users',
   },
   {
     name: 'Develop ⬖',
     title: 'Usability testing',
     color: 'var(--bs-primary)',
-    body: "Usability testing shows teams what is actually causing friction. I run unmoderated and moderated studies with real end users. I rate issues against established heuristics to guide backlog prioritization. Teams get a ranked set of fixes with accompanying video clips to help make the problems tangible for the people who decide the next steps.",
+    body: "I run moderated and unmoderated studies with end users, then rate each issue against usability principles so the team knows what to fix first. Teams get a ranked list of fixes with video clips of users hitting each problem.",
     href: '/user-research/usability-testing',
-    linkText: 'Read about how I work with dev teams',
+    linkText: 'How I work with dev teams',
   },
   {
     name: 'Deliver ⬗',
     title: 'Benchmarking',
     color: 'var(--bs-primary)',
-    body: "Benchmarking turns user behaviour into numbers leadership can act on. I run task-based studies with the same protocol on legacy products and redesigns. This way, teams see exactly what improved and what declined over time.",
+    body: "I run the same task-based study on legacy products and on their redesigns. That turns user behaviour into numbers leadership can act on, and shows teams what improved and what declined over time.",
     href: '/user-research/benchmarking',
-    linkText: 'Read about how I monitor product performance over time',
+    linkText: 'How I monitor product performance over time',
   },
 ];
 
@@ -85,16 +85,14 @@ function Home() {
                 <p className='text-muted small mb-2'>Mixed-methods UX researcher. Ontario, Canada.</p>
                 <h1 className='display-4 fw-bold'>For ten years, one question:<br />Whose voice is missing?</h1>
                 <p className='fs-5 mt-3'>
-                  Products are often designed around the voices already at the table. 
-                  My work in usability, accessibility, and privacy has shown me how easily people can be forgotten in product decisions.
-                  Today, I help organizations make better decisions by connecting user needs with product strategy. 
-                  I mix qualitative depth with quantitative rigour to bring overlooked perspectives into the decisions that shape products and services. </p>
+                  Teams design around the users they already hear from. My research has focused on the people they hear from least, including people with visual disabilities, older adults, and teams with fewer resources. I pair quantitative methods that show how many people hit a problem with qualitative methods that show why. Then I bring those needs into product strategy decisions.
+                </p>
               </Col>
               <Col md={4}>
                 <div className='border-start ps-3 h-100 position-relative'>
                   <h2 className='text-uppercase small text-muted fw-normal lh-base mb-2'>AI in my work</h2>
                   <p className='small mb-2'>
-                    I've have researched people's attitudes and expectations around AI's role in healthcare technology. I use AI to acclerate my research work responsibly. I experiment with AI to understand it deeply.
+                    I've researched people's attitudes and expectations around AI's role in healthcare technology. I use AI to acclerate my research work responsibly. I experiment with AI to understand it deeply.
                   </p>
                   <a href='/ai' className='stretched-link small'>Read more on my AI page</a>
                 </div>

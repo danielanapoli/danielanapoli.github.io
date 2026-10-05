@@ -64,7 +64,7 @@ function Resume() {
 
               <ResumeEntry
                 title='Senior User Experience Researcher'
-                dateRange='Oct 2025 – Current'
+                dateRange='Oct 2025 – Oct 2026'
                 organization='Canadian Institute for Health Information'
                 location='Toronto, Ontario'
                 bullets={[
@@ -73,6 +73,18 @@ function Resume() {
                   'Analyze discovery interviews with AI in parallel with fieldwork, surfacing participant feedback to the team before sessions close while keeping interpretation and validity under researcher judgment. Lead prompt-writing workshops to build the team’s AI fluency.',
                   'Anchor ambiguous project vision through storytelling and journey maps. Translate user needs into feature priorities, technical requirements, and success criteria, and present findings to senior leadership, including Branch Directors who use them to reprioritize development backlogs.',
                   'Design and build an AI-enabled UX research repository, a scalable system that consolidates findings, reduces redundancy, and lets cross-functional teams leverage user insight at organizational scale.',
+                ]}
+                featuredProject={[
+                  {
+                    href: '/user-research/discovery/case-study',
+                    label: 'Requirements discovery',
+                    linkTitle: "Link to a project page on Daniela's website. Opens in a new tab.",
+                  },
+                  {
+                    href: '/user-research/concept-testing/case-study',
+                    label: 'Research repository concept testing',
+                    linkTitle: "Link to a project page on Daniela's website. Opens in a new tab.",
+                  },
                 ]}
               />
 
@@ -85,6 +97,18 @@ function Resume() {
                   'Computer Science PhD Researcher focused on tailoring remote healthcare technology to the needs and privacy expectations of older adults, examining how trust shapes adoption of emerging technology.',
                   'Designed and executed qualitative interviews and a national survey (n=384) on data collection, data sharing preferences, and privacy concerns, and published two peer-reviewed papers at HCII 2025 on privacy and on AI in remote healthcare.',
                   "Senior member and junior research mentor for Carleton's Human Oriented Research in Usable Security Laboratory.",
+                ]}
+                featuredProject={[
+                  {
+                    href: 'https://link.springer.com/chapter/10.1007/978-3-031-92840-6_5',
+                    label: 'Remote healthcare privacy paper (HCII 2025)',
+                    linkTitle: 'Link to Springer. Opens in a new tab.',
+                  },
+                  {
+                    href: '/user-research/surveys/case-study',
+                    label: 'Survey data pipeline',
+                    linkTitle: "Link to a project page on Daniela's website. Opens in a new tab.",
+                  },
                 ]}
               />
 
@@ -99,8 +123,8 @@ function Resume() {
                   'Partnered cross-functionally with product, design, and engineering teams and presented recommendations to leadership; findings implemented in retirement of legacy offerings and release of new products designed around user needs.',
                 ]}
                 featuredProject={{
-                  href: '/user-research/discovery',
-                  label: 'Requirements discovery',
+                  href: '/user-research/benchmarking/case-study',
+                  label: 'Longitudinal benchmarking',
                   linkTitle: "Link to a project page on Daniela's website. Opens in a new tab.",
                 }}
               />

@@ -38,9 +38,9 @@ function HowIUseAI() {
             <Col md={6}>
               <div className='bg-light rounded-3 p-4 p-md-5 h-100'>
                 <h3>UXR Claude skill</h3>
-                <p className='text-uppercase small fw-bold text-primary mb-3'>Featured &middot; Claude &middot; Open source</p>
+                <p className='text-uppercase small fw-bold text-primary mb-3'>Open source</p>
                 <p className='display-5 fw-bold mb-0'>5</p>
-                <p className='text-muted small mb-3'>websites tested &middot; 200+ reads &middot; 15 repo clones</p>
+                <p className='text-muted small mb-3'>websites tested &middot; 200+ reads &middot; 15+ repo clones</p>
                 <p className='text-uppercase small fw-bold text-muted mb-1'>Outcome</p>
                 <p className='small mb-3'>Open-source skill that the research community is reading and cloning.</p>
                 <p className='fw-bold mb-3'>I built a Claude skill to replace myself in conducting usability heuristic evaluations, then ran it across five websites to see what would hold up.</p>
@@ -75,7 +75,7 @@ function HowIUseAI() {
                   <p className='mb-0'><a href='/user-research/concept-testing/case-study' className='stretched-link mt-2 d-inline-block'>Read about the research repository</a></p>
                 </div>
                 <div className='border rounded p-3 position-relative'>
-                  <p className='text-uppercase small fw-bold text-muted mb-2'>Fast, cheap, not quite human</p>
+                  <p className='text-uppercase small fw-bold text-muted mb-2'>Synthetic users: Fast, cheap, not human</p>
                   <p className='mb-0'>Testing my portfolio site with 10 Claude-generated synthetic recruiter personas alongside 1 real participant to see whether AI can stand in for human usability testing.</p>
                   <p className='mb-0'><a href='https://hellodaniela.substack.com/p/fast-cheap-not-quite-human-creating' target='_blank' rel='noopener noreferrer' title="Fast, Cheap, Not Quite Human: Creating Synthetic Users. Daniela's Substack. Opens in a new tab." className='stretched-link mt-2 d-inline-block'>Read the post on my Substack</a></p>
                 </div>

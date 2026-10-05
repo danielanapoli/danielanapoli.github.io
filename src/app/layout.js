@@ -48,6 +48,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <head>
+        <script async src="https://t.contentsquare.net/uxa/5dbd2d91b66a8.js"></script>
+      </head>
       <GoogleAnalytics gaId="G-92QDBLPD10" />
       
       <ImportBootstrap/>
