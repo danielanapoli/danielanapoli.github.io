@@ -44,6 +44,23 @@ function AcademicTalks() {
             <Row className='g-4 align-items-center'>
               <Col xs={12} md={7}>
                 <div className='mb-2'>
+                  <Badge bg="secondary">Doctoral Defence</Badge>
+                </div>
+                <h2 className='mb-2'>Tailoring Remote Healthcare Technology to Meet the Needs and Privacy Expectations of Older Adults</h2>
+                <p className='mb-3'>Through a national survey, interviews, and expert focus groups with older adults across Canada, I explored their needs and privacy expectations in remote healthcare technology, then created a design toolkit to help teams build solutions tailored to this growing population.</p>
+                <p className='text-muted small mb-2'>PhD in Computer Science &middot; Carleton University &middot; 2025</p>
+                <a href="https://carleton.scholaris.ca/items/5c6cdb7d-fc69-4ceb-ab86-6cc9dd5b12e3" target="_blank" rel="noopener noreferrer" title="A link to the full thesis on Carleton University's repository. Opens in a new tab.">Read the full thesis</a>
+              </Col>
+              <Col xs={12} md={5}>
+                <SlidesEmbed embedId={"https://speakerdeck.com/player/24843835d2544122bf902f4b59dd02f1"} title="Slides: Tailoring Remote Healthcare Technology to Meet the Needs and Privacy Expectations of Older Adults" />
+              </Col>
+            </Row>
+          </div>
+
+          <div className='border rounded p-4 mb-4'>
+            <Row className='g-4 align-items-center'>
+              <Col xs={12} md={7}>
+                <div className='mb-2'>
                   <Badge bg="secondary">Presentation</Badge>
                 </div>
                 <h2 className='mb-2'>Remote Healthcare Technology Use Cases and the Contextual Integrity of Older Adult User Privacy</h2>
@@ -53,6 +70,23 @@ function AcademicTalks() {
               </Col>
               <Col xs={12} md={5}>
                 <SlidesEmbed embedId={"https://www.slideshare.net/slideshow/embed_code/key/zsZeg71024rJW?hostedIn=slideshare&page=upload"} title="Slides: Remote Healthcare Technology Use Cases and the Contextual Integrity of Older Adult User Privacy" />
+              </Col>
+            </Row>
+          </div>
+
+          <div className='border rounded p-4 mb-4'>
+            <Row className='g-4 align-items-center'>
+              <Col xs={12} md={7}>
+                <div className='mb-2'>
+                  <Badge bg="secondary">Master&rsquo;s Defence</Badge>
+                </div>
+                <h2 className='mb-2'>Accessible and Usable Security: Exploring Visually Impaired Users&rsquo; Online Security and Privacy Strategies</h2>
+                <p className='mb-3'>Through an expert evaluation of web-based security cues with a screen reader and a task-based study with 14 visually impaired users, I uncovered severe issues that force users to choose between accessibility and security, then offered recommendations to better communicate security information.</p>
+                <p className='text-muted small mb-2'>MA in Human-Computer Interaction &middot; Carleton University &middot; 2018</p>
+                <a href="https://carleton.scholaris.ca/items/b9e26ef6-df12-4cf4-bfea-07a99d045f59" target="_blank" rel="noopener noreferrer" title="A link to the full Master's thesis on Carleton University's repository. Opens in a new tab.">Read the full thesis</a>
+              </Col>
+              <Col xs={12} md={5}>
+                <SlidesEmbed embedId={"https://speakerdeck.com/player/181863c72616440486823083e14ff4ef"} title="Slides: Accessible and Usable Security: Exploring Visually Impaired Users' Online Security and Privacy Strategies" />
               </Col>
             </Row>
           </div>

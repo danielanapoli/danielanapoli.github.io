@@ -21,7 +21,7 @@ function footer(){
             <br/>
             <p className="smaller-text">
                 Designed & developed by Daniela Napoli <br/>
-                Last updated September 2026<br/>
+                Last updated October 2026<br/>
             </p> 
             </Col>
             </Row>
